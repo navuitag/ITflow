@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v17";
+const CACHE_NAME = "itflow-vn-v18";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -10,6 +10,9 @@ const APP_SHELL = [
   "./assets/css/lab.css",
   "./assets/css/blockly-lab.css",
   "./assets/css/input-lab.css",
+  "./assets/css/embed-lab.css",
+  "./modules/embedLab.js",
+  "./modules/embedLab/scratchProjects.js",
   "./assets/css/practice-features.css",
   "./assets/css/mindmap.css",
   "./modules/blocklyLab.js",

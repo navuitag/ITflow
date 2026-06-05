@@ -3,7 +3,7 @@
  * và phân phối chương trình TH (8 chủ đề mở rộng 16 bài học).
  */
 import { readFile, writeFile } from "node:fs/promises";
-import { SKILL_SIMULATORS } from "../modules/inputLab/scenarios.js";
+import { buildLabForSkill } from "./lib/lab-builders.mjs";
 
 const SOURCE =
   "Bám sát SGK Hướng dẫn học Tin học lớp 2 (NXBGD) và phân phối chương trình môn Tin học TH; nội dung tự biên soạn cho ITFlow.";
@@ -302,33 +302,19 @@ const defaultLabSteps = [
   { id: "s3", label: "Báo cáo kết quả", hint: "Trình bày hoặc chụp màn hình nếu được phép." }
 ];
 
-const theoryOnly = new Set(["g2_a01", "g2_b04", "g2_d09"]);
+const theoryOnly = new Set(["g2_a01", "g2_d09"]);
 
 const buildLabs = () =>
   grade2
     .filter(([id]) => !theoryOnly.has(id))
-    .map(([id, title]) => {
-      const sim = SKILL_SIMULATORS[id];
-      const short = title.replace(/^Bài \d+\.\s*/, "");
-      if (sim) {
-        return {
-          id: `lab_${id}`,
-          skill: id,
-          type: sim.type,
-          title: `Thực hành: ${short}`,
-          xp: 40,
-          simulator: sim
-        };
-      }
-      return {
-        id: `lab_${id}`,
-        skill: id,
-        type: "checklist",
-        title: `Thực hành: ${short}`,
-        xp: 40,
-        steps: labStepsBySkill[id] || defaultLabSteps
-      };
-    });
+    .map(([id, title]) =>
+      buildLabForSkill(id, title, {
+        labStepsBySkill,
+        xp: 44,
+        simXp: 40,
+        checklistXp: 40
+      })
+    );
 
 const grade2Errors = [
   {

@@ -530,6 +530,111 @@ function createMouseController(lab, sim, elements) {
       };
     }
 
+    case "device_parts": {
+      tasks.push({ id: "parts", label: "Nháy 4 bộ phận máy tính", done: false });
+      const parts = [
+        { id: "screen", label: "🖥 Màn hình", left: "18%", top: "12%" },
+        { id: "mouse", label: "🖱 Chuột", left: "12%", top: "68%" },
+        { id: "keyboard", label: "⌨ Bàn phím", left: "42%", top: "68%" },
+        { id: "speaker", label: "🔊 Loa", left: "72%", top: "48%" }
+      ];
+      const clicked = new Set();
+      parts.forEach((part) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "input-device-btn";
+        btn.textContent = part.label;
+        btn.style.left = part.left;
+        btn.style.top = part.top;
+        desktop.appendChild(btn);
+        btn.addEventListener("click", () => {
+          clicked.add(part.id);
+          btn.classList.add("is-hit");
+          if (clicked.size >= 4) hitTask("parts", "Đủ 4 bộ phận");
+        });
+      });
+      break;
+    }
+
+    case "posture_check": {
+      tasks.push(
+        { id: "posture", label: "Chọn tư thế ngồi đúng", done: false },
+        { id: "light", label: "Chọn ánh sáng phù hợp", done: false }
+      );
+      const posturePanel = document.createElement("div");
+      posturePanel.className = "input-posture-panel";
+      posturePanel.innerHTML = "<strong>Tư thế ngồi</strong>";
+      desktop.appendChild(posturePanel);
+      [
+        "Ngồi cúi sát màn hình",
+        "Ngồi thẳng lưng, mắt cách màn hình một gang tay",
+        "Nằm khi dùng máy tính"
+      ].forEach((text, index) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "input-posture-btn";
+        btn.textContent = text;
+        posturePanel.appendChild(btn);
+        btn.addEventListener("click", () => {
+          if (index === 1) {
+            btn.classList.add("is-correct");
+            hitTask("posture", "Tư thế đúng");
+          } else {
+            btn.classList.add("is-wrong");
+            setFeedback(feedback, "Chưa đúng — chọn tư thế giữ mắt và lưng khỏe.");
+          }
+        });
+      });
+      const lightPanel = document.createElement("div");
+      lightPanel.className = "input-posture-panel";
+      lightPanel.innerHTML = "<strong>Ánh sáng phòng học</strong>";
+      desktop.appendChild(lightPanel);
+      ["Phòng tối, chỉ sáng màn hình", "Đủ sáng, không chói màn hình", "Ánh nắng chiếu thẳng vào màn hình"].forEach(
+        (text, index) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "input-posture-btn";
+          btn.textContent = text;
+          lightPanel.appendChild(btn);
+          btn.addEventListener("click", () => {
+            if (index === 1) {
+              btn.classList.add("is-correct");
+              hitTask("light", "Ánh sáng đúng");
+            } else {
+              btn.classList.add("is-wrong");
+              setFeedback(feedback, "Chưa đúng — cần đủ sáng và không chói mắt.");
+            }
+          });
+        }
+      );
+      break;
+    }
+
+    case "right_click": {
+      tasks.push({ id: "menu", label: "Nháy phải và chọn «Mở»", done: false });
+      const icon = placeIcons(desktop, 1)[0];
+      icon.style.left = "50%";
+      icon.style.top = "40%";
+      icon.style.transform = "translate(-50%, -50%)";
+      const menu = document.createElement("div");
+      menu.className = "input-context-menu";
+      menu.innerHTML = `<button type="button" data-action="open">Mở</button><button type="button">Đổi tên</button>`;
+      desktop.appendChild(menu);
+      icon.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        const rect = desktop.getBoundingClientRect();
+        menu.style.left = `${e.clientX - rect.left}px`;
+        menu.style.top = `${e.clientY - rect.top}px`;
+        menu.classList.add("is-open");
+      });
+      menu.querySelector('[data-action="open"]').addEventListener("click", () => {
+        menu.classList.remove("is-open");
+        icon.classList.add("is-hit");
+        hitTask("menu", "Mở");
+      });
+      break;
+    }
+
     case "click_play": {
       tasks.push({ id: "play", label: "Nháy nút PLAY", done: false });
       const btn = document.createElement("button");

@@ -2,7 +2,7 @@
  * Nội dung Tin học lớp 4 — SGK Kết nối tri thức với cuộc sống (16 bài + 12A/12B)
  */
 import { readFile, writeFile } from "node:fs/promises";
-import { SKILL_SIMULATORS } from "../modules/inputLab/scenarios.js";
+import { buildLabForSkill } from "./lib/lab-builders.mjs";
 
 const SOURCE = "Bám sát SGK Tin học 4 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.";
 
@@ -272,39 +272,14 @@ const theoryOnly = new Set(["g4_a01", "g4_d06"]);
 const buildLabs = () =>
   grade4
     .filter(([id]) => !theoryOnly.has(id))
-    .map(([id, title]) => {
-      const short = title.replace(/^Bài \d+[AB]?\.\s*/, "");
-      if (blocklyLabs[id]) {
-        const cfg = blocklyLabs[id];
-        return {
-          id: `lab_${id}`,
-          skill: id,
-          type: "blockly",
-          title: `Thực hành Blockly: ${short}`,
-          xp: 48,
-          blockly: { ...cfg, starterXml: null }
-        };
-      }
-      const sim = SKILL_SIMULATORS[id];
-      if (sim) {
-        return {
-          id: `lab_${id}`,
-          skill: id,
-          type: sim.type,
-          title: `Thực hành: ${short}`,
-          xp: 42,
-          simulator: sim
-        };
-      }
-      return {
-        id: `lab_${id}`,
-        skill: id,
-        type: "checklist",
-        title: `Thực hành: ${short}`,
-        xp: 42,
-        steps: defaultLabSteps
-      };
-    });
+    .map(([id, title]) =>
+      buildLabForSkill(id, title, {
+        blocklyLabs,
+        xp: 48,
+        simXp: 42,
+        checklistXp: 42
+      })
+    );
 
 const grade4Errors = [
   {

@@ -3,7 +3,7 @@
  * (SGK KNTT chính thức bắt đầu từ lớp 3; lớp 1 = tiền đề NLa theo CT GDPT 2018)
  */
 import { readFile, writeFile } from "node:fs/promises";
-import { SKILL_SIMULATORS } from "../modules/inputLab/scenarios.js";
+import { buildLabForSkill } from "./lib/lab-builders.mjs";
 
 const SOURCE =
   "Bám sát chương trình Tin học lớp 1 (làm quen máy tính, chuột, bàn phím); nội dung tự biên soạn cho ITFlow, chuẩn bị cho SGK KNTT lớp 3+.";
@@ -227,29 +227,15 @@ const defaultLabSteps = [
 
 const buildLabs = () =>
   grade1
-    .filter(([id]) => id !== "g1_a01" && id !== "g1_a02" && id !== "g1_a03" && id !== "g1_d15")
-    .map(([id, title]) => {
-      const sim = SKILL_SIMULATORS[id];
-      const short = title.replace(/^Bài \d+\.\s*/, "");
-      if (sim) {
-        return {
-          id: `lab_${id}`,
-          skill: id,
-          type: sim.type,
-          title: `Thực hành: ${short}`,
-          xp: 35,
-          simulator: sim
-        };
-      }
-      return {
-        id: `lab_${id}`,
-        skill: id,
-        type: "checklist",
-        title: `Thực hành: ${short}`,
-        xp: 35,
-        steps: labStepsBySkill[id] || defaultLabSteps
-      };
-    });
+    .filter(([id]) => id !== "g1_a01" && id !== "g1_d15")
+    .map(([id, title]) =>
+      buildLabForSkill(id, title, {
+        labStepsBySkill,
+        xp: 39,
+        simXp: 35,
+        checklistXp: 35
+      })
+    );
 
 const grade1Errors = [
   {

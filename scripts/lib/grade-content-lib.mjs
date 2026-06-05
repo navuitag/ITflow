@@ -2,7 +2,7 @@
  * Tiện ích sinh nội dung SGK cho ITFlow (dùng chung lớp 8–12).
  */
 import { readFile, writeFile } from "node:fs/promises";
-import { SKILL_SIMULATORS } from "../../modules/inputLab/scenarios.js";
+import { buildLabForSkill, defaultLabSteps } from "./lab-builders.mjs";
 
 export const merge = (existing, incoming, key = "id") => {
   const map = new Map(existing.map((item) => [item[key], item]));
@@ -21,12 +21,6 @@ export const mergeErrors = (existing, incoming) => {
   for (const item of incoming) map.set(key(item), item);
   return [...map.values()];
 };
-
-const defaultLabSteps = [
-  { id: "s1", label: "Đọc yêu cầu SGK và xác định sản phẩm", hint: "Ghi ra việc cần hoàn thành." },
-  { id: "s2", label: "Thực hiện trên máy theo hướng dẫn", hint: "Làm đúng thứ tự." },
-  { id: "s3", label: "Kiểm tra và trình bày kết quả", hint: "So với rubric bài học." }
-];
 
 const shortTitle = (title) =>
   title
@@ -157,39 +151,15 @@ export function buildGradeContent({
   const buildLabs = () =>
     lessons
       .filter(([id]) => !theoryOnly.has(id))
-      .map(([id, title]) => {
-        const short = shortTitle(title);
-        if (blocklyLabs[id]) {
-          const cfg = blocklyLabs[id];
-          return {
-            id: `lab_${id}`,
-            skill: id,
-            type: "blockly",
-            title: `Thực hành Blockly: ${short}`,
-            xp: 52,
-            blockly: { ...cfg, starterXml: null }
-          };
-        }
-        const sim = SKILL_SIMULATORS[id];
-        if (sim) {
-          return {
-            id: `lab_${id}`,
-            skill: id,
-            type: sim.type,
-            title: `Thực hành: ${short}`,
-            xp: 46,
-            simulator: sim
-          };
-        }
-        return {
-          id: `lab_${id}`,
-          skill: id,
-          type: "checklist",
-          title: `Thực hành: ${short}`,
-          xp: 46,
-          steps: checklistSteps[id] || defaultLabSteps
-        };
-      });
+      .map(([id, title]) =>
+        buildLabForSkill(id, title, {
+          blocklyLabs,
+          checklistSteps,
+          xp: 52,
+          simXp: 46,
+          checklistXp: 46
+        })
+      );
 
   return { buildSkills, buildLessons, buildQuestions, buildLabs, gradeErrors };
 }

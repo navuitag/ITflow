@@ -1,5 +1,15 @@
 /** Cấu hình mô phỏng theo skill (chuột & bàn phím). */
 export const SKILL_SIMULATORS = {
+  g1_a02: {
+    type: "mouse",
+    scenario: "device_parts",
+    instruction: "Nháy từng bộ phận: màn hình, chuột, bàn phím và loa."
+  },
+  g1_a03: {
+    type: "mouse",
+    scenario: "posture_check",
+    instruction: "Chọn tư thế ngồi và ánh sáng đúng khi học với máy tính."
+  },
   g1_a04: { type: "mouse", scenario: "shutdown", instruction: "Nháy nút Bật máy, mở menu Start rồi chọn Tắt máy." },
   g1_b05: { type: "mouse", scenario: "click_targets", instruction: "Di chuyển chuột và nháy vào 3 biểu tượng trên màn hình.", targetCount: 3 },
   g1_b06: { type: "mouse", scenario: "double_click", instruction: "Nháy đúp vào biểu tượng để mở chương trình." },
@@ -14,11 +24,12 @@ export const SKILL_SIMULATORS = {
   g1_c16: { type: "keyboard", scenario: "type_sequence", instruction: "Ôn hàng cơ sở: asdfjkl;", text: "asdfjkl;" },
   g2_a02: { type: "mouse", scenario: "mouse_trainer", instruction: "Luyện nháy 3 lần, nháy đúp 1 lần và kéo thả 1 lần." },
   g2_a03: { type: "mouse", scenario: "open_close", instruction: "Nháy đúp mở cửa sổ phần mềm, rồi nháy nút X để đóng." },
+  g2_b04: { type: "mouse", scenario: "right_click", instruction: "Nháy phải biểu tượng và chọn «Mở» trong menu." },
   g2_b05: { type: "mouse", scenario: "paint_colors", instruction: "Chọn 3 màu và nháy lên vùng vẽ để tô." },
   g2_b14: { type: "mouse", scenario: "drag_drop", instruction: "Kéo hình khối vào khung mẫu." },
   g2_b15: { type: "keyboard", scenario: "type_word", instruction: "Dùng công cụ chữ: gõ «hoa».", text: "hoa" },
   g2_c06: { type: "keyboard", scenario: "type_sequence", instruction: "Rapid Typing — gõ hàng cơ sở: ffjjddkk", text: "ffjjddkk" },
-  g2_c07: { type: "keyboard", scenario: "type_word", instruction: "Gõ từ «lop2» chậm nhưng đúng.", text: "lop2" },
+  g2_c07: { type: "keyboard", scenario: "number_row", instruction: "Luyện hàng số: gõ 12345", text: "12345" },
   g2_c08: { type: "keyboard", scenario: "type_sequence", instruction: "Trò chơi chữ cái: gõ abc", text: "abc" },
   g2_c13: { type: "keyboard", scenario: "type_word", instruction: "Fast Hands: gõ từ tiếng Anh «cat».", text: "cat" },
   g2_d10: { type: "mouse", scenario: "web_search", instruction: "Nháy ô tìm kiếm, gõ từ khóa (bàn phím) và nháy kết quả." },
@@ -33,6 +44,7 @@ export const SKILL_SIMULATORS = {
     instruction: "Tìm trên Internet: nháy ô tìm kiếm, gõ «thien» và chọn kết quả.",
     searchKeyword: "thien"
   },
+  g3_c09: { type: "mouse", scenario: "drag_drop", instruction: "Kéo tệp vào thư mục đúng trên màn hình." },
   g3_e13: { type: "mouse", scenario: "mouse_trainer", instruction: "Ôn nháy 3 lần, nháy đúp và kéo thả như SGK bài 13." },
   g4_a02: { type: "keyboard", scenario: "type_word", instruction: "Gõ «lop4» và tên em (chữ thường).", text: "lop4" },
   g4_b03: {
@@ -53,7 +65,13 @@ export const SKILL_SIMULATORS = {
     instruction: "Luyện gõ 10 ngón: asdf jkl;",
     text: "asdfjkl;"
   },
-  g4_f13: { type: "mouse", scenario: "click_play", instruction: "Chơi với máy tính: nháy PLAY để bắt đầu trò chơi." },
+  g5_c04: { type: "mouse", scenario: "drag_drop", instruction: "Tổ chức thư mục: kéo tệp vào thư mục «Bài tập»." },
+  g5_e07: {
+    type: "keyboard",
+    scenario: "type_word",
+    instruction: "Soạn thảo văn bản: gõ «van ban» (không dấu).",
+    text: "van ban"
+  },
   g6_a03: { type: "keyboard", scenario: "type_word", instruction: "Thông tin số: gõ «lop6» (chữ thường).", text: "lop6" },
   g6_b05: {
     type: "mouse",

@@ -65,7 +65,7 @@
     "id": "lab_g1_b09",
     "skill": "g1_b09",
     "type": "mouse",
-    "title": "Thực hành: Thực hành trò chơi Tangram",
+    "title": "Thực hành: trò chơi Tangram",
     "xp": 35,
     "simulator": {
       "type": "mouse",
@@ -105,7 +105,7 @@
     "id": "lab_g1_c12",
     "skill": "g1_c12",
     "type": "keyboard",
-    "title": "Thực hành: Thực hành bàn phím",
+    "title": "Thực hành: bàn phím",
     "xp": 35,
     "simulator": {
       "type": "keyboard",
@@ -131,7 +131,7 @@
     "id": "lab_g1_c14",
     "skill": "g1_c14",
     "type": "keyboard",
-    "title": "Thực hành: Thực hành bàn phím (tiếp)",
+    "title": "Thực hành: bàn phím (tiếp)",
     "xp": 35,
     "simulator": {
       "type": "keyboard",
@@ -2885,9 +2885,9 @@
     "xp": 40,
     "simulator": {
       "type": "keyboard",
-      "scenario": "type_word",
-      "instruction": "Gõ từ «lop2» chậm nhưng đúng.",
-      "text": "lop2"
+      "scenario": "number_row",
+      "instruction": "Luyện hàng số: gõ 12345",
+      "text": "12345"
     }
   },
   {
@@ -2943,15 +2943,31 @@
   {
     "id": "lab_g2_d12",
     "skill": "g2_d12",
-    "type": "mouse",
-    "title": "Thực hành: Trò chơi GCompris",
-    "xp": 40,
-    "simulator": {
-      "type": "mouse",
-      "scenario": "click_targets",
-      "instruction": "Chọn 4 trò chơi GCompris trên lưới.",
-      "targetCount": 4
-    }
+    "type": "embed",
+    "title": "Scratch: Trò chơi và animation",
+    "xp": 44,
+    "embed": {
+      "provider": "scratch",
+      "projectId": 4814367,
+      "mission": "Làm quen Scratch qua dự án «Animate your name». Nháy cờ xanh, thử đổi chữ và thêm hiệu ứng chuyển động."
+    },
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nháy cờ xanh chạy chương trình",
+        "hint": "Góc trên bên phải khung Scratch."
+      },
+      {
+        "id": "s2",
+        "label": "Thử đổi tên hoặc màu chữ của em",
+        "hint": "Kéo khối trong nhóm Hiển thị / Ngoại hình."
+      },
+      {
+        "id": "s3",
+        "label": "Thêm ít nhất một hiệu ứng chuyển động",
+        "hint": "Dùng khối Lặp hoặc Trượt."
+      }
+    ]
   },
   {
     "id": "lab_g2_d16",
@@ -3056,26 +3072,14 @@
   {
     "id": "lab_g3_c09",
     "skill": "g3_c09",
-    "type": "checklist",
-    "title": "Thực hành: Thực hành với tệp và thư mục",
+    "type": "mouse",
+    "title": "Thực hành: với tệp và thư mục",
     "xp": 40,
-    "steps": [
-      {
-        "id": "s1",
-        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
-        "hint": "Ghi ra việc cần hoàn thành."
-      },
-      {
-        "id": "s2",
-        "label": "Thực hiện trên máy theo hướng dẫn",
-        "hint": "Làm đúng thứ tự."
-      },
-      {
-        "id": "s3",
-        "label": "Kiểm tra và trình bày kết quả",
-        "hint": "So với rubric bài học."
-      }
-    ]
+    "simulator": {
+      "type": "mouse",
+      "scenario": "drag_drop",
+      "instruction": "Kéo tệp vào thư mục đúng trên màn hình."
+    }
   },
   {
     "id": "lab_g3_e11",
@@ -3142,7 +3146,7 @@
     "skill": "g3_f14",
     "type": "blockly",
     "title": "Thực hành Blockly: Em thực hiện công việc như thế nào",
-    "xp": 45,
+    "xp": 51,
     "blockly": {
       "mode": "sequence",
       "mission": "Ghép ít nhất 2 lệnh tuần tự (Nói, Tiến…) dưới «Khi bấm Chạy».",
@@ -3158,7 +3162,7 @@
     "skill": "g3_f15",
     "type": "blockly",
     "title": "Thực hành Blockly: Công việc theo điều kiện",
-    "xp": 45,
+    "xp": 51,
     "blockly": {
       "mode": "branch",
       "mission": "Dùng khối «Nếu … thì» với điều kiện và ít nhất một lệnh trong nhánh.",
@@ -3172,7 +3176,7 @@
     "skill": "g3_f16",
     "type": "blockly",
     "title": "Thực hành Blockly: Công việc của em và sự trợ giúp của máy tính",
-    "xp": 45,
+    "xp": 51,
     "blockly": {
       "mode": "branch",
       "mission": "Từ kịch bản công việc: dùng «Nếu … thì» + ít nhất 2 lệnh (Nói/Tiến), rồi chạy thử.",
@@ -3370,7 +3374,7 @@
     "id": "lab_g4_e12a",
     "skill": "g4_e12a",
     "type": "checklist",
-    "title": "Thực hành: Thực hành đa phương tiện",
+    "title": "Thực hành: đa phương tiện",
     "xp": 42,
     "steps": [
       {
@@ -3406,21 +3410,38 @@
   {
     "id": "lab_g4_f13",
     "skill": "g4_f13",
-    "type": "mouse",
-    "title": "Thực hành: Chơi với máy tính",
-    "xp": 42,
-    "simulator": {
-      "type": "mouse",
-      "scenario": "click_play",
-      "instruction": "Chơi với máy tính: nháy PLAY để bắt đầu trò chơi."
-    }
+    "type": "embed",
+    "title": "Scratch: Chơi với máy tính",
+    "xp": 48,
+    "embed": {
+      "provider": "scratch",
+      "projectId": 104,
+      "mission": "Điều khiển nhân vật Scratch bằng phím mũi tên — bước đầu lập trình trực quan."
+    },
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nháy cờ xanh để chạy",
+        "hint": "Quan sát nhân vật di chuyển."
+      },
+      {
+        "id": "s2",
+        "label": "Nhấn phím mũi tên trên bàn phím",
+        "hint": "Thử các hướng lên, xuống, trái, phải."
+      },
+      {
+        "id": "s3",
+        "label": "Đổi trang phục hoặc phông nền",
+        "hint": "Tab Trang phục hoặc Phông nền bên dưới sân khấu."
+      }
+    ]
   },
   {
     "id": "lab_g4_f14",
     "skill": "g4_f14",
     "type": "blockly",
     "title": "Thực hành Blockly: Khám phá môi trường lập trình trực quan",
-    "xp": 48,
+    "xp": 54,
     "blockly": {
       "mode": "sequence",
       "mission": "Khám phá Blockly: ghép ≥ 2 lệnh tuần tự (Nói, Tiến…) dưới «Khi bấm Chạy».",
@@ -3436,7 +3457,7 @@
     "skill": "g4_f15",
     "type": "blockly",
     "title": "Thực hành Blockly: Tạo chương trình máy tính để diễn tả ý tưởng",
-    "xp": 48,
+    "xp": 54,
     "blockly": {
       "mode": "loop",
       "mission": "Dùng khối «Lặp lại» ≥ 3 lần, bên trong có ít nhất một lệnh.",
@@ -3452,7 +3473,7 @@
     "skill": "g4_f16",
     "type": "blockly",
     "title": "Thực hành Blockly: Chương trình của em",
-    "xp": 48,
+    "xp": 54,
     "blockly": {
       "mode": "loop_practice",
       "mission": "Chương trình của em: lặp ≥ 4 lần + chạy thử trên sân khấu.",
@@ -5176,6 +5197,42 @@
         "minBlocks": 6
       },
       "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g1_a02",
+    "skill": "g1_a02",
+    "type": "mouse",
+    "title": "Thực hành: Các bộ phận máy tính",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "device_parts",
+      "instruction": "Nháy từng bộ phận: màn hình, chuột, bàn phím và loa."
+    }
+  },
+  {
+    "id": "lab_g1_a03",
+    "skill": "g1_a03",
+    "type": "mouse",
+    "title": "Thực hành: Tư thế ngồi học và ánh sáng",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "posture_check",
+      "instruction": "Chọn tư thế ngồi và ánh sáng đúng khi học với máy tính."
+    }
+  },
+  {
+    "id": "lab_g2_b04",
+    "skill": "g2_b04",
+    "type": "mouse",
+    "title": "Thực hành: Em tập làm họa sĩ (Leah's Farm Paint)",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "right_click",
+      "instruction": "Nháy phải biểu tượng và chọn «Mở» trong menu."
     }
   }
 ]

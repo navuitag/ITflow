@@ -1,0 +1,235 @@
+.embed-lab {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) 1fr;
+  gap: 1rem;
+  min-height: calc(100vh - 8rem);
+}
+
+.embed-lab-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.embed-lab-mission {
+  color: var(--muted, #64748b);
+  line-height: 1.5;
+}
+
+.embed-lab-note {
+  font-size: 0.85rem;
+  color: var(--muted, #64748b);
+  margin: 0;
+}
+
+.embed-editor-link {
+  align-self: flex-start;
+}
+
+.embed-checklist {
+  flex: 1;
+  overflow: auto;
+}
+
+.embed-step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.embed-step-check {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.embed-step-hint {
+  margin: 0.25rem 0 0 1.5rem;
+  font-size: 0.8rem;
+  color: var(--muted, #64748b);
+}
+
+.embed-frame-wrap {
+  background: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.embed-frame {
+  width: 100%;
+  height: min(72vh, 640px);
+  border: 0;
+  display: block;
+  background: #111;
+}
+
+.scratch-gallery .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.scratch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.scratch-card {
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card, #fff);
+}
+
+.scratch-card-frame {
+  aspect-ratio: 4 / 3;
+  background: #0f172a;
+}
+
+.scratch-card-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.scratch-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-practice-hub .section-head {
+  margin-bottom: 1rem;
+}
+
+.input-practice-groups {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.input-practice-group h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.input-practice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.input-practice-item {
+  display: block;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input-practice-item:hover {
+  border-color: var(--accent, #0891b2);
+  box-shadow: 0 2px 8px rgba(8, 145, 178, 0.12);
+}
+
+.input-practice-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.input-practice-item span {
+  font-size: 0.85rem;
+  color: var(--muted, #64748b);
+}
+
+.input-device-btn {
+  position: absolute;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid #94a3b8;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.input-device-btn.is-hit {
+  border-color: #22c55e;
+  background: #dcfce7;
+}
+
+.input-posture-panel {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-posture-btn {
+  text-align: left;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+}
+
+.input-posture-btn.is-correct {
+  border-color: #22c55e;
+  background: #dcfce7;
+}
+
+.input-posture-btn.is-wrong {
+  border-color: #ef4444;
+  background: #fee2e2;
+}
+
+.input-context-menu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+}
+
+.input-context-menu.is-open {
+  display: block;
+}
+
+.input-context-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input-context-menu button:hover {
+  background: #f1f5f9;
+}
+
+@media (max-width: 900px) {
+  .embed-lab {
+    grid-template-columns: 1fr;
+  }
+
+  .embed-frame {
+    height: 52vh;
+  }
+}

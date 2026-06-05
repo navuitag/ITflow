@@ -37,6 +37,13 @@ import {
   bindInputLab,
   disposeInputLab
 } from "../../modules/inputLab.js";
+import {
+  isEmbedLab,
+  renderEmbedLab,
+  bindEmbedLab,
+  renderScratchGallery
+} from "../../modules/embedLab.js";
+import { SKILL_SIMULATORS } from "../../modules/inputLab/scenarios.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
 import {
   getOverallAccuracy,
@@ -66,6 +73,7 @@ let mindMap;
 let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 let disposeBlockly = null;
 let disposeInput = null;
+let disposeEmbed = null;
 
 export function configureRouter(appData) {
   data = appData;
@@ -115,6 +123,10 @@ export function renderRoute() {
     disposeInput();
     disposeInput = null;
     disposeInputLab();
+  }
+  if (disposeEmbed && route !== "lab") {
+    disposeEmbed();
+    disposeEmbed = null;
   }
 
   if (!state.onboarded) {
@@ -174,6 +186,10 @@ export function renderRoute() {
   } else if (route === "skills") {
     content = renderSkills(state);
     after = bindSkills;
+  } else if (route === "input") {
+    content = renderInputPractice(state);
+  } else if (route === "scratch") {
+    content = renderScratchGallery(escapeHtml);
   } else if (route === "review") {
     content = renderErrors(state);
   } else if (route === "profile") {
@@ -288,6 +304,8 @@ function renderHome(state) {
         <div class="hero-actions">
           <a class="btn primary" href="#/lesson/${nextSkill.id}">Tiếp tục học</a>
           <a class="btn secondary" href="#/practice/${nextSkill.id}">Luyện nhanh</a>
+          <a class="btn secondary" href="#/input">Chuột &amp; bàn phím</a>
+          <a class="btn secondary" href="#/scratch">Scratch</a>
         </div>
       </div>
       <div class="daily-card">
@@ -471,6 +489,57 @@ function bindLesson(id) {
   });
 }
 
+function renderInputPractice(state) {
+  const grade = resolveGrade(state);
+  const entries = Object.entries(SKILL_SIMULATORS)
+    .map(([skillId, sim]) => {
+      const skill = data.skills.find((item) => item.id === skillId);
+      if (!skill || skill.grade !== grade) return null;
+      return { skillId, sim, skill };
+    })
+    .filter(Boolean)
+    .sort((a, b) => (a.skill.chapterIndex - b.skill.chapterIndex) || (a.skill.lessonNo - b.skill.lessonNo));
+
+  const mouseItems = entries.filter((item) => item.sim.type === "mouse");
+  const keyboardItems = entries.filter((item) => item.sim.type === "keyboard");
+
+  const renderGroup = (title, items) => {
+    if (!items.length) {
+      return `<section class="input-practice-group"><h2>${title}</h2><p>Chưa có bài luyện cho lớp này.</p></section>`;
+    }
+    return `
+      <section class="input-practice-group">
+        <h2>${title}</h2>
+        <div class="input-practice-list">
+          ${items
+            .map(
+              (item) => `
+            <a class="input-practice-item" href="#/lab/${item.skillId}">
+              <strong>${escapeHtml(item.skill.title)}</strong>
+              <span>${escapeHtml(item.sim.instruction)}</span>
+            </a>`
+            )
+            .join("")}
+        </div>
+      </section>`;
+  };
+
+  return `
+    <section class="input-practice-hub">
+      <header class="section-head">
+        <div>
+          <h1>Luyện chuột &amp; bàn phím · Lớp ${grade}</h1>
+          <p>Thực hành thao tác cơ bản qua mô phỏng tương tác — không cần cài phần mềm riêng.</p>
+        </div>
+        <a class="back-link" href="#/home">← Trang chủ</a>
+      </header>
+      <div class="input-practice-groups">
+        ${renderGroup("🖱 Chuột", mouseItems)}
+        ${renderGroup("⌨ Bàn phím", keyboardItems)}
+      </div>
+    </section>`;
+}
+
 function renderLab(skillId, state) {
   const lab = getLabForSkill(skillId, data.labs);
   const skill = data.skills.find((s) => s.id === skillId);
@@ -478,6 +547,10 @@ function renderLab(skillId, state) {
 
   if (isBlocklyLab(lab)) {
     return renderBlocklyLab(lab, skill, escapeHtml);
+  }
+
+  if (isEmbedLab(lab)) {
+    return renderEmbedLab(lab, skill, escapeHtml);
   }
 
   if (isInputLab(lab)) {
@@ -530,6 +603,25 @@ async function bindLab(skillId) {
         showModal({
           title: "Hoàn thành thực hành Blockly",
           body: `+${lab.xp} XP. Bạn đã hoàn thành lập trình trực quan cho bài này.`,
+          actionLabel: "Tiếp tục",
+          onAction: () => setRoute("#/skills")
+        });
+      }
+    });
+    return;
+  }
+
+  if (isEmbedLab(lab)) {
+    disposeEmbed = bindEmbedLab(lab, {
+      onComplete: () => {
+        updateState((draft) => {
+          if (!draft.labProgress) draft.labProgress = {};
+          draft.labProgress[lab.id] = { done: (lab.steps || []).map((step) => step.id) };
+        });
+        completeLab(lab);
+        showModal({
+          title: "Hoàn thành Scratch",
+          body: `+${lab.xp} XP. Em đã hoàn thành thực hành lập trình trực quan.`,
           actionLabel: "Tiếp tục",
           onAction: () => setRoute("#/skills")
         });
