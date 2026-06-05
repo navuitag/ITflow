@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "id": "summer_g10-g11",
+    "packId": "g10-g11",
+    "title": "Ôn hè Tin học lớp 10 → lớp 11",
+    "subtitle": "6 chủ đề + 1 đề tổng hợp",
+    "gradeFrom": 10,
+    "gradeTo": 11,
+    "source": "Nội dung ôn hè tự biên soạn từ SGK Tin học KNTT (ITFlow)."
+  },
+  "topics": [
+    {
+      "id": "sr_g10_ch1",
+      "order": 1,
+      "title": "Máy tính và xã hội tri thức",
+      "emoji": "💻",
+      "description": "Ôn tập Máy tính và xã hội tri thức — lớp 10 lên 11.",
+      "prerequisite": [],
+      "xp": 40
+    },
+    {
+      "id": "sr_g10_ch2",
+      "order": 2,
+      "title": "Mạng máy tính và Internet",
+      "emoji": "🖱️",
+      "description": "Ôn tập Mạng máy tính và Internet — lớp 10 lên 11.",
+      "prerequisite": [
+        "sr_g10_ch1"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g10_ch3",
+      "order": 3,
+      "title": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+      "emoji": "⌨️",
+      "description": "Ôn tập Đạo đức, pháp luật và văn hóa trong môi trường số — lớp 10 lên 11.",
+      "prerequisite": [
+        "sr_g10_ch2"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g10_ch4",
+      "order": 4,
+      "title": "Ứng dụng tin học",
+      "emoji": "🌐",
+      "description": "Ôn tập Ứng dụng tin học — lớp 10 lên 11.",
+      "prerequisite": [
+        "sr_g10_ch3"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g10_ch5",
+      "order": 5,
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "emoji": "📊",
+      "description": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 10 lên 11.",
+      "prerequisite": [
+        "sr_g10_ch4"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g10_ch6",
+      "order": 6,
+      "title": "Hướng nghiệp với tin học",
+      "emoji": "🧩",
+      "description": "Ôn tập Hướng nghiệp với tin học — lớp 10 lên 11.",
+      "prerequisite": [
+        "sr_g10_ch5"
+      ],
+      "xp": 40
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sr_g10_ch1",
+      "title": "Máy tính và xã hội tri thức",
+      "topic": "sr_g10_ch1",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Máy tính và xã hội tri thức — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+            "IoT, thiết bị thông minh và tác động xã hội.",
+            "Kiểu số, chuỗi, logic trong lập trình.",
+            "Chuyển đổi nhị phân – thập phân; biểu diễn số nguyên."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g10_ch2",
+      "title": "Mạng máy tính và Internet",
+      "topic": "sr_g10_ch2",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Mạng máy tính và Internet — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Mạng có dây/không dây trong gia đình và trường học.",
+            "Mã hóa, mật khẩu mạnh và bảo vệ tài khoản.",
+            "Tìm và đánh giá tài nguyên học tập trực tuyến."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g10_ch3",
+      "title": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+      "topic": "sr_g10_ch3",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Đạo đức, pháp luật và văn hóa trong môi trường số — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Ứng xử văn minh và nghĩa vụ tôn trọng bản quyền."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g10_ch4",
+      "title": "Ứng dụng tin học",
+      "topic": "sr_g10_ch4",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Ứng dụng tin học — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Làm quen vector/raster và công cụ đồ họa.",
+            "Vẽ hình cơ bản, chèn icon và clipart.",
+            "Đường thẳng, đường cong và text trên canvas.",
+            "Xuất file ảnh và hoàn thiện poster theo rubric."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g10_ch5",
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "topic": "sr_g10_ch5",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Làm quen Python và môi trường lập trình.",
+            "Khai báo biến, gán giá trị trong Python.",
+            "input(), print() và định dạng xuất.",
+            "if, elif, else trong Python."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g10_ch6",
+      "title": "Hướng nghiệp với tin học",
+      "topic": "sr_g10_ch6",
+      "source": "Ôn hè Tin học lớp 10 → 11 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Hướng nghiệp với tin học — lớp 10 lên 11."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Định hướng nghề thiết kế đồ họa số.",
+            "Định hướng nghề lập trình viên."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam_g10_1",
+      "order": 1,
+      "title": "Đề tổng hợp lớp 10",
+      "description": "Kiểm tra nhanh kiến thức Tin học trước khi lên lớp 11.",
+      "prerequisite": [
+        "sr_g10_ch6"
+      ],
+      "questionCount": 5,
+      "xp": 50
+    }
+  ],
+  "questions": [
+    {
+      "id": "sr_g10-g11_sr_g10_ch1_q1",
+      "skill": "g10_a01",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thông tin và xử lý thông tin», ý nào đúng nhất?",
+      "choices": [
+        "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch1"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch1_q2",
+      "skill": "g10_a02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thiết bị thông minh và tin học với xã hội», ý nào đúng nhất?",
+      "choices": [
+        "IoT, thiết bị thông minh và tác động xã hội.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "IoT, thiết bị thông minh và tác động xã hội.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch1"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch2_q1",
+      "skill": "g10_b08",
+      "type": "multiple_choice",
+      "question": "Theo bài «Mạng máy tính trong cuộc sống hiện đại», ý nào đúng nhất?",
+      "choices": [
+        "Mạng có dây/không dây trong gia đình và trường học.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Mạng có dây/không dây trong gia đình và trường học.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch2"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch2_q2",
+      "skill": "g10_b09",
+      "type": "multiple_choice",
+      "question": "Theo bài «An toàn trên không gian mạng», ý nào đúng nhất?",
+      "choices": [
+        "Mã hóa, mật khẩu mạnh và bảo vệ tài khoản.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Mã hóa, mật khẩu mạnh và bảo vệ tài khoản.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch2"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch3_q1",
+      "skill": "g10_c11",
+      "type": "multiple_choice",
+      "question": "Theo bài «Ứng xử trên môi trường số và bản quyền», ý nào đúng nhất?",
+      "choices": [
+        "Ứng xử văn minh và nghĩa vụ tôn trọng bản quyền.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Ứng xử văn minh và nghĩa vụ tôn trọng bản quyền.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch3"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch4_q1",
+      "skill": "g10_d12",
+      "type": "multiple_choice",
+      "question": "Theo bài «Phần mềm thiết kế đồ họa», ý nào đúng nhất?",
+      "choices": [
+        "Làm quen vector/raster và công cụ đồ họa.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Làm quen vector/raster và công cụ đồ họa.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch4"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch4_q2",
+      "skill": "g10_d13",
+      "type": "multiple_choice",
+      "question": "Theo bài «Bổ sung các đối tượng đồ họa», ý nào đúng nhất?",
+      "choices": [
+        "Vẽ hình cơ bản, chèn icon và clipart.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Vẽ hình cơ bản, chèn icon và clipart.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch4"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch5_q1",
+      "skill": "g10_e16",
+      "type": "multiple_choice",
+      "question": "Theo bài «Ngôn ngữ lập trình Python», ý nào đúng nhất?",
+      "choices": [
+        "Làm quen Python và môi trường lập trình.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Làm quen Python và môi trường lập trình.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch5"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch5_q2",
+      "skill": "g10_e17",
+      "type": "multiple_choice",
+      "question": "Theo bài «Biến và lệnh gán», ý nào đúng nhất?",
+      "choices": [
+        "Khai báo biến, gán giá trị trong Python.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Khai báo biến, gán giá trị trong Python.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch5"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch6_q1",
+      "skill": "g10_f33",
+      "type": "multiple_choice",
+      "question": "Theo bài «Nghề thiết kế đồ họa máy tính», ý nào đúng nhất?",
+      "choices": [
+        "Định hướng nghề thiết kế đồ họa số.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Định hướng nghề thiết kế đồ họa số.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch6"
+    },
+    {
+      "id": "sr_g10-g11_sr_g10_ch6_q2",
+      "skill": "g10_f34",
+      "type": "multiple_choice",
+      "question": "Theo bài «Nghề phát triển phần mềm», ý nào đúng nhất?",
+      "choices": [
+        "Định hướng nghề lập trình viên.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Định hướng nghề lập trình viên.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g10_ch6"
+    },
+    {
+      "id": "sr_g10-g11_exam_g10_1_q1",
+      "skill": "g10_a01",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thông tin và xử lý thông tin», ý nào đúng nhất?",
+      "choices": [
+        "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g10_1"
+    },
+    {
+      "id": "sr_g10-g11_exam_g10_1_q2",
+      "skill": "g10_a02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thiết bị thông minh và tin học với xã hội», ý nào đúng nhất?",
+      "choices": [
+        "IoT, thiết bị thông minh và tác động xã hội.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "IoT, thiết bị thông minh và tác động xã hội.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g10_1"
+    },
+    {
+      "id": "sr_g10-g11_exam_g10_1_q3",
+      "skill": "g10_a03",
+      "type": "multiple_choice",
+      "question": "Theo bài «Kiểu dữ liệu và dữ liệu văn bản», ý nào đúng nhất?",
+      "choices": [
+        "Kiểu số, chuỗi, logic trong lập trình.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Kiểu số, chuỗi, logic trong lập trình.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g10_1"
+    },
+    {
+      "id": "sr_g10-g11_exam_g10_1_q4",
+      "skill": "g10_a04",
+      "type": "multiple_choice",
+      "question": "Hệ nhị phân dùng các chữ số:",
+      "choices": [
+        "0 và 1",
+        "0 đến 9",
+        "A đến F only",
+        "1 và 2"
+      ],
+      "answer": "0 và 1",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "exam": "exam_g10_1"
+    },
+    {
+      "id": "sr_g10-g11_exam_g10_1_q5",
+      "skill": "g10_a05",
+      "type": "multiple_choice",
+      "question": "Theo bài «Dữ liệu lôgic», ý nào đúng nhất?",
+      "choices": [
+        "Giá trị True/False và phép toán logic.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Giá trị True/False và phép toán logic.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g10_1"
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "meta": {
+    "id": "summer_g3-g4",
+    "packId": "g3-g4",
+    "title": "Ôn hè Tin học lớp 3 → lớp 4",
+    "subtitle": "6 chủ đề + 1 đề tổng hợp",
+    "gradeFrom": 3,
+    "gradeTo": 4,
+    "source": "Nội dung ôn hè tự biên soạn từ SGK Tin học KNTT (ITFlow)."
+  },
+  "topics": [
+    {
+      "id": "sr_g3_ch1",
+      "order": 1,
+      "title": "Máy tính và em",
+      "emoji": "💻",
+      "description": "Ôn tập Máy tính và em — lớp 3 lên 4.",
+      "prerequisite": [],
+      "xp": 40
+    },
+    {
+      "id": "sr_g3_ch2",
+      "order": 2,
+      "title": "Mạng máy tính và Internet",
+      "emoji": "🖱️",
+      "description": "Ôn tập Mạng máy tính và Internet — lớp 3 lên 4.",
+      "prerequisite": [
+        "sr_g3_ch1"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g3_ch3",
+      "order": 3,
+      "title": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "emoji": "⌨️",
+      "description": "Ôn tập Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin — lớp 3 lên 4.",
+      "prerequisite": [
+        "sr_g3_ch2"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g3_ch4",
+      "order": 4,
+      "title": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "emoji": "🌐",
+      "description": "Ôn tập Đạo đức, pháp luật và văn hoá trong môi trường số — lớp 3 lên 4.",
+      "prerequisite": [
+        "sr_g3_ch3"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g3_ch5",
+      "order": 5,
+      "title": "Tin học ứng dụng",
+      "emoji": "📊",
+      "description": "Ôn tập Tin học ứng dụng — lớp 3 lên 4.",
+      "prerequisite": [
+        "sr_g3_ch4"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g3_ch6",
+      "order": 6,
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "emoji": "🧩",
+      "description": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 3 lên 4.",
+      "prerequisite": [
+        "sr_g3_ch5"
+      ],
+      "xp": 40
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sr_g3_ch1",
+      "title": "Máy tính và em",
+      "topic": "sr_g3_ch1",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Máy tính và em — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Nhận biết thông tin giúp em đưa ra quyết định đúng trong học tập và sinh hoạt.",
+            "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+            "Mô tả vai trò máy tính trong học tập, giao tiếp và sáng tạo.",
+            "Khởi động, mở/thoát phần mềm và làm việc an toàn trên máy tính."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g3_ch2",
+      "title": "Mạng máy tính và Internet",
+      "topic": "sr_g3_ch2",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Mạng máy tính và Internet — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Tìm kiếm thông tin trên Internet có người lớn hướng dẫn."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g3_ch3",
+      "title": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "topic": "sr_g3_ch3",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Đặt tên tệp và thư mục có nghĩa để dễ tìm lại.",
+            "Nhận biết cấu trúc cây thư mục trên máy tính.",
+            "Tạo, đổi tên, di chuyển tệp và thư mục theo hướng dẫn."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g3_ch4",
+      "title": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "topic": "sr_g3_ch4",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Đạo đức, pháp luật và văn hoá trong môi trường số — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Bảo vệ mật khẩu và thông tin cá nhân khi dùng máy tính."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g3_ch5",
+      "title": "Tin học ứng dụng",
+      "topic": "sr_g3_ch5",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Tin học ứng dụng — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Tạo slide đơn giản: tiêu đề, nội dung và hình ảnh.",
+            "Dùng phần mềm/website để khám phá chủ đề tự nhiên.",
+            "Ôn nháy, nháy đúp, kéo thả chuột chính xác."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g3_ch6",
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "topic": "sr_g3_ch6",
+      "source": "Ôn hè Tin học lớp 3 → 4 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 3 lên 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Mô tả các bước công việc theo thứ tự (thuật toán tuần tự).",
+            "Nhận biết việc làm khác nhau khi điều kiện thay đổi (rẽ nhánh).",
+            "Lập kế hoạch công việc và dùng máy tính hỗ trợ (trình chiếu, tìm kiếm)."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam_g3_1",
+      "order": 1,
+      "title": "Đề tổng hợp lớp 3",
+      "description": "Kiểm tra nhanh kiến thức Tin học trước khi lên lớp 4.",
+      "prerequisite": [
+        "sr_g3_ch6"
+      ],
+      "questionCount": 5,
+      "xp": 50
+    }
+  ],
+  "questions": [
+    {
+      "id": "sr_g3-g4_sr_g3_ch1_q1",
+      "skill": "g3_a01",
+      "type": "multiple_choice",
+      "question": "Thông tin giúp em điều gì?",
+      "choices": [
+        "Đưa ra quyết định tốt hơn",
+        "Không cần suy nghĩ",
+        "Chỉ để chơi",
+        "Thay thế học bài"
+      ],
+      "answer": "Đưa ra quyết định tốt hơn",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "topic": "sr_g3_ch1"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch1_q2",
+      "skill": "g3_a02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Xử lí thông tin», ý nào đúng nhất?",
+      "choices": [
+        "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch1"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch2_q1",
+      "skill": "g3_b06",
+      "type": "multiple_choice",
+      "question": "Theo bài «Khám phá thông tin trên Internet», ý nào đúng nhất?",
+      "choices": [
+        "Tìm kiếm thông tin trên Internet có người lớn hướng dẫn.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Tìm kiếm thông tin trên Internet có người lớn hướng dẫn.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch2"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch3_q1",
+      "skill": "g3_c07",
+      "type": "multiple_choice",
+      "question": "Theo bài «Sắp xếp để dễ tìm», ý nào đúng nhất?",
+      "choices": [
+        "Đặt tên tệp và thư mục có nghĩa để dễ tìm lại.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Đặt tên tệp và thư mục có nghĩa để dễ tìm lại.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch3"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch3_q2",
+      "skill": "g3_c08",
+      "type": "multiple_choice",
+      "question": "Cây thư mục trên máy tính giống:",
+      "choices": [
+        "Cây có thư mục cha và con",
+        "Một tệp duy nhất",
+        "Màn hình Desktop",
+        "Bàn phím"
+      ],
+      "answer": "Cây có thư mục cha và con",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "topic": "sr_g3_ch3"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch4_q1",
+      "skill": "g3_d10",
+      "type": "multiple_choice",
+      "question": "Khi dùng máy chung, em nên:",
+      "choices": [
+        "Đăng xuất tài khoản",
+        "Để mật khẩu trên màn hình",
+        "Chia sẻ mật khẩu bạn",
+        "Mở link lạ"
+      ],
+      "answer": "Đăng xuất tài khoản",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "topic": "sr_g3_ch4"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch5_q1",
+      "skill": "g3_e11",
+      "type": "multiple_choice",
+      "question": "Theo bài «Bài trình chiếu của em», ý nào đúng nhất?",
+      "choices": [
+        "Tạo slide đơn giản: tiêu đề, nội dung và hình ảnh.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Tạo slide đơn giản: tiêu đề, nội dung và hình ảnh.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch5"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch5_q2",
+      "skill": "g3_e12",
+      "type": "multiple_choice",
+      "question": "Theo bài «Tìm hiểu về thế giới tự nhiên», ý nào đúng nhất?",
+      "choices": [
+        "Dùng phần mềm/website để khám phá chủ đề tự nhiên.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Dùng phần mềm/website để khám phá chủ đề tự nhiên.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch5"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch6_q1",
+      "skill": "g3_f14",
+      "type": "multiple_choice",
+      "question": "Theo bài «Em thực hiện công việc như thế nào», ý nào đúng nhất?",
+      "choices": [
+        "Mô tả các bước công việc theo thứ tự (thuật toán tuần tự).",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Mô tả các bước công việc theo thứ tự (thuật toán tuần tự).",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g3_ch6"
+    },
+    {
+      "id": "sr_g3-g4_sr_g3_ch6_q2",
+      "skill": "g3_f15",
+      "type": "multiple_choice",
+      "question": "«Nếu trời mưa thì mang áo mưa» thuộc loại:",
+      "choices": [
+        "Công việc theo điều kiện",
+        "Lặp vô hạn",
+        "Không có thứ tự",
+        "Chỉ gõ phím"
+      ],
+      "answer": "Công việc theo điều kiện",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "topic": "sr_g3_ch6"
+    },
+    {
+      "id": "sr_g3-g4_exam_g3_1_q1",
+      "skill": "g3_a01",
+      "type": "multiple_choice",
+      "question": "Thông tin giúp em điều gì?",
+      "choices": [
+        "Đưa ra quyết định tốt hơn",
+        "Không cần suy nghĩ",
+        "Chỉ để chơi",
+        "Thay thế học bài"
+      ],
+      "answer": "Đưa ra quyết định tốt hơn",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "exam": "exam_g3_1"
+    },
+    {
+      "id": "sr_g3-g4_exam_g3_1_q2",
+      "skill": "g3_a02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Xử lí thông tin», ý nào đúng nhất?",
+      "choices": [
+        "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g3_1"
+    },
+    {
+      "id": "sr_g3-g4_exam_g3_1_q3",
+      "skill": "g3_a03",
+      "type": "multiple_choice",
+      "question": "Máy tính có thể giúp em:",
+      "choices": [
+        "Học tập và sáng tạo",
+        "Chỉ xem phim",
+        "Không giao tiếp",
+        "Không lưu bài"
+      ],
+      "answer": "Học tập và sáng tạo",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "exam": "exam_g3_1"
+    },
+    {
+      "id": "sr_g3-g4_exam_g3_1_q4",
+      "skill": "g3_a04",
+      "type": "multiple_choice",
+      "question": "Theo bài «Làm việc với máy tính», ý nào đúng nhất?",
+      "choices": [
+        "Khởi động, mở/thoát phần mềm và làm việc an toàn trên máy tính.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Khởi động, mở/thoát phần mềm và làm việc an toàn trên máy tính.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g3_1"
+    },
+    {
+      "id": "sr_g3-g4_exam_g3_1_q5",
+      "skill": "g3_a05",
+      "type": "multiple_choice",
+      "question": "Theo bài «Sử dụng bàn phím», ý nào đúng nhất?",
+      "choices": [
+        "Gõ chữ, số và ký tự cơ bản bằng đúng tư thế bàn phím.",
+        "Máy tính không liên quan đến học tập.",
+        "Không cần bảo vệ thông tin cá nhân.",
+        "Thuật toán không cần thứ tự bước."
+      ],
+      "answer": "Gõ chữ, số và ký tự cơ bản bằng đúng tư thế bàn phím.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g3_1"
+    }
+  ]
+}

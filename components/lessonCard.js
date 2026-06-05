@@ -17,7 +17,7 @@ export function renderLessonCard(skill, state, questions, labs) {
     : "";
   const action = unlocked
     ? `<a class="btn primary" href="#/lesson/${skill.id}">Lý thuyết</a>
-       <a class="btn secondary" href="#/quiz/${skill.id}">Quiz</a>
+       <a class="btn secondary" href="#/practice/${skill.id}">Luyện</a>
        ${labLink}`
     : `<button class="btn disabled" disabled>Khóa</button>`;
 

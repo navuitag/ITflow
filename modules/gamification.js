@@ -7,6 +7,7 @@ export function getGamificationSummary(state) {
   if (state.completedLessons.length >= 1) badges.push("Bước đầu số hóa");
   if (state.completedLabs.length >= 1) badges.push("Tay nghề thực hành");
   if (state.completedLessons.length >= 5) badges.push("Nhịp học đều");
+  if (state.answers.filter((answer) => answer.correct).length >= 10) badges.push("Mười câu chắc tay");
   if (state.streak >= 7) badges.push("7 ngày liên tiếp");
 
   return {

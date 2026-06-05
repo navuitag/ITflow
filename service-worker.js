@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v13";
+const CACHE_NAME = "itflow-vn-v14";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -10,6 +10,9 @@ const APP_SHELL = [
   "./assets/css/lab.css",
   "./assets/css/blockly-lab.css",
   "./assets/css/input-lab.css",
+  "./assets/css/practice-features.css",
+  "./assets/css/mindmap.css",
+  "./assets/css/summer-review.css",
   "./modules/blocklyLab.js",
   "./modules/inputLab.js",
   "./modules/inputLab/scenarios.js",
@@ -17,6 +20,10 @@ const APP_SHELL = [
   "./modules/blockly/toolboxes.js",
   "./modules/blockly/validate.js",
   "./modules/blockly/simulator.js",
+  "./modules/practiceModes.js",
+  "./modules/practiceContent.js",
+  "./modules/mindMap.js",
+  "./modules/summerReview.js",
   "./assets/js/app.js",
   "./assets/js/router.js",
   "./assets/js/state.js",
@@ -32,12 +39,15 @@ const APP_SHELL = [
   "./components/learnerSwitcher.js",
   "./components/lessonCard.js",
   "./components/quizCard.js",
+  "./components/flashcardPanel.js",
+  "./components/memoryPanel.js",
   "./components/modal.js",
   "./data/skills.json",
   "./data/lessons.json",
   "./data/questions.json",
   "./data/labs.json",
-  "./data/errors.json"
+  "./data/errors.json",
+  "./data/exercises.json"
 ];
 
 self.addEventListener("install", (event) => {

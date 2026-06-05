@@ -1,6 +1,6 @@
 import { escapeHtml, shuffle } from "../assets/js/utils.js";
 
-export function renderQuizCard(question) {
+export function renderQuizCard(question, options = {}) {
   const choiceList = Array.isArray(question.choices) ? question.choices : [];
   const choices = question.type === "multiple_choice" ? shuffle(choiceList) : [];
   const answerArea = question.type === "true_false"
@@ -18,12 +18,26 @@ export function renderQuizCard(question) {
       </form>
     `;
 
+  const sourceTag = question.source === "sgk"
+    ? ' <span class="tag tag-sgk">SGK</span>'
+    : question.source === "sbt"
+    ? ' <span class="tag tag-sbt">SBT</span>'
+    : question.source === "btcb"
+    ? ' <span class="tag tag-btcb">BTCB</span>'
+    : question.source === "chuyen_de"
+    ? ' <span class="tag tag-chuyen-de">Chuyên đề</span>'
+    : "";
+
   return `
     <article class="quiz-card" data-question-id="${question.id}">
       <div class="quiz-meta">
-        <span>Lý thuyết · Mini quiz</span>
-        <button class="hint-btn" type="button" data-hint="${escapeHtml(question.hint || "")}">Gợi ý</button>
+        <span>${options.workbook ? "Bài tập rèn luyện" : "Mini quiz"}${sourceTag}</span>
+        <div class="quiz-meta-actions">
+          <button class="hint-btn" type="button" data-hint="${escapeHtml(question.hint || "")}">Gợi ý</button>
+          ${question.solution && options.workbook ? `<button class="hint-btn solution-btn" type="button" data-solution="${escapeHtml(question.solution)}">Lời giải</button>` : ""}
+        </div>
       </div>
+      ${question.section ? `<span class="quiz-section">${escapeHtml(question.section)}</span>` : ""}
       <h2>${escapeHtml(question.question)}</h2>
       ${answerArea}
       <div class="feedback-panel" aria-live="polite"></div>

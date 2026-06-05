@@ -1,6 +1,6 @@
 # ITFlow VN — Học Tin học kiểu micro-learning
 
-Ứng dụng web học **Tin học** (lớp **1–12** – bám chương trình làm quen / SGK KNTT): mỗi bài gồm **lý thuyết**, **quiz** và **thực hành** (lab checklist hoặc Blockly). SPA thuần HTML/CSS/JS (ES Modules), PWA offline, lưu tiến độ trong `localStorage`.
+Ứng dụng web học **Tin học** (lớp **1–12** – bám chương trình làm quen / SGK KNTT): mỗi bài gồm **lý thuyết**, **luyện tập** (quiz, flashcards, memory, bài tập SGK), **thực hành** (lab checklist / Blockly / mô phỏng), **sơ đồ tư duy** và **ôn hè**. SPA thuần HTML/CSS/JS (ES Modules), PWA offline, lưu tiến độ trong `localStorage`.
 
 ## Chạy ứng dụng
 
@@ -113,11 +113,24 @@ Lab **Mô phỏng** thay checklist cho các bài thực hành lớp 1–2:
 
 Cấu hình kịch bản: `modules/inputLab/scenarios.js`
 
+## Tính năng (parity MathFlow + lab Tin học)
+
+- **Luyện tập** (`#/practice/:skill`): mini quiz, flashcards, memory, bài tập SGK (`exercises.json`)
+- **Sơ đồ tư duy** (`#/mindmap`): tổng hợp theo lớp/chủ đề/bài
+- **Ôn hè** (`#/summer`): 11 lộ trình lớp 1→12, chủ đề + đề tổng hợp
+- **Sổ lỗi sai**, **hồ sơ/huy hiệu**, **daily quest**
+- **Lab riêng ITflow**: Blockly, mô phỏng chuột/bàn phím, checklist HTML/Python/SQL
+
+Sinh dữ liệu phụ:
+
+```bash
+node scripts/generate-it-extras.mjs
+```
+
 ## Lộ trình mở rộng
 
 1. Lab Python/SQL/HTML tương tác (THPT)
-2. Lab CSDL/ảnh/video tương tác (lớp 11 ICT)
-3. Lưu workspace Blockly offline (vendor cục bộ)
+2. Lưu workspace Blockly offline (vendor cục bộ)
 
 ## Tham chiếu
 

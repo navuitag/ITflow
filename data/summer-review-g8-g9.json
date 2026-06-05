@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "id": "summer_g8-g9",
+    "packId": "g8-g9",
+    "title": "Ôn hè Tin học lớp 8 → lớp 9",
+    "subtitle": "6 chủ đề + 1 đề tổng hợp",
+    "gradeFrom": 8,
+    "gradeTo": 9,
+    "source": "Nội dung ôn hè tự biên soạn từ SGK Tin học KNTT (ITFlow)."
+  },
+  "topics": [
+    {
+      "id": "sr_g8_ch1",
+      "order": 1,
+      "title": "Máy tính và cộng đồng",
+      "emoji": "💻",
+      "description": "Ôn tập Máy tính và cộng đồng — lớp 8 lên 9.",
+      "prerequisite": [],
+      "xp": 40
+    },
+    {
+      "id": "sr_g8_ch2",
+      "order": 2,
+      "title": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "emoji": "🖱️",
+      "description": "Ôn tập Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin — lớp 8 lên 9.",
+      "prerequisite": [
+        "sr_g8_ch1"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g8_ch3",
+      "order": 3,
+      "title": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+      "emoji": "⌨️",
+      "description": "Ôn tập Đạo đức, pháp luật và văn hóa trong môi trường số — lớp 8 lên 9.",
+      "prerequisite": [
+        "sr_g8_ch2"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g8_ch4",
+      "order": 4,
+      "title": "Ứng dụng tin học",
+      "emoji": "🌐",
+      "description": "Ôn tập Ứng dụng tin học — lớp 8 lên 9.",
+      "prerequisite": [
+        "sr_g8_ch3"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g8_ch5",
+      "order": 5,
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "emoji": "📊",
+      "description": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 8 lên 9.",
+      "prerequisite": [
+        "sr_g8_ch4"
+      ],
+      "xp": 40
+    },
+    {
+      "id": "sr_g8_ch6",
+      "order": 6,
+      "title": "Hướng nghiệp với tin học",
+      "emoji": "🧩",
+      "description": "Ôn tập Hướng nghiệp với tin học — lớp 8 lên 9.",
+      "prerequisite": [
+        "sr_g8_ch5"
+      ],
+      "xp": 40
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sr_g8_ch1",
+      "title": "Máy tính và cộng đồng",
+      "topic": "sr_g8_ch1",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Máy tính và cộng đồng — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Tóm tắt lịch sử phát triển công cụ tính từ cổ đại đến máy tính hiện đại."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g8_ch2",
+      "title": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "topic": "sr_g8_ch2",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+            "Tìm, tải và tổ chức thông tin số có ích cho học tập."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g8_ch3",
+      "title": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+      "topic": "sr_g8_ch3",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Đạo đức, pháp luật và văn hóa trong môi trường số — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g8_ch4",
+      "title": "Ứng dụng tin học",
+      "topic": "sr_g8_ch4",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Ứng dụng tin học — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+            "Sắp xếp hàng/cột và lọc dữ liệu theo điều kiện.",
+            "Tạo biểu đồ cột, tròn phù hợp dữ liệu.",
+            "Tạo danh sách có thứ tự/không thứ tự và chèn ảnh."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g8_ch5",
+      "title": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "topic": "sr_g8_ch5",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Giải quyết vấn đề với sự trợ giúp của máy tính — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Chuyển thuật toán mô tả bằng lời sang chương trình.",
+            "Biến và kiểu dữ liệu trong lập trình trực quan.",
+            "Tuần tự, rẽ nhánh và lặp trong chương trình.",
+            "Nhận biết lỗi logic/cú pháp và sửa chương trình."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    },
+    {
+      "id": "sr_g8_ch6",
+      "title": "Hướng nghiệp với tin học",
+      "topic": "sr_g8_ch6",
+      "source": "Ôn hè Tin học lớp 8 → 9 (ITFlow).",
+      "xp": 40,
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Mục tiêu chủ đề",
+          "content": "Ôn tập Hướng nghiệp với tin học — lớp 8 lên 9."
+        },
+        {
+          "type": "keypoints",
+          "title": "Kiến thức cần nhớ",
+          "content": "Nắm vững các ý sau trước khi luyện:",
+          "points": [
+            "Khám phá nghề liên quan tin học và kỹ năng cần có."
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "Sẵn sàng thử thách?",
+          "content": "Hoàn thành câu hỏi để nhận sao và mở khóa đề tiếp theo!"
+        }
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam_g8_1",
+      "order": 1,
+      "title": "Đề tổng hợp lớp 8",
+      "description": "Kiểm tra nhanh kiến thức Tin học trước khi lên lớp 9.",
+      "prerequisite": [
+        "sr_g8_ch6"
+      ],
+      "questionCount": 5,
+      "xp": 50
+    }
+  ],
+  "questions": [
+    {
+      "id": "sr_g8-g9_sr_g8_ch1_q1",
+      "skill": "g8_a01",
+      "type": "multiple_choice",
+      "question": "Máy tính hiện đại thuộc thế hệ công cụ tính:",
+      "choices": [
+        "Điện tử",
+        "Cơ học thuần túy",
+        "Chỉ dùng giấy",
+        "Không cần điện"
+      ],
+      "answer": "Điện tử",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "topic": "sr_g8_ch1"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch2_q1",
+      "skill": "g8_b02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thông tin trong môi trường số», ý nào đúng nhất?",
+      "choices": [
+        "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch2"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch2_q2",
+      "skill": "g8_b03",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thực hành: Khai thác thông tin số», ý nào đúng nhất?",
+      "choices": [
+        "Tìm, tải và tổ chức thông tin số có ích cho học tập.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Tìm, tải và tổ chức thông tin số có ích cho học tập.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch2"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch3_q1",
+      "skill": "g8_c04",
+      "type": "multiple_choice",
+      "question": "Theo bài «Đạo đức và văn hóa trong sử dụng công nghệ số», ý nào đúng nhất?",
+      "choices": [
+        "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch3"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch4_q1",
+      "skill": "g8_d05",
+      "type": "multiple_choice",
+      "question": "Theo bài «Sử dụng bảng tính giải quyết bài toán thực tế», ý nào đúng nhất?",
+      "choices": [
+        "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch4"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch4_q2",
+      "skill": "g8_d06",
+      "type": "multiple_choice",
+      "question": "Theo bài «Sắp xếp và lọc dữ liệu», ý nào đúng nhất?",
+      "choices": [
+        "Sắp xếp hàng/cột và lọc dữ liệu theo điều kiện.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Sắp xếp hàng/cột và lọc dữ liệu theo điều kiện.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch4"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch5_q1",
+      "skill": "g8_e12",
+      "type": "multiple_choice",
+      "question": "Theo bài «Từ thuật toán đến chương trình», ý nào đúng nhất?",
+      "choices": [
+        "Chuyển thuật toán mô tả bằng lời sang chương trình.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Chuyển thuật toán mô tả bằng lời sang chương trình.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch5"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch5_q2",
+      "skill": "g8_e13",
+      "type": "multiple_choice",
+      "question": "Theo bài «Biểu diễn dữ liệu», ý nào đúng nhất?",
+      "choices": [
+        "Biến và kiểu dữ liệu trong lập trình trực quan.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Biến và kiểu dữ liệu trong lập trình trực quan.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch5"
+    },
+    {
+      "id": "sr_g8-g9_sr_g8_ch6_q1",
+      "skill": "g8_f16",
+      "type": "multiple_choice",
+      "question": "Theo bài «Tin học với nghề nghiệp», ý nào đúng nhất?",
+      "choices": [
+        "Khám phá nghề liên quan tin học và kỹ năng cần có.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Khám phá nghề liên quan tin học và kỹ năng cần có.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "topic": "sr_g8_ch6"
+    },
+    {
+      "id": "sr_g8-g9_exam_g8_1_q1",
+      "skill": "g8_a01",
+      "type": "multiple_choice",
+      "question": "Máy tính hiện đại thuộc thế hệ công cụ tính:",
+      "choices": [
+        "Điện tử",
+        "Cơ học thuần túy",
+        "Chỉ dùng giấy",
+        "Không cần điện"
+      ],
+      "answer": "Điện tử",
+      "hint": "Xem lại phần «Em cần nhớ».",
+      "exam": "exam_g8_1"
+    },
+    {
+      "id": "sr_g8-g9_exam_g8_1_q2",
+      "skill": "g8_b02",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thông tin trong môi trường số», ý nào đúng nhất?",
+      "choices": [
+        "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g8_1"
+    },
+    {
+      "id": "sr_g8-g9_exam_g8_1_q3",
+      "skill": "g8_b03",
+      "type": "multiple_choice",
+      "question": "Theo bài «Thực hành: Khai thác thông tin số», ý nào đúng nhất?",
+      "choices": [
+        "Tìm, tải và tổ chức thông tin số có ích cho học tập.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Tìm, tải và tổ chức thông tin số có ích cho học tập.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g8_1"
+    },
+    {
+      "id": "sr_g8-g9_exam_g8_1_q4",
+      "skill": "g8_c04",
+      "type": "multiple_choice",
+      "question": "Theo bài «Đạo đức và văn hóa trong sử dụng công nghệ số», ý nào đúng nhất?",
+      "choices": [
+        "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g8_1"
+    },
+    {
+      "id": "sr_g8-g9_exam_g8_1_q5",
+      "skill": "g8_d05",
+      "type": "multiple_choice",
+      "question": "Theo bài «Sử dụng bảng tính giải quyết bài toán thực tế», ý nào đúng nhất?",
+      "choices": [
+        "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+        "Không cần tôn trọng bản quyền số.",
+        "Dữ liệu và thông tin luôn giống nhau.",
+        "Thuật toán không cần thứ tự các bước."
+      ],
+      "answer": "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+      "hint": "Đọc lại mục tiêu và kiến thức trọng tâm.",
+      "exam": "exam_g8_1"
+    }
+  ]
+}

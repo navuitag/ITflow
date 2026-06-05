@@ -16,8 +16,13 @@ import { setRoute, escapeHtml, streamTag } from "./utils.js";
 import { renderNavbar, renderBottomNav } from "../../components/navbar.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { renderLessonCard } from "../../components/lessonCard.js";
-import { renderQuizCard, focusAnswerInput } from "../../components/quizCard.js";
+import { renderQuizCard } from "../../components/quizCard.js";
+import { renderFlashcardPanel } from "../../components/flashcardPanel.js";
+import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
+import { createPracticeModule } from "../../modules/practiceModes.js";
+import { createSummerReviewModule } from "../../modules/summerReview.js";
+import { chapterMindMapHref, createMindMapModule } from "../../modules/mindMap.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
 import { completeLab, getLabProgress, toggleLabStep } from "../../modules/labEngine.js";
@@ -36,27 +41,76 @@ import {
 import { getGamificationSummary } from "../../modules/gamification.js";
 import { getOverallAccuracy, getSkillProgress, getWeakSkills, getLabForSkill } from "../../modules/progress.js";
 
+const MINDMAP_CONFIG = {
+  subject: "Tin học",
+  emoji: "💻",
+  defaultGroupMode: "chapter"
+};
+
 let data = {
   skills: [],
   lessons: [],
   questions: [],
   labs: [],
-  errors: []
+  errors: [],
+  exercises: [],
+  summerPacks: {}
 };
 
+let practice;
+let summerReview;
+let mindMap;
+let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 let disposeBlockly = null;
 let disposeInput = null;
 
 export function configureRouter(appData) {
   data = appData;
+  practice = createPracticeModule({
+    data,
+    getState,
+    updateState,
+    renderRoute,
+    setRoute,
+    escapeHtml,
+    showModal,
+    renderQuizCard,
+    renderFlashcardPanel,
+    renderMemoryPanel,
+    labelSkill,
+    notFound,
+    handleAnswer
+  });
+  summerReview = createSummerReviewModule({
+    data,
+    getState,
+    renderRoute,
+    setRoute,
+    notFound,
+    escapeHtml
+  });
+  mindMap = createMindMapModule({
+    data,
+    getState,
+    setSelectedGrade,
+    renderRoute,
+    escapeHtml,
+    config: MINDMAP_CONFIG,
+    setMindMapMode: (mode) => { mindMapGroupMode = mode; }
+  });
   window.addEventListener("hashchange", renderRoute);
 }
 
 export function renderRoute() {
   const state = getState();
-  const parts = (window.location.hash || "#/home").replace("#/", "").split("/").filter(Boolean);
+  const hash = window.location.hash || "#/home";
+  const parts = hash.replace("#/", "").split("/").filter(Boolean);
   const route = parts[0] || "home";
   const id = parts[1];
+  const sub = parts[2];
+
+  practice?.resetOnLeavePractice(route);
+  summerReview?.resetOnLeave(route);
 
   if (disposeBlockly && route !== "lab") {
     disposeBlockly();
@@ -77,7 +131,9 @@ export function renderRoute() {
 
   const shell = (content) => `
     ${renderNavbar(state, availableGrades())}
-    <main class="app-shell">${content}</main>
+    <main class="app-shell">
+      ${content}
+    </main>
     ${renderBottomNav()}
   `;
 
@@ -88,15 +144,77 @@ export function renderRoute() {
     content = renderLesson(id, state);
     after = () => bindLesson(id);
   } else if (route === "quiz") {
-    content = renderQuiz(id, state);
-    after = () => bindQuiz(id);
+    content = practice.renderPracticeQuiz(id, state);
+    after = () => practice.bindPracticeQuiz(id);
   } else if (route === "lab") {
     content = renderLab(id, state);
     after = () => bindLab(id);
+  } else if (route === "practice") {
+    if (sub === "flashcards") {
+      content = practice.renderPracticeFlashcards(id, state);
+      after = () => practice.bindPracticeFlashcards();
+    } else if (sub === "memory") {
+      content = practice.renderPracticeMemory(id, state);
+      after = () => practice.bindPracticeMemory(id);
+    } else if (sub === "workbook") {
+      content = practice.renderPracticeWorkbook(id, state);
+      after = () => practice.bindPracticeWorkbook(id);
+    } else {
+      content = practice.renderPracticeQuiz(id, state);
+      after = () => practice.bindPracticeQuiz(id);
+    }
+  } else if (route === "mindmap") {
+    const mmKind = id;
+    const mmParam = sub;
+    const mmParam2 = parts[3];
+    if (mmKind === "topic" && mmParam) {
+      content = mindMap.renderTopicPage(state, mmParam, { groupMode: mindMapGroupMode });
+      after = () => mindMap.bindPage(state);
+    } else if (mmKind === "lesson" && mmParam) {
+      content = mindMap.renderSkillPage(state, mmParam);
+      after = () => mindMap.bindPage(state);
+    } else if (mmKind === "summer" && mmParam && mmParam2) {
+      content = mindMap.renderSummerTopicPage(state, mmParam, mmParam2);
+      after = () => mindMap.bindPage(state);
+    } else {
+      content = mindMap.renderPage(state, { groupMode: mindMapGroupMode });
+      after = () => mindMap.bindPage(state);
+    }
   } else if (route === "skills") {
     content = renderSkills(state);
     after = bindSkills;
-  } else if (route === "review" && id === "errors") {
+  } else if (route === "summer") {
+    let packId = summerReview.resolvePackId(parts[1]);
+    let base = 1;
+    if (!packId && (parts[1] === "topic" || parts[1] === "exam")) {
+      packId = "g1-g2";
+      base = 1;
+    } else if (packId) {
+      base = 2;
+    }
+    const kind = parts[base];
+    const entityId = parts[base + 1];
+    const action = parts[base + 2];
+    if (!packId) {
+      content = summerReview.renderPackPicker(state);
+    } else if (kind === "topic" && entityId) {
+      if (action === "play") {
+        content = summerReview.renderTopicPlay(packId, entityId, state);
+        after = () => summerReview.bindPlayQuiz();
+      } else {
+        content = summerReview.renderTopicLesson(packId, entityId, state);
+      }
+    } else if (kind === "exam" && entityId) {
+      if (action === "play") {
+        content = summerReview.renderExamPlay(packId, entityId, state);
+        after = () => summerReview.bindPlayQuiz();
+      } else {
+        content = summerReview.renderExamIntro(packId, entityId, state);
+      }
+    } else {
+      content = summerReview.renderHub(packId, state);
+    }
+  } else if (route === "review") {
     content = renderErrors(state);
   } else if (route === "profile") {
     content = renderProfile(state);
@@ -110,27 +228,6 @@ export function renderRoute() {
   if (after) after();
 }
 
-function render(html) {
-  document.querySelector("#app").innerHTML = html;
-}
-
-function availableGrades() {
-  return [...new Set(data.skills.map((s) => s.grade))].sort((a, b) => a - b);
-}
-
-function resolveGrade(state) {
-  const grades = availableGrades();
-  return grades.includes(state.selectedGrade) ? state.selectedGrade : grades[0];
-}
-
-function labelSkill(skillId) {
-  return data.skills.find((s) => s.id === skillId)?.title || skillId;
-}
-
-function notFound(message) {
-  return `<section class="empty-state">${escapeHtml(message)}</section>`;
-}
-
 function bindNavbar() {
   bindLearnerSwitcher({
     onSwitch: (profileId) => {
@@ -139,6 +236,7 @@ function bindNavbar() {
     },
     onAdd: () => setRoute("#/profile")
   });
+
   const select = document.querySelector("#gradeSelect");
   if (!select) return;
   select.addEventListener("change", () => {
@@ -149,14 +247,16 @@ function bindNavbar() {
 
 function renderOnboarding(state) {
   const grades = availableGrades();
-  const isNew = !hasProfiles();
+  const isNewAccount = !hasProfiles();
   const cards = grades.map((grade) => {
-    const count = data.skills.filter((s) => s.grade === grade).length;
+    const count = data.skills.filter((skill) => skill.grade === grade).length;
+    const chapters = new Set(data.skills.filter((skill) => skill.grade === grade).map((skill) => skill.chapterIndex)).size;
     return `
       <button class="grade-pick" data-grade="${grade}" type="button">
         <span class="grade-pick-num">Lớp ${grade}</span>
-        <span class="grade-pick-meta">${count} bài · Tin học</span>
-      </button>`;
+        <span class="grade-pick-meta">${chapters} chương · ${count} bài</span>
+      </button>
+    `;
   }).join("");
 
   return `
@@ -164,16 +264,21 @@ function renderOnboarding(state) {
       <section class="onboarding-card">
         <span class="brand-mark">IT</span>
         <span class="eyebrow">Chào mừng ITFlow VN</span>
-        <h1>${isNew ? "Ai sẽ học hôm nay?" : "Bạn đang học lớp mấy?"}</h1>
-        <p>Học lý thuyết, làm quiz và thực hành theo SGK Kết nối tri thức.</p>
-        ${isNew ? `
+        <h1>${isNewAccount ? "Ai sẽ học hôm nay?" : "Bạn đang học lớp mấy?"}</h1>
+        <p>${isNewAccount
+    ? "Nhập tên người học và chọn lớp. Mỗi người có tiến độ riêng — phù hợp khi nhiều em cùng dùng một máy."
+    : "Chọn lớp để mở đúng lộ trình Tin học (lớp 1–12). Bạn có thể đổi lớp bất cứ lúc nào trên thanh điều hướng."}</p>
+        ${isNewAccount ? `
           <label class="onboarding-name">
             <span>Tên người học</span>
-            <input type="text" id="onboardingName" maxlength="40" placeholder="Ví dụ: Minh, Lan..." value="${escapeHtml(state.user.name === "Bạn học" ? "" : state.user.name)}">
+            <input type="text" id="onboardingName" maxlength="40" placeholder="Ví dụ: Minh, Lan..." value="${escapeHtml(state.user.name === "Bạn học" ? "" : state.user.name)}" required>
           </label>` : ""}
-        <div class="grade-pick-grid">${cards}</div>
+        <div class="grade-pick-grid">
+          ${cards}
+        </div>
       </section>
-    </main>`;
+    </main>
+  `;
 }
 
 function bindOnboarding() {
@@ -189,15 +294,11 @@ function bindOnboarding() {
       }
 
       if (!hasProfiles()) {
-        const profileId = createProfile(name || "Bạn học");
-        if (!profileId) return;
+        createProfile(name || "Bạn học");
       }
 
       completeOnboarding(grade, name);
-
-      // Hash đã là #/home thì setRoute không đổi → phải renderRoute() trực tiếp
-      const hash = window.location.hash || "#/home";
-      if (hash === "#/home" || hash === "#/" || hash === "#") {
+      if (window.location.hash === "#/home") {
         renderRoute();
       } else {
         setRoute("#/home");
@@ -206,30 +307,47 @@ function bindOnboarding() {
   });
 }
 
+function render(content) {
+  document.querySelector("#app").innerHTML = content;
+}
+
 function renderHome(state) {
   const summary = getGamificationSummary(state);
   const activeGrade = resolveGrade(state);
-  const gradeSkills = data.skills.filter((s) => s.grade === activeGrade);
-  const nextSkill = gradeSkills.find((s) => !state.completedLessons.includes(s.id)) || gradeSkills[0];
+  const gradeSkills = data.skills.filter((skill) => skill.grade === activeGrade);
+  const nextSkill = gradeSkills.find((skill) => !state.completedLessons.includes(skill.id)) || gradeSkills[0] || data.skills[0];
   const questPercent = Math.round((state.dailyQuest.progress / state.dailyQuest.target) * 100);
-  const weak = getWeakSkills(state)[0];
+  const weakSkill = getWeakSkills(state)[0];
+  const sr = state.summerReview || {};
+  const srPacks = sr.packs || {};
+  const srSummary = Object.keys(srPacks).length
+    ? Object.entries(srPacks).map(([id, p]) => `${p.completedTopics?.length || 0} chủ đề (${id})`).join(" · ")
+    : "Chọn lộ trình ôn hè";
 
   return `
+    <section class="summer-banner">
+      <div>
+        <span class="tag">Ôn hè · Lớp 1→12</span>
+        <h2>Luyện Tin học tương tác — chủ đề & đề tổng hợp</h2>
+        <p>Game hóa với sao, combo XP và lộ trình mở khóa. ${srSummary}.</p>
+      </div>
+      <a class="btn primary" href="#/summer">Vào ôn hè ☀️</a>
+    </section>
     <section class="hero-panel">
       <div>
-        <span class="eyebrow">${escapeHtml(state.user.name)} · Lớp ${activeGrade} · Tin học</span>
+        <span class="eyebrow">Lộ trình hôm nay · ${escapeHtml(state.user.name)} · Lớp ${activeGrade}</span>
         <h1>Lý thuyết chắc, thực hành thạo.</h1>
-        <p>Mỗi bài gồm phần lý thuyết, mini quiz và thực hành (nếu có). Hoàn thành cả hai để đạt mastery.</p>
+        <p>Hoàn thành lý thuyết, làm quiz, thực hành lab và xem ngay gợi ý khi trả lời chưa đúng.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#/lesson/${nextSkill?.id || ""}">Tiếp tục học</a>
-          <a class="btn secondary" href="#/skills">Cây kỹ năng</a>
+          <a class="btn primary" href="#/lesson/${nextSkill.id}">Tiếp tục học</a>
+          <a class="btn secondary" href="#/practice/${nextSkill.id}">Luyện nhanh</a>
         </div>
       </div>
       <div class="daily-card">
         <span class="tag">Daily Quest</span>
         <h2>${state.dailyQuest.progress}/${state.dailyQuest.target} câu đúng</h2>
         <div class="progress-track"><span style="width:${questPercent}%"></span></div>
-        <p>${weak ? `Nên ôn: ${escapeHtml(labelSkill(weak.skill))}` : "Tiếp tục bài tiếp theo nhé."}</p>
+        <p>${weakSkill ? `Nên ôn thêm: ${labelSkill(weakSkill.skill)}` : "Bạn chưa có lỗi nổi bật. Khởi động nhẹ thôi."}</p>
       </div>
     </section>
     <section class="stat-grid">
@@ -239,12 +357,22 @@ function renderHome(state) {
       <article><strong>${summary.level}</strong><span>Cấp độ</span></article>
     </section>
     <section class="section-head">
-      <h2>Kỹ năng · Lớp ${activeGrade}</h2>
-      <a href="#/skills">Xem tất cả</a>
+      <h2>Kỹ năng tiếp theo · Lớp ${activeGrade}</h2>
+      <a href="#/mindmap">Sơ đồ tư duy</a> · <a href="#/skills">Cây kỹ năng</a>
     </section>
     <div class="skill-grid">
-      ${gradeSkills.slice(0, 3).map((s) => renderLessonCard(s, state, data.questions, data.labs)).join("")}
-    </div>`;
+      ${gradeSkills.slice(0, 3).map((skill) => renderLessonCard(skill, state, data.questions, data.labs)).join("")}
+    </div>
+  `;
+}
+
+function availableGrades() {
+  return [...new Set(data.skills.map((skill) => skill.grade))].sort((a, b) => a - b);
+}
+
+function resolveGrade(state) {
+  const grades = availableGrades();
+  return grades.includes(state.selectedGrade) ? state.selectedGrade : grades[0];
 }
 
 function groupByChapter(skills) {
@@ -255,7 +383,7 @@ function groupByChapter(skills) {
     .forEach((skill) => {
       const key = `${skill.chapterIndex}|${skill.chapter}`;
       if (!groups.has(key)) {
-        groups.set(key, { chapter: skill.chapter, chapterIndex: skill.chapterIndex, items: [] });
+        groups.set(key, { chapter: skill.chapter, chapterIndex: skill.chapterIndex, book: skill.book, items: [] });
       }
       groups.get(key).items.push(skill);
     });
@@ -265,38 +393,47 @@ function groupByChapter(skills) {
 function renderSkills(state) {
   const grades = availableGrades();
   const activeGrade = resolveGrade(state);
-  const gradeSkills = data.skills.filter((s) => s.grade === activeGrade);
-  const done = gradeSkills.filter((s) => state.completedLessons.includes(s.id)).length;
+  const gradeSkills = data.skills.filter((skill) => skill.grade === activeGrade);
+  const completedCount = gradeSkills.filter((skill) => state.completedLessons.includes(skill.id)).length;
   const chapters = groupByChapter(gradeSkills);
+
   const tabs = grades.map((grade) => {
-    const count = data.skills.filter((s) => s.grade === grade).length;
-    const active = grade === activeGrade ? " active" : "";
-    return `<button class="grade-tab${active}" data-grade="${grade}" type="button">
-      <strong>Lớp ${grade}</strong><span>${count} bài</span>
+    const count = data.skills.filter((skill) => skill.grade === grade).length;
+    const isActive = grade === activeGrade ? " active" : "";
+    return `<button class="grade-tab${isActive}" data-grade="${grade}" aria-pressed="${grade === activeGrade}">
+      <strong>Lớp ${grade}</strong>
+      <span>${count} bài</span>
     </button>`;
   }).join("");
+
+  const chapterSections = chapters.map((group) => `
+    <section class="chapter-group">
+      <header class="chapter-head">
+        <span class="tag">Chương ${group.chapterIndex} · ${group.book}</span>
+        <h2>${group.chapter}</h2>
+        <a class="chapter-mm-link" href="${chapterMindMapHref(group.items[0], mindMapGroupMode)}">🧠 Sơ đồ chủ đề</a>
+      </header>
+      <div class="skill-path">
+        ${group.items.map((skill) => renderLessonCard(skill, state, data.questions, data.labs)).join("")}
+      </div>
+    </section>
+  `).join("");
 
   return `
     <section class="page-title">
       <span class="eyebrow">Skill Tree</span>
       <h1>Cây kỹ năng Tin học</h1>
-      <p>Hoàn thành lý thuyết và thực hành để mở khóa bài tiếp theo.</p>
+      <p>Chọn lớp để bắt đầu. Mỗi nút là một vi kỹ năng; hoàn thành bài trước để mở khóa bài tiếp theo.</p>
     </section>
-    <div class="grade-tabs">${tabs}</div>
-    <div class="grade-summary">
-      <span>Lớp ${activeGrade} · ${chapters.length} chủ đề · ${gradeSkills.length} bài</span>
-      <span>${done}/${gradeSkills.length} bài lý thuyết xong</span>
+    <div class="grade-tabs" role="group" aria-label="Chọn lớp">
+      ${tabs}
     </div>
-    ${chapters.map((group) => `
-      <section class="chapter-group">
-        <header class="chapter-head">
-          <span class="tag">Chủ đề ${group.chapterIndex}</span>
-          <h2>${escapeHtml(group.chapter)}</h2>
-        </header>
-        <div class="skill-path">
-          ${group.items.map((s) => renderLessonCard(s, state, data.questions, data.labs)).join("")}
-        </div>
-      </section>`).join("")}`;
+    <div class="grade-summary">
+      <span>Lớp ${activeGrade} · ${chapters.length} chương · ${gradeSkills.length} bài</span>
+      <span>${completedCount}/${gradeSkills.length} bài đã hoàn thành</span>
+    </div>
+    ${chapterSections}
+  `;
 }
 
 function bindSkills() {
@@ -304,132 +441,73 @@ function bindSkills() {
     tab.addEventListener("click", () => {
       setSelectedGrade(Number(tab.dataset.grade));
       renderRoute();
+      document.querySelector(".grade-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 }
 
 function renderKeypoints(step) {
   if (!step.points?.length) return "";
-  return `<ul class="keypoints-list">${step.points.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>`;
+  return `
+    <ul class="keypoints-list">
+      ${step.points.map((point) => `<li class="math-content">${escapeHtml(point)}</li>`).join("")}
+    </ul>
+  `;
 }
 
 function renderLesson(id, state) {
-  const lesson = data.lessons.find((l) => l.id === id);
+  const lesson = data.lessons.find((item) => item.id === id);
   if (!lesson) return notFound("Không tìm thấy bài học.");
   const skill = data.skills.find((s) => s.id === lesson.skill);
-  const progress = getSkillProgress({ id: lesson.skill }, state, data.questions, data.labs);
+  const skillProgress = getSkillProgress({ id: lesson.skill }, state, data.questions, data.labs);
   const lab = getLabForSkill(lesson.skill, data.labs);
 
   return `
     <section class="lesson-layout">
       <aside class="lesson-sidebar">
         <a class="back-link" href="#/skills">← Kỹ năng</a>
+        <a class="lesson-mm-link" href="#/mindmap/lesson/${id}">🧠 Sơ đồ bài học</a>
         <h1>${escapeHtml(lesson.title)}</h1>
-        <p>${streamTag(skill?.streams)} ${progress.mastery}% mastery</p>
-        <div class="progress-track"><span style="width:${progress.mastery}%"></span></div>
+        <p>${streamTag(skill?.streams)} ${skillProgress.mastery}% mastery</p>
+        <div class="progress-track"><span style="width:${skillProgress.mastery}%"></span></div>
       </aside>
       <div class="lesson-steps">
-        ${lesson.steps.map((step, i) => `
+        ${lesson.steps.map((step, index) => `
           <article class="lesson-step${step.type === "keypoints" ? " lesson-step-keypoints" : ""}">
-            <span class="step-count">${i + 1}</span>
+            <span class="step-count">${index + 1}</span>
             <div>
               <h2>${escapeHtml(step.title)}</h2>
               ${step.content ? `<p>${escapeHtml(step.content)}</p>` : ""}
               ${step.type === "keypoints" ? renderKeypoints(step) : ""}
             </div>
-          </article>`).join("")}
+          </article>
+        `).join("")}
         <div class="completion-panel">
           <div>
             <h2>Hoàn thành lý thuyết</h2>
             <p>Nhận ${lesson.xp} XP, sau đó làm quiz${lab ? " và thực hành" : ""}.</p>
           </div>
-          <button class="btn primary" id="completeLesson" type="button">Hoàn thành</button>
+          <button class="btn primary" id="completeLesson">Hoàn thành</button>
         </div>
       </div>
-    </section>`;
+    </section>
+  `;
 }
 
 function bindLesson(id) {
-  const lesson = data.lessons.find((l) => l.id === id);
+  const lesson = data.lessons.find((item) => item.id === id);
   const button = document.querySelector("#completeLesson");
   if (!lesson || !button) return;
   button.addEventListener("click", () => {
     completeLesson(lesson);
+    const lab = getLabForSkill(lesson.skill, data.labs);
     showModal({
       title: "Đã hoàn thành lý thuyết",
-      body: `+${lesson.xp} XP. Chuyển sang mini quiz nhé.`,
-      actionLabel: "Làm quiz",
-      onAction: () => setRoute(`#/quiz/${lesson.skill}`)
+      body: `+${lesson.xp} XP. Chuyển sang luyện tập${lab ? " rồi thực hành lab" : ""}.`,
+      actionLabel: "Luyện ngay",
+      onAction: () => setRoute(`#/practice/${lesson.skill}`)
     });
   });
-}
-
-function renderQuiz(skillId, state) {
-  const skill = data.skills.find((s) => s.id === skillId);
-  if (!skill) return notFound("Không tìm thấy kỹ năng.");
-  const questions = data.questions.filter((q) => q.skill === skillId);
-  if (!questions.length) return notFound("Chưa có câu hỏi cho bài này.");
-  const question = questions.find((q) => !state.answers.some((a) => a.questionId === q.id && a.correct)) || questions[0];
-
-  return `
-    <section class="page-title">
-      <a class="back-link" href="#/lesson/${skillId}">← Bài học</a>
-      <h1>Quiz · ${escapeHtml(skill.title)}</h1>
-      <p>Luyện nắm vững kiến thức lý thuyết.</p>
-    </section>
-    ${renderQuizCard(question)}`;
-}
-
-function bindQuiz(skillId) {
-  const questions = data.questions.filter((q) => q.skill === skillId);
-  const question = questions.find((q) => !getState().answers.some((a) => a.questionId === q.id && a.correct)) || questions[0];
-  const card = document.querySelector(".quiz-card");
-  if (!card || !question) return;
-
-  focusAnswerInput(card);
-
-  card.querySelectorAll(".choice-btn").forEach((btn) => {
-    btn.addEventListener("click", () => handleAnswer(btn.dataset.answer, question, skillId));
-  });
-
-  const form = card.querySelector(".answer-form");
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const value = form.querySelector("[name=answer]")?.value?.trim();
-      if (value) handleAnswer(value, question, skillId);
-    });
-  }
-
-  card.querySelector(".hint-btn")?.addEventListener("click", () => {
-    showModal({ title: "Gợi ý", body: question.hint || "Đọc lại phần kiến thức trọng tâm." });
-  });
-}
-
-function handleAnswer(answer, question, skillId) {
-  const result = submitAnswer(answer, question, data.errors);
-  const panel = document.querySelector(".feedback-panel");
-  const card = document.querySelector(".quiz-card");
-  card?.classList.remove("is-correct", "is-wrong");
-  card?.classList.add(result.correct ? "is-correct" : "is-wrong");
-
-  if (result.correct) {
-    const allCorrect = data.questions
-      .filter((q) => q.skill === skillId)
-      .every((q) => getState().answers.some((a) => a.questionId === q.id && a.correct));
-    panel.innerHTML = `<strong>Chính xác! +${result.xp} XP</strong>
-      <p>${allCorrect ? "Đã hoàn thành quiz. " : ""}${getLabForSkill(skillId, data.labs) ? '<a class="btn primary" href="#/lab/' + skillId + '">Sang thực hành</a>' : '<a class="btn quiet" href="#/skills">Về cây kỹ năng</a>'}</p>`;
-    if (allCorrect) updateState((s) => {
-      s.skillMastery[skillId] = Math.max(s.skillMastery[skillId] || 0, 60);
-    });
-    return;
-  }
-
-  panel.innerHTML = `
-    <strong>${escapeHtml(result.error.title)}</strong>
-    <p>${escapeHtml(result.error.message)}</p>
-    <p><b>Gợi ý:</b> ${escapeHtml(result.error.hint)}</p>
-    <a class="btn quiet" href="#/lesson/${result.error.recommendation}">Ôn lại bài</a>`;
 }
 
 function renderLab(skillId, state) {
@@ -450,7 +528,7 @@ function renderLab(skillId, state) {
   return `
     <section class="lab-layout">
       <aside class="lesson-sidebar">
-        <a class="back-link" href="#/quiz/${skillId}">← Quiz</a>
+        <a class="back-link" href="#/practice/${skillId}">← Luyện tập</a>
         <h1>${escapeHtml(lab.title)}</h1>
         <p class="lab-progress-text">${progress.done.length}/${progress.total} bước · ${progress.percent}%</p>
         <div class="progress-track"><span style="width:${progress.percent}%"></span></div>
@@ -535,63 +613,141 @@ async function bindLab(skillId) {
   });
 }
 
-function renderErrors(state) {
-  const weak = getWeakSkills(state);
-  const items = state.errors.slice(0, 10).map((error) => `
-    <article class="error-item">
-      <h3>${escapeHtml(error.title)}</h3>
-      <p>${escapeHtml(error.message)}</p>
-      <a class="btn quiet" href="#/lesson/${error.recommendation}">Ôn lại</a>
-    </article>`).join("");
+function handleAnswer(answer, question, skillId) {
+  const result = submitAnswer(answer, question, data.errors);
+  const panel = document.querySelector(".feedback-panel");
+  const card = document.querySelector(".quiz-card");
+  if (!card) return;
+  card.classList.remove("is-correct", "is-wrong");
+  card.classList.add(result.correct ? "is-correct" : "is-wrong");
+  const isWorkbook = String(question.id || "").startsWith("ex_");
+  const lab = getLabForSkill(skillId, data.labs);
 
+  if (result.correct) {
+    const completed = isWorkbook
+      ? practice.onWorkbookAnswerCorrect(skillId)
+      : practice.onPracticeAnswerCorrect(skillId);
+    if (completed && !isWorkbook) {
+      updateState((s) => {
+        s.skillMastery[skillId] = Math.max(s.skillMastery[skillId] || 0, 60);
+      });
+    }
+    const labLink = completed && lab && !isWorkbook
+      ? `<a class="btn primary" href="#/lab/${skillId}">Sang thực hành</a>`
+      : "";
+    panel.innerHTML = `
+      <strong>Chính xác! +${result.xp} XP</strong>
+      <p>${completed ? "Bạn đã trả lời đúng tất cả câu hỏi của bài này." : "Câu tiếp theo sẽ xuất hiện sau một nhịp."}</p>
+      ${labLink}`;
+    return;
+  }
+
+  panel.innerHTML = `
+    <strong>${escapeHtml(result.error.title)}</strong>
+    <p>${escapeHtml(result.error.message)}</p>
+    <p><b>Gợi ý:</b> ${escapeHtml(result.error.hint)}</p>
+    <a class="btn quiet" href="#/lesson/${result.error.recommendation}">Ôn lại bài liên quan</a>
+  `;
+}
+
+function renderErrors(state) {
+  const weakSkills = getWeakSkills(state);
   return `
     <section class="page-title">
       <span class="eyebrow">Error Review</span>
       <h1>Sổ tay lỗi sai</h1>
+      <p>Ứng dụng lưu lỗi gần đây để gợi ý bài cần ôn — đặc biệt khi nhầm khái niệm hoặc thao tác tin học.</p>
     </section>
-    ${weak.length ? `<p>Kỹ năng cần chú ý: ${weak.map((w) => escapeHtml(labelSkill(w.skill))).join(", ")}</p>` : ""}
-    <div class="error-list">${items || "<p class='empty-state'>Chưa ghi nhận lỗi. Làm quiz để có phản hồi.</p>"}</div>`;
+    <div class="review-grid">
+      <article class="review-summary">
+        <h2>Kỹ năng cần chú ý</h2>
+        ${weakSkills.length ? weakSkills.map((item) => `
+          <div class="weak-row">
+            <span>${labelSkill(item.skill)}</span>
+            <strong>${item.count} lỗi</strong>
+          </div>
+        `).join("") : "<p>Chưa có lỗi nào được ghi nhận.</p>"}
+      </article>
+      <div class="error-list">
+        ${state.errors.length ? state.errors.map((error) => `
+          <article class="error-card">
+            <span class="tag">${labelSkill(error.skill)}</span>
+            <h2>${escapeHtml(error.title)}</h2>
+            <p>${escapeHtml(error.message)}</p>
+            <p><b>Gợi ý:</b> ${escapeHtml(error.hint)}</p>
+            <a class="btn quiet" href="#/practice/${error.recommendation}">Luyện lại</a>
+          </article>
+        `).join("") : "<article class='empty-state'>Làm vài câu quiz để sổ tay bắt đầu ghi nhận lỗi nhé.</article>"}
+      </div>
+    </div>
+  `;
 }
 
 function renderProfile(state) {
   const summary = getGamificationSummary(state);
   const profiles = getProfiles();
+
   return `
     <section class="page-title">
-      <h1>Hồ sơ học tập</h1>
-      <p>${escapeHtml(state.user.name)} · Lớp ${state.selectedGrade}</p>
+      <span class="eyebrow">Hồ sơ</span>
+      <h1>${escapeHtml(state.user.name)}</h1>
+      <p>Đang học Lớp ${resolveGrade(state)} · Level ${summary.level} · ${state.xp} XP</p>
     </section>
-    <section class="stat-grid">
-      <article><strong>${state.xp}</strong><span>Tổng XP</span></article>
-      <article><strong>${state.completedLessons.length}</strong><span>Bài lý thuyết</span></article>
-      <article><strong>${state.completedLabs.length}</strong><span>Lab xong</span></article>
-      <article><strong>${summary.badges.length}</strong><span>Huy hiệu</span></article>
-    </section>
-    <p>${summary.badges.map((b) => `<span class="tag">${escapeHtml(b)}</span>`).join(" ") || "Chưa có huy hiệu."}</p>
-    <section class="profile-actions">
-      <button class="btn secondary" id="changeGrade" type="button">Đổi lớp</button>
-      <button class="btn danger" id="resetProgress" type="button">Xóa tiến độ</button>
+    <section class="profile-grid">
+      <article>
+        <h2>Huy hiệu</h2>
+        <div class="badge-list">
+          ${summary.badges.length ? summary.badges.map((badge) => `<span>${badge}</span>`).join("") : "<p>Hoàn thành bài đầu tiên để nhận huy hiệu.</p>"}
+        </div>
+      </article>
+      <article>
+        <h2>Tiến độ cấp độ</h2>
+        <div class="progress-track"><span style="width:${Math.round((summary.currentLevelXp / summary.nextLevelXp) * 100)}%"></span></div>
+        <p>${summary.currentLevelXp}/${summary.nextLevelXp} XP tới level tiếp theo</p>
+        <p>${state.completedLessons.length} bài lý thuyết · ${state.completedLabs.length} lab hoàn thành</p>
+      </article>
+      <article>
+        <h2>Lớp đang học</h2>
+        <p>Bạn đang theo lộ trình Lớp ${resolveGrade(state)}. Đổi lớp sẽ mở lại màn hình chọn lớp (tiến độ được giữ nguyên).</p>
+        <button class="btn secondary" id="changeGrade">Đổi lớp</button>
+      </article>
+      <article>
+        <h2>Dữ liệu người học này</h2>
+        <p>Xóa tiến độ chỉ ảnh hưởng hồ sơ <strong>${escapeHtml(state.user.name)}</strong>, không ảnh hưởng người học khác.</p>
+        <button class="btn danger" id="resetProgress">Xóa tiến độ người này</button>
+      </article>
     </section>
     <section class="section-head">
       <h2>Người học trên máy này</h2>
+      <p>Mỗi người có XP, bài hoàn thành và lỗi sai riêng.</p>
     </section>
-    <div class="learner-list">${renderLearnerList(state, profiles)}</div>
+    <div class="learner-list">
+      ${renderLearnerList(state, profiles)}
+    </div>
     <section class="add-learner-panel">
       <h2>Thêm người học mới</h2>
       ${renderAddLearnerForm()}
-    </section>`;
+    </section>
+  `;
 }
 
 function bindProfile() {
-  document.querySelector("#changeGrade")?.addEventListener("click", () => {
-    restartOnboarding();
-    renderRoute();
-  });
-  document.querySelector("#resetProgress")?.addEventListener("click", () => {
-    if (!window.confirm(`Xóa toàn bộ tiến độ của ${getState().user.name}?`)) return;
-    resetProgress();
-    setRoute("#/home");
-  });
+  const reset = document.querySelector("#resetProgress");
+  if (reset) {
+    reset.addEventListener("click", () => {
+      if (!window.confirm(`Xóa toàn bộ tiến độ của ${getState().user.name}?`)) return;
+      resetProgress();
+      setRoute("#/home");
+    });
+  }
+
+  const changeGrade = document.querySelector("#changeGrade");
+  if (changeGrade) {
+    changeGrade.addEventListener("click", () => {
+      restartOnboarding();
+      renderRoute();
+    });
+  }
 
   document.querySelectorAll("[data-switch-profile]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -629,4 +785,12 @@ function bindProfile() {
     restartOnboarding();
     renderRoute();
   });
+}
+
+function labelSkill(id) {
+  return data.skills.find((skill) => skill.id === id)?.title || id;
+}
+
+function notFound(message) {
+  return `<section class="empty-state">${message}<br><a class="btn primary" href="#/home">Về trang chính</a></section>`;
 }
