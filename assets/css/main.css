@@ -128,7 +128,32 @@ p {
 .tag-cs { background: #ede9fe; color: #6d28d9; }
 .tag-dl { background: #ccfbf1; color: #0f766e; }
 
+.topbar {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.86);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 0 28px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  z-index: 20;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  font-weight: 900;
+  gap: 10px;
+  min-width: 0;
+}
+
 .brand-mark {
+  flex: 0 0 auto;
   align-items: center;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   border-radius: 12px;
@@ -138,6 +163,98 @@ p {
   height: 36px;
   justify-content: center;
   width: 36px;
+}
+
+.brand span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-links,
+.top-stats {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a,
+.top-stats span {
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  padding: 10px 12px;
+}
+
+.nav-links a:hover {
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.top-stats span {
+  background: #f3f7fb;
+  color: var(--text);
+}
+
+.grade-switch {
+  align-items: center;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  padding: 4px 10px 4px 12px;
+}
+
+.grade-switch span {
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.grade-switch select {
+  background: transparent;
+  border: 0;
+  color: var(--primary-dark);
+  cursor: pointer;
+  font-weight: 850;
+  padding: 6px 4px;
+}
+
+.grade-switch select:focus {
+  outline: none;
+}
+
+.modal-backdrop {
+  align-items: center;
+  background: rgba(13, 30, 49, 0.38);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 420px;
+  padding: 24px;
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.modal-actions .btn {
+  flex: 1 1 140px;
 }
 
 .progress-track {
