@@ -8,6 +8,16 @@ export function getLabForSkill(skillId, labs) {
   return labs.find((lab) => lab.skill === skillId);
 }
 
+export function getNextSkill(currentSkillId, skills) {
+  const current = skills.find((skill) => skill.id === currentSkillId);
+  if (!current) return null;
+  const gradeSkills = skills
+    .filter((skill) => skill.grade === current.grade)
+    .sort((a, b) => (a.chapterIndex - b.chapterIndex) || (a.lessonNo - b.lessonNo));
+  const index = gradeSkills.findIndex((skill) => skill.id === currentSkillId);
+  return index >= 0 ? gradeSkills[index + 1] || null : null;
+}
+
 export function getSkillProgress(skill, state, questions, labs = []) {
   const relatedAnswers = state.answers.filter((answer) => answer.skill === skill.id);
   const correct = relatedAnswers.filter((answer) => answer.correct).length;

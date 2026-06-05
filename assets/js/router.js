@@ -38,7 +38,13 @@ import {
   disposeInputLab
 } from "../../modules/inputLab.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
-import { getOverallAccuracy, getSkillProgress, getWeakSkills, getLabForSkill } from "../../modules/progress.js";
+import {
+  getOverallAccuracy,
+  getSkillProgress,
+  getWeakSkills,
+  getLabForSkill,
+  getNextSkill
+} from "../../modules/progress.js";
 
 const MINDMAP_CONFIG = {
   subject: "Tin học",
@@ -426,7 +432,7 @@ function renderLesson(id, state) {
         <div class="completion-panel">
           <div>
             <h2>Hoàn thành lý thuyết</h2>
-            <p>Nhận ${lesson.xp} XP, sau đó làm quiz${lab ? " và thực hành" : ""}.</p>
+            <p>Nhận ${lesson.xp} XP${lab ? ", sau đó làm quiz và thực hành." : ", sau đó chuyển sang bài tiếp theo."}</p>
           </div>
           <button class="btn primary" id="completeLesson">Hoàn thành</button>
         </div>
@@ -442,9 +448,23 @@ function bindLesson(id) {
   button.addEventListener("click", () => {
     completeLesson(lesson);
     const lab = getLabForSkill(lesson.skill, data.labs);
+    if (!lab) {
+      const next = getNextSkill(lesson.skill, data.skills);
+      if (next) {
+        setRoute(`#/lesson/${next.id}`);
+        return;
+      }
+      showModal({
+        title: "Đã hoàn thành lý thuyết",
+        body: `+${lesson.xp} XP. Bạn đã học hết bài trong lớp này.`,
+        actionLabel: "Về cây kỹ năng",
+        onAction: () => setRoute("#/skills")
+      });
+      return;
+    }
     showModal({
       title: "Đã hoàn thành lý thuyết",
-      body: `+${lesson.xp} XP. Chuyển sang luyện tập${lab ? " rồi thực hành lab" : ""}.`,
+      body: `+${lesson.xp} XP. Chuyển sang luyện tập rồi thực hành lab.`,
       actionLabel: "Luyện ngay",
       onAction: () => setRoute(`#/practice/${lesson.skill}`)
     });
