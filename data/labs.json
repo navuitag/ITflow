@@ -1,5 +1,3469 @@
 [
   {
+    "id": "lab_g1_a04",
+    "skill": "g1_a04",
+    "type": "mouse",
+    "title": "Thực hành: Bật và tắt máy tính",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "shutdown",
+      "instruction": "Nháy nút Bật máy, mở menu Start rồi chọn Tắt máy."
+    }
+  },
+  {
+    "id": "lab_g1_b05",
+    "skill": "g1_b05",
+    "type": "mouse",
+    "title": "Thực hành: Chuột máy tính",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_targets",
+      "instruction": "Di chuyển chuột và nháy vào 3 biểu tượng trên màn hình.",
+      "targetCount": 3
+    }
+  },
+  {
+    "id": "lab_g1_b06",
+    "skill": "g1_b06",
+    "type": "mouse",
+    "title": "Thực hành: Chuột máy tính (tiếp theo)",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "double_click",
+      "instruction": "Nháy đúp vào biểu tượng để mở chương trình."
+    }
+  },
+  {
+    "id": "lab_g1_b07",
+    "skill": "g1_b07",
+    "type": "mouse",
+    "title": "Thực hành: Trò chơi Sticks",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_targets",
+      "instruction": "Nháy nhanh vào các hình nhỏ xuất hiện (luyện mắt–tay).",
+      "targetCount": 5
+    }
+  },
+  {
+    "id": "lab_g1_b08",
+    "skill": "g1_b08",
+    "type": "mouse",
+    "title": "Thực hành: Chuột máy tính (tiếp theo)",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "scroll_reveal",
+      "instruction": "Cuộn danh sách xuống và nháy vào mục ẩn phía dưới."
+    }
+  },
+  {
+    "id": "lab_g1_b09",
+    "skill": "g1_b09",
+    "type": "mouse",
+    "title": "Thực hành: Thực hành trò chơi Tangram",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "drag_drop",
+      "instruction": "Kéo mảnh ghép vào đúng vị trí trên khung."
+    }
+  },
+  {
+    "id": "lab_g1_b10",
+    "skill": "g1_b10",
+    "type": "mouse",
+    "title": "Thực hành: Ôn tập chuột và Tangram",
+    "xp": 35,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_sequence",
+      "instruction": "Nháy các ô theo đúng thứ tự 1 → 2 → 3."
+    }
+  },
+  {
+    "id": "lab_g1_c11",
+    "skill": "g1_c11",
+    "type": "keyboard",
+    "title": "Thực hành: Bàn phím máy tính",
+    "xp": 35,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "press_keys",
+      "instruction": "Gõ phím F và J để đặt tay lên hàng cơ sở.",
+      "keys": [
+        "f",
+        "j"
+      ]
+    }
+  },
+  {
+    "id": "lab_g1_c12",
+    "skill": "g1_c12",
+    "type": "keyboard",
+    "title": "Thực hành: Thực hành bàn phím",
+    "xp": 35,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Gõ dãy: ff jj dd kk",
+      "text": "ffjjddkk"
+    }
+  },
+  {
+    "id": "lab_g1_c13",
+    "skill": "g1_c13",
+    "type": "keyboard",
+    "title": "Thực hành: Bàn phím (tiếp theo)",
+    "xp": 35,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_capital",
+      "instruction": "Giữ Shift và gõ chữ e, rồi gõ m (như tên Em).",
+      "text": "em"
+    }
+  },
+  {
+    "id": "lab_g1_c14",
+    "skill": "g1_c14",
+    "type": "keyboard",
+    "title": "Thực hành: Thực hành bàn phím (tiếp)",
+    "xp": 35,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Gõ từ «lop1» không dấu.",
+      "text": "lop1"
+    }
+  },
+  {
+    "id": "lab_g1_c16",
+    "skill": "g1_c16",
+    "type": "keyboard",
+    "title": "Thực hành: Ôn tập bàn phím",
+    "xp": 35,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Ôn hàng cơ sở: asdfjkl;",
+      "text": "asdfjkl;"
+    }
+  },
+  {
+    "id": "lab_g10_a01",
+    "skill": "g10_a01",
+    "type": "checklist",
+    "title": "Thực hành: Thông tin và xử lý thông tin",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a02",
+    "skill": "g10_a02",
+    "type": "checklist",
+    "title": "Thực hành: Thiết bị thông minh và tin học với xã hội",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a03",
+    "skill": "g10_a03",
+    "type": "checklist",
+    "title": "Thực hành: Kiểu dữ liệu và dữ liệu văn bản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a04",
+    "skill": "g10_a04",
+    "type": "checklist",
+    "title": "Thực hành: Hệ nhị phân và dữ liệu số nguyên",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a05",
+    "skill": "g10_a05",
+    "type": "checklist",
+    "title": "Thực hành: Dữ liệu lôgic",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a06",
+    "skill": "g10_a06",
+    "type": "checklist",
+    "title": "Thực hành: Dữ liệu âm thanh và hình ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_a07",
+    "skill": "g10_a07",
+    "type": "keyboard",
+    "title": "Thực hành: sử dụng thiết bị số thông dụng",
+    "xp": 46,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Thiết bị số: gõ «lop10».",
+      "text": "lop10"
+    }
+  },
+  {
+    "id": "lab_g10_b08",
+    "skill": "g10_b08",
+    "type": "checklist",
+    "title": "Thực hành: Mạng máy tính trong cuộc sống hiện đại",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_b09",
+    "skill": "g10_b09",
+    "type": "checklist",
+    "title": "Thực hành: An toàn trên không gian mạng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_b10",
+    "skill": "g10_b10",
+    "type": "mouse",
+    "title": "Thực hành: khai thác tài nguyên trên Internet",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Khai thác Internet: tìm «tai nguyen» và chọn kết quả.",
+      "searchKeyword": "tai"
+    }
+  },
+  {
+    "id": "lab_g10_d12",
+    "skill": "g10_d12",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm thiết kế đồ họa",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_d13",
+    "skill": "g10_d13",
+    "type": "checklist",
+    "title": "Thực hành: Bổ sung các đối tượng đồ họa",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_d14",
+    "skill": "g10_d14",
+    "type": "checklist",
+    "title": "Thực hành: Đối tượng đường và văn bản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_d15",
+    "skill": "g10_d15",
+    "type": "checklist",
+    "title": "Thực hành: Hoàn thiện hình ảnh đồ họa",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e16",
+    "skill": "g10_e16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Ngôn ngữ lập trình Python",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Python: mô phỏng chương trình tuần tự ≥ 2 lệnh.",
+      "hint": "Làm quen cấu trúc chương trình.",
+      "rules": {
+        "minChain": 2
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g10_e17",
+    "skill": "g10_e17",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Biến và lệnh gán",
+    "xp": 52,
+    "blockly": {
+      "mode": "variables",
+      "mission": "Biến và gán: khai báo biến, gán giá trị.",
+      "hint": "Tương ứng x = 5 trong Python.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g10_e18",
+    "skill": "g10_e18",
+    "type": "checklist",
+    "title": "Thực hành: Lệnh vào ra đơn giản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e19",
+    "skill": "g10_e19",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Câu lệnh rẽ nhánh if",
+    "xp": 52,
+    "blockly": {
+      "mode": "branch",
+      "mission": "if: dùng «Nếu … thì» với điều kiện.",
+      "hint": "Rẽ nhánh if/else.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g10_e20",
+    "skill": "g10_e20",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Câu lệnh lặp for",
+    "xp": 52,
+    "blockly": {
+      "mode": "loop",
+      "mission": "for: «Lặp lại» ≥ 3 lần.",
+      "hint": "Vòng lặp for trong Python.",
+      "rules": {
+        "minRepeatTimes": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g10_e21",
+    "skill": "g10_e21",
+    "type": "checklist",
+    "title": "Thực hành: Câu lệnh lặp while",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e22",
+    "skill": "g10_e22",
+    "type": "checklist",
+    "title": "Thực hành: Kiểu dữ liệu danh sách",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e23",
+    "skill": "g10_e23",
+    "type": "checklist",
+    "title": "Thực hành: Lệnh làm việc với danh sách",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e24",
+    "skill": "g10_e24",
+    "type": "checklist",
+    "title": "Thực hành: Xâu kí tự",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e25",
+    "skill": "g10_e25",
+    "type": "checklist",
+    "title": "Thực hành: Lệnh làm việc với xâu kí tự",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e26",
+    "skill": "g10_e26",
+    "type": "checklist",
+    "title": "Thực hành: Hàm trong Python",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e27",
+    "skill": "g10_e27",
+    "type": "checklist",
+    "title": "Thực hành: Tham số của hàm",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e28",
+    "skill": "g10_e28",
+    "type": "checklist",
+    "title": "Thực hành: Phạm vi của biến",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e29",
+    "skill": "g10_e29",
+    "type": "checklist",
+    "title": "Thực hành: Nhận biết lỗi chương trình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e30",
+    "skill": "g10_e30",
+    "type": "checklist",
+    "title": "Thực hành: Kiểm thử và gỡ lỗi",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g10_e31",
+    "skill": "g10_e31",
+    "type": "blockly",
+    "title": "Thực hành Blockly: viết chương trình đơn giản",
+    "xp": 52,
+    "blockly": {
+      "mode": "project",
+      "mission": "Dự án Python: ≥ 6 khối, chạy thử.",
+      "hint": "Tổng hợp kiến thức đã học.",
+      "rules": {
+        "minBlocks": 6
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g10_e32",
+    "skill": "g10_e32",
+    "type": "checklist",
+    "title": "Thực hành: Ôn tập lập trình Python",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_a01",
+    "skill": "g11_a01",
+    "type": "checklist",
+    "title": "Thực hành: Hệ điều hành",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_a02",
+    "skill": "g11_a02",
+    "type": "checklist",
+    "title": "Thực hành: sử dụng hệ điều hành",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_a03",
+    "skill": "g11_a03",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm nguồn mở và phần mềm Internet",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_a04",
+    "skill": "g11_a04",
+    "type": "checklist",
+    "title": "Thực hành: Bên trong máy tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_a05",
+    "skill": "g11_a05",
+    "type": "checklist",
+    "title": "Thực hành: Kết nối máy tính với thiết bị số",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_b06",
+    "skill": "g11_b06",
+    "type": "checklist",
+    "title": "Thực hành: Lưu trữ và chia sẻ tệp trên Internet",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_b07",
+    "skill": "g11_b07",
+    "type": "mouse",
+    "title": "Thực hành: tìm kiếm thông tin trên Internet",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Tìm kiếm nâng cao: gõ «sql» và chọn kết quả.",
+      "searchKeyword": "sql"
+    }
+  },
+  {
+    "id": "lab_g11_b08",
+    "skill": "g11_b08",
+    "type": "checklist",
+    "title": "Thực hành: email và mạng xã hội",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d10",
+    "skill": "g11_d10",
+    "type": "checklist",
+    "title": "Thực hành: Lưu trữ dữ liệu phục vụ quản lí",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d11",
+    "skill": "g11_d11",
+    "type": "checklist",
+    "title": "Thực hành: Cơ sở dữ liệu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d12",
+    "skill": "g11_d12",
+    "type": "checklist",
+    "title": "Thực hành: Hệ quản trị CSDL và hệ CSDL",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d13",
+    "skill": "g11_d13",
+    "type": "checklist",
+    "title": "Thực hành: Cơ sở dữ liệu quan hệ",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d14",
+    "skill": "g11_d14",
+    "type": "checklist",
+    "title": "Thực hành: SQL – ngôn ngữ truy vấn",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Viết câu SELECT đơn giản",
+        "hint": "Chọn trường cần hiển thị."
+      },
+      {
+        "id": "s2",
+        "label": "Thử INSERT/UPDATE trên bảng mẫu",
+        "hint": "Sao lưu trước khi sửa."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả truy vấn",
+        "hint": "So với yêu cầu SGK."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_d15",
+    "skill": "g11_d15",
+    "type": "checklist",
+    "title": "Thực hành: Bảo mật và an toàn CSDL",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f17",
+    "skill": "g11_f17",
+    "type": "checklist",
+    "title": "Thực hành: Dữ liệu mảng một chiều và hai chiều",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f18",
+    "skill": "g11_f18",
+    "type": "checklist",
+    "title": "Thực hành: dữ liệu mảng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f19",
+    "skill": "g11_f19",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Bài toán tìm kiếm",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Tìm kiếm: mô phỏng duyệt tuần tự ≥ 3 bước.",
+      "hint": "So sánh từng phần tử mảng.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g11_f20",
+    "skill": "g11_f20",
+    "type": "checklist",
+    "title": "Thực hành: bài toán tìm kiếm",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f21",
+    "skill": "g11_f21",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thuật toán sắp xếp đơn giản",
+    "xp": 52,
+    "blockly": {
+      "mode": "loop",
+      "mission": "Sắp xếp: lặp ≥ 4 lần trong thuật toán.",
+      "hint": "Vòng lặp lồng so sánh đổi chỗ.",
+      "rules": {
+        "minRepeatTimes": 4
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g11_f22",
+    "skill": "g11_f22",
+    "type": "checklist",
+    "title": "Thực hành: bài toán sắp xếp",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f23",
+    "skill": "g11_f23",
+    "type": "checklist",
+    "title": "Thực hành: Kiểm thử và đánh giá chương trình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f24",
+    "skill": "g11_f24",
+    "type": "checklist",
+    "title": "Thực hành: Độ phức tạp thời gian thuật toán",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f25",
+    "skill": "g11_f25",
+    "type": "checklist",
+    "title": "Thực hành: xác định độ phức tạp",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f26",
+    "skill": "g11_f26",
+    "type": "checklist",
+    "title": "Thực hành: Làm mịn dần trong thiết kế chương trình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f27",
+    "skill": "g11_f27",
+    "type": "checklist",
+    "title": "Thực hành: thiết kế làm mịn dần",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f28",
+    "skill": "g11_f28",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thiết kế chương trình theo mô đun",
+    "xp": 52,
+    "blockly": {
+      "mode": "project",
+      "mission": "Mô đun: chương trình ≥ 6 khối tổng hợp.",
+      "hint": "Chia nhỏ theo module/hàm.",
+      "rules": {
+        "minBlocks": 6
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g11_f29",
+    "skill": "g11_f29",
+    "type": "checklist",
+    "title": "Thực hành: thiết kế mô đun",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f30",
+    "skill": "g11_f30",
+    "type": "checklist",
+    "title": "Thực hành: Thiết lập thư viện cho chương trình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11_f31",
+    "skill": "g11_f31",
+    "type": "checklist",
+    "title": "Thực hành: thiết lập thư viện",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc đề và viết thuật toán",
+        "hint": "Ghi pseudocode."
+      },
+      {
+        "id": "s2",
+        "label": "Viết code Python theo SGK",
+        "hint": "Chạy thử từng phần."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm thử với test case",
+        "hint": "Sửa lỗi nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu file .py và nộp",
+        "hint": "Tên file có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g17",
+    "skill": "g11ict_g17",
+    "type": "checklist",
+    "title": "Thực hành: Quản trị cơ sở dữ liệu trên máy tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g18",
+    "skill": "g11ict_g18",
+    "type": "checklist",
+    "title": "Thực hành: xác định cấu trúc bảng và các trường khóa",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g19",
+    "skill": "g11ict_g19",
+    "type": "checklist",
+    "title": "Thực hành: tạo lập cơ sở dữ liệu và các bảng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g20",
+    "skill": "g11ict_g20",
+    "type": "checklist",
+    "title": "Thực hành: tạo lập các bảng có khóa ngoài",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g21",
+    "skill": "g11ict_g21",
+    "type": "checklist",
+    "title": "Thực hành: cập nhật và truy xuất dữ liệu các bảng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g22",
+    "skill": "g11ict_g22",
+    "type": "checklist",
+    "title": "Thực hành: cập nhật bảng dữ liệu có tham chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g23",
+    "skill": "g11ict_g23",
+    "type": "checklist",
+    "title": "Thực hành: truy xuất dữ liệu qua liên kết các bảng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g24",
+    "skill": "g11ict_g24",
+    "type": "checklist",
+    "title": "Thực hành: sao lưu dữ liệu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thiết kế/xác định cấu trúc bảng",
+        "hint": "Khóa chính, khóa ngoại."
+      },
+      {
+        "id": "s2",
+        "label": "Tạo hoặc cập nhật CSDL theo SGK",
+        "hint": "Đúng kiểu dữ liệu từng trường."
+      },
+      {
+        "id": "s3",
+        "label": "Truy vấn và kiểm tra kết quả",
+        "hint": "SELECT/JOIN nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc sao lưu dữ liệu",
+        "hint": "Backup trước khi sửa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g25",
+    "skill": "g11ict_g25",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm chỉnh sửa ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g26",
+    "skill": "g11ict_g26",
+    "type": "checklist",
+    "title": "Thực hành: Công cụ tinh chỉnh màu sắc và công cụ chọn",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g27",
+    "skill": "g11ict_g27",
+    "type": "checklist",
+    "title": "Thực hành: Công cụ vẽ và một số ứng dụng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g28",
+    "skill": "g11ict_g28",
+    "type": "checklist",
+    "title": "Thực hành: Tạo ảnh động",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g29",
+    "skill": "g11ict_g29",
+    "type": "mouse",
+    "title": "Thực hành: Khám phá phần mềm làm phim",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_play",
+      "instruction": "Phần mềm làm phim: nháy PLAY để xem trước timeline."
+    }
+  },
+  {
+    "id": "lab_g11ict_g30",
+    "skill": "g11ict_g30",
+    "type": "checklist",
+    "title": "Thực hành: Biên tập phim",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g11ict_g31",
+    "skill": "g11ict_g31",
+    "type": "checklist",
+    "title": "Thực hành: tạo phim hoạt hình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Chuẩn bị ảnh/clip theo kịch bản",
+        "hint": "Đúng định dạng, bản quyền."
+      },
+      {
+        "id": "s2",
+        "label": "Chỉnh sửa trên phần mềm SGK",
+        "hint": "Lớp, màu, cắt ghép."
+      },
+      {
+        "id": "s3",
+        "label": "Xem trước và chỉnh theo góp ý",
+        "hint": "Âm thanh vừa phải."
+      },
+      {
+        "id": "s4",
+        "label": "Xuất file và nộp sản phẩm",
+        "hint": "Định dạng giáo viên yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_a01",
+    "skill": "g12_a01",
+    "type": "checklist",
+    "title": "Thực hành: Làm quen với Trí tuệ nhân tạo",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_a02",
+    "skill": "g12_a02",
+    "type": "checklist",
+    "title": "Thực hành: AI trong khoa học và đời sống",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_b03",
+    "skill": "g12_b03",
+    "type": "checklist",
+    "title": "Thực hành: Thiết bị mạng thông dụng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_b04",
+    "skill": "g12_b04",
+    "type": "checklist",
+    "title": "Thực hành: Giao thức mạng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_b05",
+    "skill": "g12_b05",
+    "type": "checklist",
+    "title": "Thực hành: chia sẻ tài nguyên trên mạng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d07",
+    "skill": "g12_d07",
+    "type": "blockly",
+    "title": "Thực hành Blockly: HTML và cấu trúc trang web",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "HTML: ≥ 2 lệnh tuần tự mô phỏng cấu trúc trang.",
+      "hint": "Thứ tự các phần tử trang web.",
+      "rules": {
+        "minChain": 2
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g12_d08",
+    "skill": "g12_d08",
+    "type": "keyboard",
+    "title": "Thực hành: Định dạng văn bản HTML",
+    "xp": 46,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "HTML: gõ thẻ «p» (chữ thường).",
+      "text": "p"
+    }
+  },
+  {
+    "id": "lab_g12_d09",
+    "skill": "g12_d09",
+    "type": "checklist",
+    "title": "Thực hành: Danh sách và bảng HTML",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d10",
+    "skill": "g12_d10",
+    "type": "checklist",
+    "title": "Thực hành: Tạo liên kết",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d11",
+    "skill": "g12_d11",
+    "type": "checklist",
+    "title": "Thực hành: Chèn đa phương tiện và iframe",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d12",
+    "skill": "g12_d12",
+    "type": "checklist",
+    "title": "Thực hành: Tạo biểu mẫu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d13",
+    "skill": "g12_d13",
+    "type": "checklist",
+    "title": "Thực hành: Khái niệm và vai trò CSS",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d14",
+    "skill": "g12_d14",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng văn bản bằng CSS",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d15",
+    "skill": "g12_d15",
+    "type": "checklist",
+    "title": "Thực hành: Màu chữ và nền CSS",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d16",
+    "skill": "g12_d16",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng khung CSS",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d17",
+    "skill": "g12_d17",
+    "type": "checklist",
+    "title": "Thực hành: Mức ưu tiên bộ chọn CSS",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_d18",
+    "skill": "g12_d18",
+    "type": "blockly",
+    "title": "Thực hành Blockly: tổng hợp thiết kế trang web",
+    "xp": 52,
+    "blockly": {
+      "mode": "project",
+      "mission": "Dự án web: ≥ 5 khối tổng hợp HTML/CSS.",
+      "hint": "Hoàn thiện trang theo rubric.",
+      "rules": {
+        "minBlocks": 5
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g12_f22",
+    "skill": "g12_f22",
+    "type": "checklist",
+    "title": "Thực hành: Tìm hiểu thiết bị mạng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Xác định thiết bị và topology",
+        "hint": "Router, switch, AP theo sơ đồ."
+      },
+      {
+        "id": "s2",
+        "label": "Cấu hình hoặc mô phỏng kết nối",
+        "hint": "IP, dây/cáp hoặc Wi-Fi."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra chia sẻ tài nguyên",
+        "hint": "Ping, truy cập tệp/máy in."
+      },
+      {
+        "id": "s4",
+        "label": "Ghi chú và nộp báo cáo",
+        "hint": "Sơ đồ + kết quả thử."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_f23",
+    "skill": "g12_f23",
+    "type": "checklist",
+    "title": "Thực hành: Đường truyền mạng và ứng dụng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Xác định thiết bị và topology",
+        "hint": "Router, switch, AP theo sơ đồ."
+      },
+      {
+        "id": "s2",
+        "label": "Cấu hình hoặc mô phỏng kết nối",
+        "hint": "IP, dây/cáp hoặc Wi-Fi."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra chia sẻ tài nguyên",
+        "hint": "Ping, truy cập tệp/máy in."
+      },
+      {
+        "id": "s4",
+        "label": "Ghi chú và nộp báo cáo",
+        "hint": "Sơ đồ + kết quả thử."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_f24",
+    "skill": "g12_f24",
+    "type": "checklist",
+    "title": "Thực hành: Sơ bộ về thiết kế mạng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Xác định thiết bị và topology",
+        "hint": "Router, switch, AP theo sơ đồ."
+      },
+      {
+        "id": "s2",
+        "label": "Cấu hình hoặc mô phỏng kết nối",
+        "hint": "IP, dây/cáp hoặc Wi-Fi."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra chia sẻ tài nguyên",
+        "hint": "Ping, truy cập tệp/máy in."
+      },
+      {
+        "id": "s4",
+        "label": "Ghi chú và nộp báo cáo",
+        "hint": "Sơ đồ + kết quả thử."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_g27",
+    "skill": "g12_g27",
+    "type": "checklist",
+    "title": "Thực hành: Máy tính và Khoa học dữ liệu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thu thập/chuẩn bị dữ liệu mẫu",
+        "hint": "CSV hoặc bảng theo SGK."
+      },
+      {
+        "id": "s2",
+        "label": "Phân tích hoặc trực quan hóa",
+        "hint": "Biểu đồ, thống kê cơ bản."
+      },
+      {
+        "id": "s3",
+        "label": "Rút ra nhận xét/tri thức",
+        "hint": "So sánh với giả thuyết."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu sản phẩm và trình bày",
+        "hint": "File hoặc slide ngắn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_g28",
+    "skill": "g12_g28",
+    "type": "checklist",
+    "title": "Thực hành: trích rút thông tin và tri thức",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Thu thập/chuẩn bị dữ liệu mẫu",
+        "hint": "CSV hoặc bảng theo SGK."
+      },
+      {
+        "id": "s2",
+        "label": "Phân tích hoặc trực quan hóa",
+        "hint": "Biểu đồ, thống kê cơ bản."
+      },
+      {
+        "id": "s3",
+        "label": "Rút ra nhận xét/tri thức",
+        "hint": "So sánh với giả thuyết."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu sản phẩm và trình bày",
+        "hint": "File hoặc slide ngắn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12_g29",
+    "skill": "g12_g29",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Mô phỏng trong giải quyết vấn đề",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Mô phỏng: ≥ 3 bước mô hình hóa bài toán.",
+      "hint": "Thiết lập tham số rồi chạy mô phỏng.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g12_g30",
+    "skill": "g12_g30",
+    "type": "mouse",
+    "title": "Thực hành: Ứng dụng mô phỏng trong giáo dục",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_play",
+      "instruction": "Mô phỏng giáo dục: nháy PLAY để chạy thí nghiệm."
+    }
+  },
+  {
+    "id": "lab_g12ict_g22",
+    "skill": "g12ict_g22",
+    "type": "mouse",
+    "title": "Thực hành: kết nối các thiết bị số",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_targets",
+      "instruction": "Kết nối thiết bị số: nháy 3 biểu tượng (điện thoại, loa, cảm biến).",
+      "targetCount": 3
+    }
+  },
+  {
+    "id": "lab_g12ict_h23",
+    "skill": "g12ict_h23",
+    "type": "checklist",
+    "title": "Thực hành: Chuẩn bị xây dựng trang web",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12ict_h24",
+    "skill": "g12ict_h24",
+    "type": "checklist",
+    "title": "Thực hành: Xây dựng phần đầu trang web",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12ict_h25",
+    "skill": "g12ict_h25",
+    "type": "checklist",
+    "title": "Thực hành: Xây dựng phần thân và chân trang web",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12ict_h26",
+    "skill": "g12ict_h26",
+    "type": "checklist",
+    "title": "Thực hành: Liên kết và thanh điều hướng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12ict_h27",
+    "skill": "g12ict_h27",
+    "type": "checklist",
+    "title": "Thực hành: Biểu mẫu trên trang web",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Tạo/chỉnh file HTML theo SGK",
+        "hint": "Cấu trúc đúng thẻ."
+      },
+      {
+        "id": "s2",
+        "label": "Thêm CSS hoặc nội dung",
+        "hint": "Kiểm tra trên trình duyệt."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra hiển thị và liên kết",
+        "hint": "F12 hoặc xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Thư mục dự án gọn."
+      }
+    ]
+  },
+  {
+    "id": "lab_g12ict_h28",
+    "skill": "g12ict_h28",
+    "type": "blockly",
+    "title": "Thực hành Blockly: tổng hợp",
+    "xp": 52,
+    "blockly": {
+      "mode": "project",
+      "mission": "Dự án web ICT: ≥ 5 khối HTML tổng hợp.",
+      "hint": "Hoàn thiện trang theo rubric nhánh ứng dụng.",
+      "rules": {
+        "minBlocks": 5
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g2_a02",
+    "skill": "g2_a02",
+    "type": "mouse",
+    "title": "Thực hành: Luyện tập chuột với Mouse Trainer",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "mouse_trainer",
+      "instruction": "Luyện nháy 3 lần, nháy đúp 1 lần và kéo thả 1 lần."
+    }
+  },
+  {
+    "id": "lab_g2_a03",
+    "skill": "g2_a03",
+    "type": "mouse",
+    "title": "Thực hành: Bắt đầu làm việc với máy tính",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "open_close",
+      "instruction": "Nháy đúp mở cửa sổ phần mềm, rồi nháy nút X để đóng."
+    }
+  },
+  {
+    "id": "lab_g2_b05",
+    "skill": "g2_b05",
+    "type": "mouse",
+    "title": "Thực hành: Em tập làm họa sĩ (tiếp theo)",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "paint_colors",
+      "instruction": "Chọn 3 màu và nháy lên vùng vẽ để tô."
+    }
+  },
+  {
+    "id": "lab_g2_b14",
+    "skill": "g2_b14",
+    "type": "mouse",
+    "title": "Thực hành: Paint — vẽ hình khối",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "drag_drop",
+      "instruction": "Kéo hình khối vào khung mẫu."
+    }
+  },
+  {
+    "id": "lab_g2_b15",
+    "skill": "g2_b15",
+    "type": "keyboard",
+    "title": "Thực hành: Paint — tô màu và chèn chữ",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Dùng công cụ chữ: gõ «hoa».",
+      "text": "hoa"
+    }
+  },
+  {
+    "id": "lab_g2_c06",
+    "skill": "g2_c06",
+    "type": "keyboard",
+    "title": "Thực hành: Luyện gõ bàn phím (Rapid Typing)",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Rapid Typing — gõ hàng cơ sở: ffjjddkk",
+      "text": "ffjjddkk"
+    }
+  },
+  {
+    "id": "lab_g2_c07",
+    "skill": "g2_c07",
+    "type": "keyboard",
+    "title": "Thực hành: Luyện gõ bàn phím (tiếp theo)",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Gõ từ «lop2» chậm nhưng đúng.",
+      "text": "lop2"
+    }
+  },
+  {
+    "id": "lab_g2_c08",
+    "skill": "g2_c08",
+    "type": "keyboard",
+    "title": "Thực hành: Chơi trò chơi chữ cái",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Trò chơi chữ cái: gõ abc",
+      "text": "abc"
+    }
+  },
+  {
+    "id": "lab_g2_c13",
+    "skill": "g2_c13",
+    "type": "keyboard",
+    "title": "Thực hành: Học tiếng Anh với Fast Hands",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Fast Hands: gõ từ tiếng Anh «cat».",
+      "text": "cat"
+    }
+  },
+  {
+    "id": "lab_g2_d10",
+    "skill": "g2_d10",
+    "type": "mouse",
+    "title": "Thực hành: Nhà bác học nhí",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Nháy ô tìm kiếm, gõ từ khóa (bàn phím) và nháy kết quả."
+    }
+  },
+  {
+    "id": "lab_g2_d11",
+    "skill": "g2_d11",
+    "type": "mouse",
+    "title": "Thực hành: Nhà toán học nhí",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_play",
+      "instruction": "Nháy nút PLAY để bắt đầu trò chơi toán."
+    }
+  },
+  {
+    "id": "lab_g2_d12",
+    "skill": "g2_d12",
+    "type": "mouse",
+    "title": "Thực hành: Trò chơi GCompris",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_targets",
+      "instruction": "Chọn 4 trò chơi GCompris trên lưới.",
+      "targetCount": 4
+    }
+  },
+  {
+    "id": "lab_g2_d16",
+    "skill": "g2_d16",
+    "type": "mouse",
+    "title": "Thực hành: Ôn tập cuối học kỳ",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "review_mix",
+      "instruction": "Ôn tập: nháy 2 biểu tượng và gõ «tin».",
+      "text": "tin",
+      "targetCount": 2
+    }
+  },
+  {
+    "id": "lab_g3_a04",
+    "skill": "g3_a04",
+    "type": "mouse",
+    "title": "Thực hành: Làm việc với máy tính",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "open_close",
+      "instruction": "Nháy đúp mở phần mềm, rồi nháy X để đóng cửa sổ."
+    }
+  },
+  {
+    "id": "lab_g3_a05",
+    "skill": "g3_a05",
+    "type": "keyboard",
+    "title": "Thực hành: Sử dụng bàn phím",
+    "xp": 40,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Gõ tên lớp «lop3» và dấu cách.",
+      "text": "lop3"
+    }
+  },
+  {
+    "id": "lab_g3_b06",
+    "skill": "g3_b06",
+    "type": "mouse",
+    "title": "Thực hành: Khám phá thông tin trên Internet",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Tìm trên Internet: nháy ô tìm kiếm, gõ «thien» và chọn kết quả.",
+      "searchKeyword": "thien"
+    }
+  },
+  {
+    "id": "lab_g3_c07",
+    "skill": "g3_c07",
+    "type": "checklist",
+    "title": "Thực hành: Sắp xếp để dễ tìm",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g3_c08",
+    "skill": "g3_c08",
+    "type": "checklist",
+    "title": "Thực hành: Sơ đồ hình cây",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g3_c09",
+    "skill": "g3_c09",
+    "type": "checklist",
+    "title": "Thực hành: Thực hành với tệp và thư mục",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g3_e11",
+    "skill": "g3_e11",
+    "type": "checklist",
+    "title": "Thực hành: Bài trình chiếu của em",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g3_e12",
+    "skill": "g3_e12",
+    "type": "checklist",
+    "title": "Thực hành: Tìm hiểu về thế giới tự nhiên",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g3_e13",
+    "skill": "g3_e13",
+    "type": "mouse",
+    "title": "Thực hành: Luyện tập sử dụng chuột",
+    "xp": 40,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "mouse_trainer",
+      "instruction": "Ôn nháy 3 lần, nháy đúp và kéo thả như SGK bài 13."
+    }
+  },
+  {
+    "id": "lab_g3_f14",
+    "skill": "g3_f14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Em thực hiện công việc như thế nào",
+    "xp": 45,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Ghép ít nhất 2 lệnh tuần tự (Nói, Tiến…) dưới «Khi bấm Chạy».",
+      "hint": "Công việc làm lần lượt từng bước — giống thuật toán tuần tự SGK.",
+      "rules": {
+        "minChain": 2
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g3_f15",
+    "skill": "g3_f15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Công việc theo điều kiện",
+    "xp": 45,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Dùng khối «Nếu … thì» với điều kiện và ít nhất một lệnh trong nhánh.",
+      "hint": "Ví dụ: nếu điểm > 5 thì Nói «Đạt».",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g3_f16",
+    "skill": "g3_f16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Công việc của em và sự trợ giúp của máy tính",
+    "xp": 45,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Từ kịch bản công việc: dùng «Nếu … thì» + ít nhất 2 lệnh (Nói/Tiến), rồi chạy thử.",
+      "hint": "Máy tính giúp em: chọn việc làm phù hợp điều kiện.",
+      "rules": {
+        "minBlocks": 4
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g4_a02",
+    "skill": "g4_a02",
+    "type": "keyboard",
+    "title": "Thực hành: Gõ bàn phím đúng cách",
+    "xp": 42,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Gõ «lop4» và tên em (chữ thường).",
+      "text": "lop4"
+    }
+  },
+  {
+    "id": "lab_g4_b03",
+    "skill": "g4_b03",
+    "type": "mouse",
+    "title": "Thực hành: Thông tin trên trang web",
+    "xp": 42,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Đọc trang web: tìm kiếm «trang web» và nháy kết quả.",
+      "searchKeyword": "trang"
+    }
+  },
+  {
+    "id": "lab_g4_c04",
+    "skill": "g4_c04",
+    "type": "mouse",
+    "title": "Thực hành: Tìm kiếm và trao đổi thông tin",
+    "xp": 42,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Tìm kiếm và trao đổi: gõ «chia se» và chọn kết quả.",
+      "searchKeyword": "chia"
+    }
+  },
+  {
+    "id": "lab_g4_c05",
+    "skill": "g4_c05",
+    "type": "checklist",
+    "title": "Thực hành: Thao tác với tệp và thư mục",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e07",
+    "skill": "g4_e07",
+    "type": "checklist",
+    "title": "Thực hành: Tạo bài trình chiếu",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e08",
+    "skill": "g4_e08",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng văn bản trên trang chiếu",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e09",
+    "skill": "g4_e09",
+    "type": "checklist",
+    "title": "Thực hành: Hiệu ứng chuyển trang",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e10",
+    "skill": "g4_e10",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm soạn thảo văn bản",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e11",
+    "skill": "g4_e11",
+    "type": "checklist",
+    "title": "Thực hành: Chỉnh sửa văn bản",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e12a",
+    "skill": "g4_e12a",
+    "type": "checklist",
+    "title": "Thực hành: Thực hành đa phương tiện",
+    "xp": 42,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g4_e12b",
+    "skill": "g4_e12b",
+    "type": "keyboard",
+    "title": "Thực hành: Phần mềm luyện gõ bàn phím",
+    "xp": 42,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Luyện gõ 10 ngón: asdf jkl;",
+      "text": "asdfjkl;"
+    }
+  },
+  {
+    "id": "lab_g4_f13",
+    "skill": "g4_f13",
+    "type": "mouse",
+    "title": "Thực hành: Chơi với máy tính",
+    "xp": 42,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_play",
+      "instruction": "Chơi với máy tính: nháy PLAY để bắt đầu trò chơi."
+    }
+  },
+  {
+    "id": "lab_g4_f14",
+    "skill": "g4_f14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Khám phá môi trường lập trình trực quan",
+    "xp": 48,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Khám phá Blockly: ghép ≥ 2 lệnh tuần tự (Nói, Tiến…) dưới «Khi bấm Chạy».",
+      "hint": "Bài 14 SGK — làm quen môi trường lập trình trực quan.",
+      "rules": {
+        "minChain": 2
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g4_f15",
+    "skill": "g4_f15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Tạo chương trình máy tính để diễn tả ý tưởng",
+    "xp": 48,
+    "blockly": {
+      "mode": "loop",
+      "mission": "Dùng khối «Lặp lại» ≥ 3 lần, bên trong có ít nhất một lệnh.",
+      "hint": "Diễn tả ý tưởng bằng cấu trúc lặp.",
+      "rules": {
+        "minRepeatTimes": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g4_f16",
+    "skill": "g4_f16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Chương trình của em",
+    "xp": 48,
+    "blockly": {
+      "mode": "loop_practice",
+      "mission": "Chương trình của em: lặp ≥ 4 lần + chạy thử trên sân khấu.",
+      "hint": "Kết hợp tuần tự và lặp theo kịch bản tự chọn.",
+      "rules": {
+        "minRepeatTimes": 4
+      },
+      "starterXml": null
+    }
+  },
+  {
     "id": "lab_g5_e06",
     "skill": "g5_e06",
     "type": "checklist",
@@ -87,10 +3551,10 @@
     ]
   },
   {
-    "id": "lab_g5_e09a",
-    "skill": "g5_e09a",
+    "id": "lab_g5_e08b",
+    "skill": "g5_e08b",
     "type": "checklist",
-    "title": "Thực hành: Sử dụng phần mềm đồ hoạ tạo sản phẩm số",
+    "title": "Thực hành: Làm sản phẩm thủ công theo video hướng dẫn",
     "xp": 40,
     "steps": [
       {
@@ -116,10 +3580,10 @@
     ]
   },
   {
-    "id": "lab_g5_e08b",
-    "skill": "g5_e08b",
+    "id": "lab_g5_e09a",
+    "skill": "g5_e09a",
     "type": "checklist",
-    "title": "Thực hành: Làm sản phẩm thủ công theo video hướng dẫn",
+    "title": "Thực hành: Sử dụng phần mềm đồ hoạ tạo sản phẩm số",
     "xp": 40,
     "steps": [
       {
@@ -273,6 +3737,1441 @@
       "mode": "project",
       "mission": "Từ kịch bản SGK: dùng lặp + rẽ nhánh + biến (≥ 6 khối) rồi chạy thử.",
       "hint": "Ví dụ: nếu điểm > 5 thì nói «Giỏi», không thì «Cố lên»; lặp di chuyển.",
+      "rules": {
+        "minBlocks": 6
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g6_a02",
+    "skill": "g6_a02",
+    "type": "checklist",
+    "title": "Thực hành: Xử lý thông tin",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_a03",
+    "skill": "g6_a03",
+    "type": "keyboard",
+    "title": "Thực hành: Thông tin trong máy tính",
+    "xp": 44,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Thông tin số: gõ «lop6» (chữ thường).",
+      "text": "lop6"
+    }
+  },
+  {
+    "id": "lab_g6_b04",
+    "skill": "g6_b04",
+    "type": "checklist",
+    "title": "Thực hành: Mạng máy tính",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_b05",
+    "skill": "g6_b05",
+    "type": "mouse",
+    "title": "Thực hành: Internet",
+    "xp": 44,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Internet: tìm «mang may tinh» và nháy kết quả.",
+      "searchKeyword": "mang"
+    }
+  },
+  {
+    "id": "lab_g6_c06",
+    "skill": "g6_c06",
+    "type": "checklist",
+    "title": "Thực hành: Mạng thông tin toàn cầu",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_c07",
+    "skill": "g6_c07",
+    "type": "mouse",
+    "title": "Thực hành: Tìm kiếm thông tin trên Internet",
+    "xp": 44,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Tìm kiếm thông tin: gõ «tin hoc 6» và chọn kết quả.",
+      "searchKeyword": "tin"
+    }
+  },
+  {
+    "id": "lab_g6_c08",
+    "skill": "g6_c08",
+    "type": "keyboard",
+    "title": "Thực hành: Thư điện tử",
+    "xp": 44,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Soạn email: gõ tiêu đề «chao thay» (không dấu).",
+      "text": "chao thay"
+    }
+  },
+  {
+    "id": "lab_g6_e10",
+    "skill": "g6_e10",
+    "type": "checklist",
+    "title": "Thực hành: Sơ đồ tư duy",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_e11",
+    "skill": "g6_e11",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng văn bản",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_e12",
+    "skill": "g6_e12",
+    "type": "checklist",
+    "title": "Thực hành: Trình bày thông tin ở dạng bảng",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_e13",
+    "skill": "g6_e13",
+    "type": "keyboard",
+    "title": "Thực hành: Tìm kiếm và thay thế",
+    "xp": 44,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Tìm/thay thế: gõ lại cụm «sổ lưu niệm» → «soluunien».",
+      "text": "soluunien"
+    }
+  },
+  {
+    "id": "lab_g6_e14",
+    "skill": "g6_e14",
+    "type": "checklist",
+    "title": "Thực hành: tổng hợp: Hoàn thiện sổ lưu niệm",
+    "xp": 44,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Rà soát cấu trúc sổ lưu niệm theo sơ đồ tư duy",
+        "hint": "Bìa, lời mở đầu, các mục chính."
+      },
+      {
+        "id": "s2",
+        "label": "Hoàn thiện định dạng, bảng và hình ảnh",
+        "hint": "Đồng bộ phông và căn lề."
+      },
+      {
+        "id": "s3",
+        "label": "Trao đổi nhóm và chỉnh theo góp ý",
+        "hint": "Thảo luận với bạn trong tổ."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g6_f15",
+    "skill": "g6_f15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thuật toán",
+    "xp": 50,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Viết thuật toán tuần tự: ghép ≥ 3 lệnh dưới «Khi bấm Chạy» (Nói, Tiến…).",
+      "hint": "Bài 15 SGK — mỗi bước thuật toán tương ứng một lệnh.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g6_f16",
+    "skill": "g6_f16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Các cấu trúc điều khiển",
+    "xp": 50,
+    "blockly": {
+      "mode": "loop",
+      "mission": "Cấu trúc lặp: dùng «Lặp lại» ≥ 3 lần, bên trong có ít nhất một lệnh.",
+      "hint": "Bài 16 — lặp là một trong các cấu trúc điều khiển.",
+      "rules": {
+        "minRepeatTimes": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g6_f17",
+    "skill": "g6_f17",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Chương trình máy tính",
+    "xp": 50,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Chương trình máy tính: dùng khối «Nếu … thì» với ít nhất một lệnh trong nhánh.",
+      "hint": "Kết hợp rẽ nhánh theo điều kiện — chạy thử trên sân khấu.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g7_a01",
+    "skill": "g7_a01",
+    "type": "mouse",
+    "title": "Thực hành: Thiết bị vào – ra",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_targets",
+      "instruction": "Thiết bị vào–ra: nháy 4 biểu tượng (bàn phím, chuột, màn hình, loa).",
+      "targetCount": 4
+    }
+  },
+  {
+    "id": "lab_g7_a02",
+    "skill": "g7_a02",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm máy tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_a03",
+    "skill": "g7_a03",
+    "type": "keyboard",
+    "title": "Thực hành: Quản lí dữ liệu trong máy tính",
+    "xp": 46,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Quản lí dữ liệu: gõ «lop7» (chữ thường).",
+      "text": "lop7"
+    }
+  },
+  {
+    "id": "lab_g7_b04",
+    "skill": "g7_b04",
+    "type": "mouse",
+    "title": "Thực hành: Mạng xã hội và kênh trao đổi trên Internet",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Mạng xã hội: tìm «mang xa hoi» và chọn kết quả.",
+      "searchKeyword": "mang"
+    }
+  },
+  {
+    "id": "lab_g7_d06",
+    "skill": "g7_d06",
+    "type": "checklist",
+    "title": "Thực hành: Làm quen với phần mềm bảng tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_d07",
+    "skill": "g7_d07",
+    "type": "keyboard",
+    "title": "Thực hành: Tính toán tự động trên bảng tính",
+    "xp": 46,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_sequence",
+      "instruction": "Công thức bảng tính: gõ «=a1+b1».",
+      "text": "=a1+b1"
+    }
+  },
+  {
+    "id": "lab_g7_d08",
+    "skill": "g7_d08",
+    "type": "keyboard",
+    "title": "Thực hành: Công cụ hỗ trợ tính toán",
+    "xp": 46,
+    "simulator": {
+      "type": "keyboard",
+      "scenario": "type_word",
+      "instruction": "Hàm tính tổng: gõ «sum».",
+      "text": "sum"
+    }
+  },
+  {
+    "id": "lab_g7_d09",
+    "skill": "g7_d09",
+    "type": "checklist",
+    "title": "Thực hành: Trình bày bảng tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu vào bảng tính theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc dùng hàm SUM/AVERAGE",
+        "hint": "Bắt đầu bằng dấu =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra kết quả",
+        "hint": "Xem lỗi công thức nếu có."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_d10",
+    "skill": "g7_d10",
+    "type": "checklist",
+    "title": "Thực hành: Hoàn thiện bảng tính",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu vào bảng tính theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc dùng hàm SUM/AVERAGE",
+        "hint": "Bắt đầu bằng dấu =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra kết quả",
+        "hint": "Xem lỗi công thức nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp .xlsx",
+        "hint": "Đặt tên có nghĩa."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_d11",
+    "skill": "g7_d11",
+    "type": "checklist",
+    "title": "Thực hành: Tạo bài trình chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_d12",
+    "skill": "g7_d12",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng đối tượng trên trang chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_d13",
+    "skill": "g7_d13",
+    "type": "checklist",
+    "title": "Thực hành: tổng hợp: Hoàn thiện bài trình chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Rà soát slide và số liệu từ bảng tính",
+        "hint": "Đủ phần theo rubric."
+      },
+      {
+        "id": "s2",
+        "label": "Hoàn thiện định dạng và hiệu ứng",
+        "hint": "Đồng bộ phông, màu."
+      },
+      {
+        "id": "s3",
+        "label": "Trình chiếu thử và trao đổi nhóm",
+        "hint": "F5 xem trước."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu và nộp bài trình chiếu",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g7_e14",
+    "skill": "g7_e14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thuật toán tìm kiếm tuần tự",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Tìm kiếm tuần tự: ghép ≥ 3 lệnh tuần tự (Nói, Tiến…) mô phỏng duyệt từng bước.",
+      "hint": "Mỗi bước so sánh tương ứng một lệnh trong thuật toán.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g7_e15",
+    "skill": "g7_e15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thuật toán tìm kiếm nhị phân",
+    "xp": 52,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Tìm kiếm nhị phân: dùng «Nếu … thì» so sánh và chọn nhánh xử lý.",
+      "hint": "So sánh phần tử giữa — rẽ nhánh trái hoặc phải.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g7_e16",
+    "skill": "g7_e16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thuật toán sắp xếp",
+    "xp": 52,
+    "blockly": {
+      "mode": "loop",
+      "mission": "Sắp xếp: dùng «Lặp lại» ≥ 4 lần, bên trong có lệnh (mô phỏng đổi chỗ/so sánh).",
+      "hint": "Vòng lặp thể hiện việc quét và đổi chỗ nhiều lần.",
+      "rules": {
+        "minRepeatTimes": 4
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g8_a01",
+    "skill": "g8_a01",
+    "type": "checklist",
+    "title": "Thực hành: Lược sử công cụ tính toán",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_b02",
+    "skill": "g8_b02",
+    "type": "checklist",
+    "title": "Thực hành: Thông tin trong môi trường số",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_b03",
+    "skill": "g8_b03",
+    "type": "mouse",
+    "title": "Thực hành: Khai thác thông tin số",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "web_search",
+      "instruction": "Khai thác thông tin số: tìm «tin hoc 8» và chọn kết quả.",
+      "searchKeyword": "tin"
+    }
+  },
+  {
+    "id": "lab_g8_d05",
+    "skill": "g8_d05",
+    "type": "checklist",
+    "title": "Thực hành: Sử dụng bảng tính giải quyết bài toán thực tế",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d06",
+    "skill": "g8_d06",
+    "type": "checklist",
+    "title": "Thực hành: Sắp xếp và lọc dữ liệu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d07",
+    "skill": "g8_d07",
+    "type": "checklist",
+    "title": "Thực hành: Trình bày dữ liệu bằng biểu đồ",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d08a",
+    "skill": "g8_d08a",
+    "type": "checklist",
+    "title": "Thực hành: Danh sách liệt kê và hình ảnh trong văn bản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d08b",
+    "skill": "g8_d08b",
+    "type": "checklist",
+    "title": "Thực hành: Phần mềm chỉnh sửa ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d09a",
+    "skill": "g8_d09a",
+    "type": "checklist",
+    "title": "Thực hành: Đầu trang, chân trang cho văn bản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d09b",
+    "skill": "g8_d09b",
+    "type": "checklist",
+    "title": "Thực hành: Thay đổi khung hình, kích thước ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d10a",
+    "skill": "g8_d10a",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng nâng cao cho trang chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d10b",
+    "skill": "g8_d10b",
+    "type": "checklist",
+    "title": "Thực hành: Thêm văn bản, hiệu ứng cho ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d11a",
+    "skill": "g8_d11a",
+    "type": "checklist",
+    "title": "Thực hành: Bản mẫu tạo bài trình chiếu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_d11b",
+    "skill": "g8_d11b",
+    "type": "checklist",
+    "title": "Thực hành: tổng hợp chỉnh sửa ảnh",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g8_e12",
+    "skill": "g8_e12",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Từ thuật toán đến chương trình",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Từ thuật toán đến chương trình: ≥ 3 lệnh tuần tự.",
+      "hint": "Mỗi bước thuật toán là một lệnh.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g8_e13",
+    "skill": "g8_e13",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Biểu diễn dữ liệu",
+    "xp": 52,
+    "blockly": {
+      "mode": "variables",
+      "mission": "Biểu diễn dữ liệu: gán và đọc biến.",
+      "hint": "Biến lưu giá trị dữ liệu.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g8_e14",
+    "skill": "g8_e14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Cấu trúc điều khiển",
+    "xp": 52,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Cấu trúc điều khiển: dùng «Nếu … thì».",
+      "hint": "Rẽ nhánh theo điều kiện.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g8_e15",
+    "skill": "g8_e15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Gỡ lỗi",
+    "xp": 52,
+    "blockly": {
+      "mode": "loop_practice",
+      "mission": "Gỡ lỗi: lặp ≥ 3 lần và chạy thử sửa lỗi.",
+      "hint": "Kiểm tra từng bước trong vòng lặp.",
+      "rules": {
+        "minRepeatTimes": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g9_a01",
+    "skill": "g9_a01",
+    "type": "checklist",
+    "title": "Thực hành: Thế giới kĩ thuật số",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_b02",
+    "skill": "g9_b02",
+    "type": "checklist",
+    "title": "Thực hành: Thông tin trong giải quyết vấn đề",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_b03",
+    "skill": "g9_b03",
+    "type": "checklist",
+    "title": "Thực hành: Đánh giá chất lượng thông tin",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d05",
+    "skill": "g9_d05",
+    "type": "checklist",
+    "title": "Thực hành: Tìm hiểu phần mềm mô phỏng",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d06",
+    "skill": "g9_d06",
+    "type": "mouse",
+    "title": "Thực hành: Khai thác phần mềm mô phỏng",
+    "xp": 46,
+    "simulator": {
+      "type": "mouse",
+      "scenario": "click_play",
+      "instruction": "Phần mềm mô phỏng: nháy PLAY để chạy thí nghiệm."
+    }
+  },
+  {
+    "id": "lab_g9_d07",
+    "skill": "g9_d07",
+    "type": "checklist",
+    "title": "Thực hành: Trình bày thông tin trong trao đổi và hợp tác",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d08",
+    "skill": "g9_d08",
+    "type": "checklist",
+    "title": "Thực hành: Công cụ trực quan trình bày thông tin",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d09a",
+    "skill": "g9_d09a",
+    "type": "checklist",
+    "title": "Thực hành: Công cụ xác thực dữ liệu",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d09b",
+    "skill": "g9_d09b",
+    "type": "checklist",
+    "title": "Thực hành: Chức năng phần mềm làm video",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d10a",
+    "skill": "g9_d10a",
+    "type": "checklist",
+    "title": "Thực hành: Hàm COUNTIF",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d10b",
+    "skill": "g9_d10b",
+    "type": "checklist",
+    "title": "Thực hành: Chuẩn bị dữ liệu và dựng video",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d11a",
+    "skill": "g9_d11a",
+    "type": "checklist",
+    "title": "Thực hành: Hàm SUMIF",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d11b",
+    "skill": "g9_d11b",
+    "type": "checklist",
+    "title": "Thực hành: Dựng video theo kịch bản",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d12a",
+    "skill": "g9_d12a",
+    "type": "checklist",
+    "title": "Thực hành: Hàm IF",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d12b",
+    "skill": "g9_d12b",
+    "type": "checklist",
+    "title": "Thực hành: Hoàn thành việc dựng video",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d13a",
+    "skill": "g9_d13a",
+    "type": "checklist",
+    "title": "Thực hành: Hoàn thiện bảng tính quản lí tài chính gia đình",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Nhập dữ liệu theo mẫu SGK",
+        "hint": "Đúng hàng, cột."
+      },
+      {
+        "id": "s2",
+        "label": "Viết công thức hoặc hàm",
+        "hint": "Bắt đầu bằng =."
+      },
+      {
+        "id": "s3",
+        "label": "Định dạng và kiểm tra",
+        "hint": "Biểu đồ nếu có."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu tệp",
+        "hint": "Đặt tên rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_d13b",
+    "skill": "g9_d13b",
+    "type": "checklist",
+    "title": "Thực hành: Biên tập và xuất video",
+    "xp": 46,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu SGK và xác định sản phẩm",
+        "hint": "Ghi ra việc cần hoàn thành."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện trên máy theo hướng dẫn",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra và trình bày kết quả",
+        "hint": "So với rubric bài học."
+      }
+    ]
+  },
+  {
+    "id": "lab_g9_e14",
+    "skill": "g9_e14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Giải quyết vấn đề",
+    "xp": 52,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Giải quyết vấn đề: thuật toán tuần tự ≥ 3 lệnh.",
+      "hint": "Phân tích bài toán thành các bước.",
+      "rules": {
+        "minChain": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g9_e15",
+    "skill": "g9_e15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Bài toán tin học",
+    "xp": 52,
+    "blockly": {
+      "mode": "expressions",
+      "mission": "Bài toán tin học: dùng phép tính và biến.",
+      "hint": "Biểu thức mô tả quan hệ dữ liệu.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g9_e16",
+    "skill": "g9_e16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Lập chương trình máy tính",
+    "xp": 52,
+    "blockly": {
+      "mode": "project",
+      "mission": "Lập chương trình: lặp + rẽ nhánh + biến (≥ 6 khối).",
+      "hint": "Tổng hợp từ thuật toán đã thiết kế.",
       "rules": {
         "minBlocks": 6
       },

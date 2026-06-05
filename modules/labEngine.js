@@ -4,10 +4,10 @@ export function getLabProgress(lab, state) {
   const record = state.labProgress?.[lab.id] || { done: [] };
   const done = new Set(record.done || []);
 
-  if (lab.type === "blockly") {
+  if (lab.type === "blockly" || lab.type === "mouse" || lab.type === "keyboard") {
     const passed = Boolean(record.passed) || state.completedLabs.includes(lab.skill);
     return {
-      done: passed ? ["blockly_pass"] : [],
+      done: passed ? ["sim_pass"] : [],
       total: 1,
       percent: passed ? 100 : 0,
       complete: passed

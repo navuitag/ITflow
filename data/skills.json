@@ -1,5 +1,1390 @@
 [
   {
+    "id": "g1_a01",
+    "title": "Bài 1. Làm quen với máy tính",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Làm quen máy tính",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Làm quen máy tính",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Nhận biết máy tính là thiết bị hỗ trợ học tập và vui chơi có ích.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_a02",
+    "title": "Bài 2. Các bộ phận máy tính",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Làm quen máy tính",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Làm quen máy tính",
+    "level": 1,
+    "prerequisite": [
+      "g1_a01"
+    ],
+    "description": "Nhận diện màn hình, thân máy, chuột, bàn phím và loa.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_a03",
+    "title": "Bài 3. Tư thế ngồi học và ánh sáng",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Làm quen máy tính",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Làm quen máy tính",
+    "level": 1,
+    "prerequisite": [
+      "g1_a02"
+    ],
+    "description": "Ngồi đúng tư thế, đủ ánh sáng để bảo vệ mắt và sức khỏe.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_a04",
+    "title": "Bài 4. Bật và tắt máy tính",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Làm quen máy tính",
+    "chapterIndex": 1,
+    "lessonNo": 4,
+    "domain": "Làm quen máy tính",
+    "level": 1,
+    "prerequisite": [
+      "g1_a03"
+    ],
+    "description": "Khởi động và tắt máy tính đúng cách, không tắt đột ngột khi đang dùng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b05",
+    "title": "Bài 5. Chuột máy tính",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 5,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_a04"
+    ],
+    "description": "Cầm chuột đúng cách; di chuyển con trỏ trên màn hình.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b06",
+    "title": "Bài 6. Chuột máy tính (tiếp theo)",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 6,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_b05"
+    ],
+    "description": "Nháy, nháy đúp và kéo thả chuột.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b07",
+    "title": "Bài 7. Trò chơi Sticks",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 7,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_b06"
+    ],
+    "description": "Luyện phối hợp mắt–tay qua trò chơi trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b08",
+    "title": "Bài 8. Chuột máy tính (tiếp theo)",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 8,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_b07"
+    ],
+    "description": "Dùng nút cuộn và di chuyển chính xác trong vùng làm việc.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b09",
+    "title": "Bài 9. Thực hành trò chơi Tangram",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 9,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_b08"
+    ],
+    "description": "Kéo thả hình khối để ghép hình Tangram.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_b10",
+    "title": "Bài 10. Ôn tập chuột và Tangram",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Thao tác với chuột",
+    "chapterIndex": 2,
+    "lessonNo": 10,
+    "domain": "Thao tác với chuột",
+    "level": 2,
+    "prerequisite": [
+      "g1_b09"
+    ],
+    "description": "Ôn các thao tác chuột qua bài tập tổng hợp.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_c11",
+    "title": "Bài 11. Bàn phím máy tính",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Bàn phím máy tính",
+    "chapterIndex": 3,
+    "lessonNo": 11,
+    "domain": "Bàn phím máy tính",
+    "level": 3,
+    "prerequisite": [
+      "g1_b10"
+    ],
+    "description": "Nhận biết các hàng phím và đặt tay trên hàng cơ sở.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_c12",
+    "title": "Bài 12. Thực hành bàn phím",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Bàn phím máy tính",
+    "chapterIndex": 3,
+    "lessonNo": 12,
+    "domain": "Bàn phím máy tính",
+    "level": 3,
+    "prerequisite": [
+      "g1_c11"
+    ],
+    "description": "Gõ các phím trên hàng cơ sở và hàng trên.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_c13",
+    "title": "Bài 13. Bàn phím (tiếp theo)",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Bàn phím máy tính",
+    "chapterIndex": 3,
+    "lessonNo": 13,
+    "domain": "Bàn phím máy tính",
+    "level": 3,
+    "prerequisite": [
+      "g1_c12"
+    ],
+    "description": "Gõ chữ hoa bằng phím Shift và các phím số.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_c14",
+    "title": "Bài 14. Thực hành bàn phím (tiếp)",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Bàn phím máy tính",
+    "chapterIndex": 3,
+    "lessonNo": 14,
+    "domain": "Bàn phím máy tính",
+    "level": 3,
+    "prerequisite": [
+      "g1_c13"
+    ],
+    "description": "Gõ dãy ký tự ngắn theo hướng dẫn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_c16",
+    "title": "Bài 16. Ôn tập bàn phím",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Bàn phím máy tính",
+    "chapterIndex": 3,
+    "lessonNo": 16,
+    "domain": "Bàn phím máy tính",
+    "level": 3,
+    "prerequisite": [
+      "g1_d15"
+    ],
+    "description": "Ôn tập toàn bộ thao tác gõ bàn phím cơ bản.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g1_d15",
+    "title": "Bài 15. Máy tính trong đời sống",
+    "grade": 1,
+    "book": "Tin học 1",
+    "chapter": "Máy tính trong cuộc sống",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Máy tính trong cuộc sống",
+    "level": 4,
+    "prerequisite": [
+      "g1_c14"
+    ],
+    "description": "Nêu ví dụ máy tính giúp học, giao tiếp và giải trí lành mạnh.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g2_a01",
+    "title": "Bài 1. Những gì em đã biết",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Ôn tập và thao tác cơ bản",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Ôn tập và thao tác cơ bản",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Ôn bộ phận máy tính, tư thế ngồi, đặt tay chuột và bàn phím đã học lớp 1.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_a02",
+    "title": "Bài 2. Luyện tập chuột với Mouse Trainer",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Ôn tập và thao tác cơ bản",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Ôn tập và thao tác cơ bản",
+    "level": 1,
+    "prerequisite": [
+      "g2_a01"
+    ],
+    "description": "Rèn nháy, nháy đúp và kéo thả chuột qua phần mềm Mouse Trainer.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_a03",
+    "title": "Bài 3. Bắt đầu làm việc với máy tính",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Ôn tập và thao tác cơ bản",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Ôn tập và thao tác cơ bản",
+    "level": 1,
+    "prerequisite": [
+      "g2_a02"
+    ],
+    "description": "Mở và thoát phần mềm đúng cách; nhận biết biểu tượng trên màn hình.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_b04",
+    "title": "Bài 4. Em tập làm họa sĩ (Leah's Farm Paint)",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Em tập làm họa sĩ",
+    "chapterIndex": 2,
+    "lessonNo": 4,
+    "domain": "Em tập làm họa sĩ",
+    "level": 2,
+    "prerequisite": [
+      "g2_a03"
+    ],
+    "description": "Làm quen công cụ vẽ và tô màu trong phần mềm Leah's Farm Paint & Play.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_b05",
+    "title": "Bài 5. Em tập làm họa sĩ (tiếp theo)",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Em tập làm họa sĩ",
+    "chapterIndex": 2,
+    "lessonNo": 5,
+    "domain": "Em tập làm họa sĩ",
+    "level": 2,
+    "prerequisite": [
+      "g2_b04"
+    ],
+    "description": "Thực hành vẽ, tô màu và lưu bức tranh theo mẫu.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_b14",
+    "title": "Bài 14. Paint — vẽ hình khối",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Em tập làm họa sĩ",
+    "chapterIndex": 2,
+    "lessonNo": 6,
+    "domain": "Em tập làm họa sĩ",
+    "level": 2,
+    "prerequisite": [
+      "g2_b05"
+    ],
+    "description": "Dùng công cụ hình khối, đường thẳng và đường cong trong Paint.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_b15",
+    "title": "Bài 15. Paint — tô màu và chèn chữ",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Em tập làm họa sĩ",
+    "chapterIndex": 2,
+    "lessonNo": 7,
+    "domain": "Em tập làm họa sĩ",
+    "level": 2,
+    "prerequisite": [
+      "g2_b14"
+    ],
+    "description": "Tô màu nền, viền và thêm chữ vào bức vẽ.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_c06",
+    "title": "Bài 6. Luyện gõ bàn phím (Rapid Typing)",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Bàn phím và trò chơi học tập",
+    "chapterIndex": 3,
+    "lessonNo": 8,
+    "domain": "Bàn phím và trò chơi học tập",
+    "level": 3,
+    "prerequisite": [
+      "g2_b15"
+    ],
+    "description": "Gõ các phím hàng cơ sở bằng đúng vị trí ngón tay.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_c07",
+    "title": "Bài 7. Luyện gõ bàn phím (tiếp theo)",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Bàn phím và trò chơi học tập",
+    "chapterIndex": 3,
+    "lessonNo": 9,
+    "domain": "Bàn phím và trò chơi học tập",
+    "level": 3,
+    "prerequisite": [
+      "g2_c06"
+    ],
+    "description": "Gõ hàng trên, hàng số và gõ chậm nhưng đúng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_c08",
+    "title": "Bài 8. Chơi trò chơi chữ cái",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Bàn phím và trò chơi học tập",
+    "chapterIndex": 3,
+    "lessonNo": 10,
+    "domain": "Bàn phím và trò chơi học tập",
+    "level": 3,
+    "prerequisite": [
+      "g2_c07"
+    ],
+    "description": "Làm quen chữ cái qua trò chơi giáo dục trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_c13",
+    "title": "Bài 13. Học tiếng Anh với Fast Hands",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Bàn phím và trò chơi học tập",
+    "chapterIndex": 3,
+    "lessonNo": 11,
+    "domain": "Bàn phím và trò chơi học tập",
+    "level": 3,
+    "prerequisite": [
+      "g2_c08"
+    ],
+    "description": "Luyện phản xạ bàn phím qua trò chơi từ vựng tiếng Anh.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_d09",
+    "title": "Bài 9. Thông tin xung quanh em",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Thông tin và học trên mạng",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Thông tin và học trên mạng",
+    "level": 4,
+    "prerequisite": [
+      "g2_c13"
+    ],
+    "description": "Nhận biết thông tin hữu ích trên Internet và quy tắc an toàn khi tìm kiếm.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_d10",
+    "title": "Bài 10. Nhà bác học nhí",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Thông tin và học trên mạng",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Thông tin và học trên mạng",
+    "level": 4,
+    "prerequisite": [
+      "g2_d09"
+    ],
+    "description": "Dùng website Nhà bác học nhí để tìm kiếm và khám phá kiến thức.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_d11",
+    "title": "Bài 11. Nhà toán học nhí",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Thông tin và học trên mạng",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Thông tin và học trên mạng",
+    "level": 4,
+    "prerequisite": [
+      "g2_d10"
+    ],
+    "description": "Chơi trò chơi toán trực tuyến, rèn tư duy qua website học tập.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_d12",
+    "title": "Bài 12. Trò chơi GCompris",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Thông tin và học trên mạng",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Thông tin và học trên mạng",
+    "level": 4,
+    "prerequisite": [
+      "g2_d11"
+    ],
+    "description": "Khám phá bộ trò chơi GCompris: toán, chữ cái và logic.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g2_d16",
+    "title": "Bài 16. Ôn tập cuối học kỳ",
+    "grade": 2,
+    "book": "Hướng dẫn học Tin học 2",
+    "chapter": "Thông tin và học trên mạng",
+    "chapterIndex": 4,
+    "lessonNo": 16,
+    "domain": "Thông tin và học trên mạng",
+    "level": 4,
+    "prerequisite": [
+      "g2_d12"
+    ],
+    "description": "Ôn chuột, bàn phím, vẽ và ứng dụng học tập qua bài tập tổng hợp.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g3_a01",
+    "title": "Bài 1. Thông tin và quyết định",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Nhận biết thông tin giúp em đưa ra quyết định đúng trong học tập và sinh hoạt.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_a02",
+    "title": "Bài 2. Xử lí thông tin",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [
+      "g3_a01"
+    ],
+    "description": "Thu thập, chọn lọc và sử dụng thông tin phù hợp với mục đích.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_a03",
+    "title": "Bài 3. Máy tính và em",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [
+      "g3_a02"
+    ],
+    "description": "Mô tả vai trò máy tính trong học tập, giao tiếp và sáng tạo.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_a04",
+    "title": "Bài 4. Làm việc với máy tính",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 4,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [
+      "g3_a03"
+    ],
+    "description": "Khởi động, mở/thoát phần mềm và làm việc an toàn trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_a05",
+    "title": "Bài 5. Sử dụng bàn phím",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 5,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [
+      "g3_a04"
+    ],
+    "description": "Gõ chữ, số và ký tự cơ bản bằng đúng tư thế bàn phím.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_b06",
+    "title": "Bài 6. Khám phá thông tin trên Internet",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 6,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g3_a05"
+    ],
+    "description": "Tìm kiếm thông tin trên Internet có người lớn hướng dẫn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_c07",
+    "title": "Bài 7. Sắp xếp để dễ tìm",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 7,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g3_b06"
+    ],
+    "description": "Đặt tên tệp và thư mục có nghĩa để dễ tìm lại.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_c08",
+    "title": "Bài 8. Sơ đồ hình cây",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 8,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g3_c07"
+    ],
+    "description": "Nhận biết cấu trúc cây thư mục trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_c09",
+    "title": "Bài 9. Thực hành với tệp và thư mục",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 9,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g3_c08"
+    ],
+    "description": "Tạo, đổi tên, di chuyển tệp và thư mục theo hướng dẫn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_d10",
+    "title": "Bài 10. Bảo vệ thông tin khi dùng máy tính",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "level": 4,
+    "prerequisite": [
+      "g3_c09"
+    ],
+    "description": "Bảo vệ mật khẩu và thông tin cá nhân khi dùng máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g3_e11",
+    "title": "Bài 11. Bài trình chiếu của em",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tin học ứng dụng",
+    "chapterIndex": 5,
+    "lessonNo": 11,
+    "domain": "Tin học ứng dụng",
+    "level": 5,
+    "prerequisite": [
+      "g3_d10"
+    ],
+    "description": "Tạo slide đơn giản: tiêu đề, nội dung và hình ảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_e12",
+    "title": "Bài 12. Tìm hiểu về thế giới tự nhiên",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tin học ứng dụng",
+    "chapterIndex": 5,
+    "lessonNo": 12,
+    "domain": "Tin học ứng dụng",
+    "level": 5,
+    "prerequisite": [
+      "g3_e11"
+    ],
+    "description": "Dùng phần mềm/website để khám phá chủ đề tự nhiên.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_e13",
+    "title": "Bài 13. Luyện tập sử dụng chuột",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Tin học ứng dụng",
+    "chapterIndex": 5,
+    "lessonNo": 13,
+    "domain": "Tin học ứng dụng",
+    "level": 5,
+    "prerequisite": [
+      "g3_e12"
+    ],
+    "description": "Ôn nháy, nháy đúp, kéo thả chuột chính xác.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g3_f14",
+    "title": "Bài 14. Em thực hiện công việc như thế nào",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 14,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g3_e13"
+    ],
+    "description": "Mô tả các bước công việc theo thứ tự (thuật toán tuần tự).",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g3_f15",
+    "title": "Bài 15. Công việc theo điều kiện",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g3_f14"
+    ],
+    "description": "Nhận biết việc làm khác nhau khi điều kiện thay đổi (rẽ nhánh).",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g3_f16",
+    "title": "Bài 16. Công việc của em và sự trợ giúp của máy tính",
+    "grade": 3,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g3_f15"
+    ],
+    "description": "Lập kế hoạch công việc và dùng máy tính hỗ trợ (trình chiếu, tìm kiếm).",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g4_a01",
+    "title": "Bài 1. Phần cứng và phần mềm máy tính",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Phân biệt phần cứng (thiết bị) và phần mềm (chương trình) trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_a02",
+    "title": "Bài 2. Gõ bàn phím đúng cách",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [
+      "g4_a01"
+    ],
+    "description": "Gõ bàn phím bằng 10 ngón, đúng tư thế và nhịp độ.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_b03",
+    "title": "Bài 3. Thông tin trên trang web",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 3,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g4_a02"
+    ],
+    "description": "Nhận biết tiêu đề, liên kết và nội dung chính trên trang web.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_c04",
+    "title": "Bài 4. Tìm kiếm và trao đổi thông tin",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 4,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g4_b03"
+    ],
+    "description": "Tìm kiếm, chọn lọc và chia sẻ thông tin phù hợp trên mạng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_c05",
+    "title": "Bài 5. Thao tác với tệp và thư mục",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 5,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g4_c04"
+    ],
+    "description": "Tạo, đổi tên, sao chép và sắp xếp tệp trong cây thư mục.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_d06",
+    "title": "Bài 6. Sử dụng phần mềm khi được phép",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "chapterIndex": 4,
+    "lessonNo": 6,
+    "domain": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "level": 4,
+    "prerequisite": [
+      "g4_c05"
+    ],
+    "description": "Chỉ dùng phần mềm và nội dung số khi được phép; tôn trọng bản quyền.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g4_e07",
+    "title": "Bài 7. Tạo bài trình chiếu",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 7,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_d06"
+    ],
+    "description": "Tạo slide mới: tiêu đề, nội dung và hình ảnh minh họa.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e08",
+    "title": "Bài 8. Định dạng văn bản trên trang chiếu",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 8,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e07"
+    ],
+    "description": "Đổi phông chữ, cỡ chữ, màu và căn lề trên slide.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e09",
+    "title": "Bài 9. Hiệu ứng chuyển trang",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 9,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e08"
+    ],
+    "description": "Thêm hiệu ứng chuyển slide và trình chiếu có kiểm soát.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e10",
+    "title": "Bài 10. Phần mềm soạn thảo văn bản",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e09"
+    ],
+    "description": "Làm quen giao diện trình soạn thảo văn bản (Word/Wordpad).",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e11",
+    "title": "Bài 11. Chỉnh sửa văn bản",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e10"
+    ],
+    "description": "Gõ, sửa, định dạng và lưu văn bản có cấu trúc.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e12a",
+    "title": "Bài 12A. Thực hành đa phương tiện",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e11"
+    ],
+    "description": "Kết hợp chữ, hình ảnh và âm thanh trong sản phẩm số.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_e12b",
+    "title": "Bài 12B. Phần mềm luyện gõ bàn phím",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g4_e12a"
+    ],
+    "description": "Luyện gõ 10 ngón bằng phần mềm luyện tập bàn phím.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g4_f13",
+    "title": "Bài 13. Chơi với máy tính",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 14,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g4_e12b"
+    ],
+    "description": "Làm quen trò chơi giáo dục và môi trường lập trình trực quan.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g4_f14",
+    "title": "Bài 14. Khám phá môi trường lập trình trực quan",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g4_f13"
+    ],
+    "description": "Ghép khối lệnh tuần tự trong môi trường lập trình Blockly.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g4_f15",
+    "title": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g4_f14"
+    ],
+    "description": "Dùng cấu trúc lặp để diễn tả ý tưởng bằng chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g4_f16",
+    "title": "Bài 16. Chương trình của em",
+    "grade": 4,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g4_f15"
+    ],
+    "description": "Hoàn thiện chương trình tổng hợp (tuần tự + lặp) theo kịch bản em tự chọn.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
     "id": "g5_a01",
     "title": "Bài 1. Em có thể làm gì với máy tính?",
     "grade": 5,
@@ -373,6 +1758,4231 @@
     ],
     "competencies": [
       "NLc"
+    ]
+  },
+  {
+    "id": "g6_a01",
+    "title": "Bài 1. Thông tin và dữ liệu",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Phân biệt dữ liệu (sự kiện thô) và thông tin (dữ liệu có ý nghĩa).",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_a02",
+    "title": "Bài 2. Xử lý thông tin",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [
+      "g6_a01"
+    ],
+    "description": "Nhận biết các bước thu thập, lưu trữ, xử lý và truyền thông tin.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_a03",
+    "title": "Bài 3. Thông tin trong máy tính",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [
+      "g6_a02"
+    ],
+    "description": "Hiểu dữ liệu số, đơn vị bit/byte và cách máy tính lưu trữ thông tin.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_b04",
+    "title": "Bài 4. Mạng máy tính",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 4,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g6_a03"
+    ],
+    "description": "Mô tả mạng LAN/WAN, thiết bị mạng và lợi ích kết nối máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_b05",
+    "title": "Bài 5. Internet",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 5,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g6_b04"
+    ],
+    "description": "Internet là mạng toàn cầu; trình duyệt, website và dịch vụ trực tuyến.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_c06",
+    "title": "Bài 6. Mạng thông tin toàn cầu",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 6,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g6_b05"
+    ],
+    "description": "WWW, siêu liên kết và kho tri thức trên Internet.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_c07",
+    "title": "Bài 7. Tìm kiếm thông tin trên Internet",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 7,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g6_c06"
+    ],
+    "description": "Dùng công cụ tìm kiếm, chọn từ khóa và đánh giá độ tin cậy nguồn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_c08",
+    "title": "Bài 8. Thư điện tử",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 8,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g6_c07"
+    ],
+    "description": "Soạn, gửi, nhận email; địa chỉ, tiêu đề và nội dung lịch sự.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_d09",
+    "title": "Bài 9. An toàn thông tin trên Internet",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 4,
+    "lessonNo": 9,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 4,
+    "prerequisite": [
+      "g6_c08"
+    ],
+    "description": "Bảo vệ tài khoản, nhận biết lừa đảo và ứng xử an toàn trên mạng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g6_e10",
+    "title": "Bài 10. Sơ đồ tư duy",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g6_d09"
+    ],
+    "description": "Tạo sơ đồ tư duy tổ chức ý tưởng cho dự án sổ lưu niệm.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_e11",
+    "title": "Bài 11. Định dạng văn bản",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g6_e10"
+    ],
+    "description": "Định dạng phông, cỡ chữ, màu và đoạn văn trong sổ lưu niệm.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_e12",
+    "title": "Bài 12. Trình bày thông tin ở dạng bảng",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g6_e11"
+    ],
+    "description": "Chèn bảng, gộp ô và căn chỉnh dữ liệu trong văn bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_e13",
+    "title": "Bài 13. Thực hành: Tìm kiếm và thay thế",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g6_e12"
+    ],
+    "description": "Dùng Tìm/Thay thế để sửa nhanh từ hoặc cụm từ trong văn bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_e14",
+    "title": "Bài 14. Thực hành tổng hợp: Hoàn thiện sổ lưu niệm",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 14,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g6_e13"
+    ],
+    "description": "Hoàn thiện sản phẩm sổ lưu niệm: văn bản, bảng, hình ảnh theo rubric.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g6_f15",
+    "title": "Bài 15. Thuật toán",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g6_e14"
+    ],
+    "description": "Mô tả thuật toán bằng các bước tuần tự rõ ràng, có điểm bắt đầu và kết thúc.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g6_f16",
+    "title": "Bài 16. Các cấu trúc điều khiển",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g6_f15"
+    ],
+    "description": "Tuần tự, rẽ nhánh (Nếu–Thì) và lặp trong giải quyết vấn đề.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g6_f17",
+    "title": "Bài 17. Chương trình máy tính",
+    "grade": 6,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g6_f16"
+    ],
+    "description": "Chuyển thuật toán thành chương trình Blockly hoàn chỉnh.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g7_a01",
+    "title": "Bài 1. Thiết bị vào – ra",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Phân biệt thiết bị vào (bàn phím, chuột…) và thiết bị ra (màn hình, loa…).",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_a02",
+    "title": "Bài 2. Phần mềm máy tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [
+      "g7_a01"
+    ],
+    "description": "Hệ điều hành, phần mềm ứng dụng và phần mềm hệ thống.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_a03",
+    "title": "Bài 3. Quản lí dữ liệu trong máy tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [
+      "g7_a02"
+    ],
+    "description": "Tệp, thư mục, phần mở rộng và quy tắc đặt tên dữ liệu.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_b04",
+    "title": "Bài 4. Mạng xã hội và kênh trao đổi trên Internet",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 4,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g7_a03"
+    ],
+    "description": "Mạng xã hội, forum, chat; lợi ích và rủi ro khi trao đổi trực tuyến.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_c05",
+    "title": "Bài 5. Ứng xử trên mạng",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 5,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g7_b04"
+    ],
+    "description": "Ứng xử văn minh, tôn trọng người khác và tránh bắt nạt trên mạng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g7_d06",
+    "title": "Bài 6. Làm quen với phần mềm bảng tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 6,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_c05"
+    ],
+    "description": "Ô, hàng, cột, vùng làm việc và lưu tệp bảng tính.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d07",
+    "title": "Bài 7. Tính toán tự động trên bảng tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 7,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d06"
+    ],
+    "description": "Công thức, tham chiếu ô và tính toán tự động khi dữ liệu đổi.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d08",
+    "title": "Bài 8. Công cụ hỗ trợ tính toán",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 8,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d07"
+    ],
+    "description": "Hàm SUM, AVERAGE và các công cụ tính nhanh trên bảng tính.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d09",
+    "title": "Bài 9. Trình bày bảng tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 9,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d08"
+    ],
+    "description": "Định dạng số, căn lề, viền và màu nền ô dữ liệu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d10",
+    "title": "Bài 10. Hoàn thiện bảng tính",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d09"
+    ],
+    "description": "Kiểm tra công thức, biểu đồ đơn giản và hoàn thiện bảng điểm mẫu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d11",
+    "title": "Bài 11. Tạo bài trình chiếu",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d10"
+    ],
+    "description": "Tạo slide mới, bố cục và nội dung cho bài trình chiếu chủ đề lớp.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d12",
+    "title": "Bài 12. Định dạng đối tượng trên trang chiếu",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d11"
+    ],
+    "description": "Định dạng chữ, hình, hiệu ứng và căn chỉnh đối tượng trên slide.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_d13",
+    "title": "Bài 13. Thực hành tổng hợp: Hoàn thiện bài trình chiếu",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g7_d12"
+    ],
+    "description": "Hoàn thiện bài trình chiếu kết hợp bảng tính theo rubric SGK.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g7_e14",
+    "title": "Bài 14. Thuật toán tìm kiếm tuần tự",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 14,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g7_d13"
+    ],
+    "description": "Duyệt lần lượt từng phần tử để tìm giá trị cần — độ phức tạp O(n).",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g7_e15",
+    "title": "Bài 15. Thuật toán tìm kiếm nhị phân",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g7_e14"
+    ],
+    "description": "Chia đôi dãy đã sắp xếp, so sánh phần tử giữa để thu hẹp vùng tìm.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g7_e16",
+    "title": "Bài 16. Thuật toán sắp xếp",
+    "grade": 7,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g7_e15"
+    ],
+    "description": "Sắp xếp chọn, chèn hoặc nổi bọt — đổi chỗ phần tử để dãy tăng dần.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g8_a01",
+    "title": "Bài 1. Lược sử công cụ tính toán",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Tóm tắt lịch sử phát triển công cụ tính từ cổ đại đến máy tính hiện đại.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_b02",
+    "title": "Bài 2. Thông tin trong môi trường số",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 2,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g8_a01"
+    ],
+    "description": "Nhận biết thông tin số, định dạng tệp và kho tri thức trên Internet.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_b03",
+    "title": "Bài 3. Thực hành: Khai thác thông tin số",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 3,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g8_b02"
+    ],
+    "description": "Tìm, tải và tổ chức thông tin số có ích cho học tập.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_c04",
+    "title": "Bài 4. Đạo đức và văn hóa trong sử dụng công nghệ số",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 4,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g8_b03"
+    ],
+    "description": "Ứng xử có trách nhiệm, tôn trọng bản quyền và văn hóa số.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g8_d05",
+    "title": "Bài 5. Sử dụng bảng tính giải quyết bài toán thực tế",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 5,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_c04"
+    ],
+    "description": "Mô hình hóa bài toán thực tế bằng bảng tính và công thức.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d06",
+    "title": "Bài 6. Sắp xếp và lọc dữ liệu",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 6,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d05"
+    ],
+    "description": "Sắp xếp hàng/cột và lọc dữ liệu theo điều kiện.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d07",
+    "title": "Bài 7. Trình bày dữ liệu bằng biểu đồ",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 7,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d06"
+    ],
+    "description": "Tạo biểu đồ cột, tròn phù hợp dữ liệu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d08a",
+    "title": "Bài 8A. Danh sách liệt kê và hình ảnh trong văn bản",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 8,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d07"
+    ],
+    "description": "Tạo danh sách có thứ tự/không thứ tự và chèn ảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d09a",
+    "title": "Bài 9A. Đầu trang, chân trang cho văn bản",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 9,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d08a"
+    ],
+    "description": "Thiết lập header/footer, số trang trong văn bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d10a",
+    "title": "Bài 10A. Định dạng nâng cao cho trang chiếu",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d09a"
+    ],
+    "description": "Bố cục slide, hiệu ứng và chuyển trang nâng cao.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d11a",
+    "title": "Bài 11A. Bản mẫu tạo bài trình chiếu",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d10a"
+    ],
+    "description": "Dùng template có sẵn để tạo bài trình chiếu nhanh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d08b",
+    "title": "Bài 8B. Phần mềm chỉnh sửa ảnh",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d07"
+    ],
+    "description": "Làm quen giao diện và công cụ chỉnh sửa ảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d09b",
+    "title": "Bài 9B. Thay đổi khung hình, kích thước ảnh",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d08b"
+    ],
+    "description": "Cắt, thay đổi kích thước và tỷ lệ ảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d10b",
+    "title": "Bài 10B. Thêm văn bản, hiệu ứng cho ảnh",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d09b"
+    ],
+    "description": "Chèn chữ, bộ lọc và hiệu ứng lên ảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_d11b",
+    "title": "Bài 11B. Thực hành tổng hợp chỉnh sửa ảnh",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g8_d10b"
+    ],
+    "description": "Hoàn thiện sản phẩm ảnh số theo rubric SGK.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g8_e12",
+    "title": "Bài 12. Từ thuật toán đến chương trình",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g8_d07"
+    ],
+    "description": "Chuyển thuật toán mô tả bằng lời sang chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g8_e13",
+    "title": "Bài 13. Biểu diễn dữ liệu",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g8_e12"
+    ],
+    "description": "Biến và kiểu dữ liệu trong lập trình trực quan.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g8_e14",
+    "title": "Bài 14. Cấu trúc điều khiển",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 18,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g8_e13"
+    ],
+    "description": "Tuần tự, rẽ nhánh và lặp trong chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g8_e15",
+    "title": "Bài 15. Gỡ lỗi",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 19,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g8_e14"
+    ],
+    "description": "Nhận biết lỗi logic/cú pháp và sửa chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g8_f16",
+    "title": "Bài 16. Tin học với nghề nghiệp",
+    "grade": 8,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 6,
+    "lessonNo": 20,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 6,
+    "prerequisite": [
+      "g8_e15"
+    ],
+    "description": "Khám phá nghề liên quan tin học và kỹ năng cần có.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g9_a01",
+    "title": "Bài 1. Thế giới kĩ thuật số",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Máy tính và cộng đồng",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và cộng đồng",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Bối cảnh xã hội số và vai trò công nghệ trong đời sống.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_b02",
+    "title": "Bài 2. Thông tin trong giải quyết vấn đề",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 2,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g9_a01"
+    ],
+    "description": "Thu thập và chọn thông tin phục vụ giải quyết vấn đề.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_b03",
+    "title": "Bài 3. Thực hành: Đánh giá chất lượng thông tin",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 3,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g9_b02"
+    ],
+    "description": "Tiêu chí đánh giá độ tin cậy nguồn thông tin.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_c04",
+    "title": "Bài 4. Vấn đề pháp lí khi sử dụng dịch vụ Internet",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 4,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g9_b03"
+    ],
+    "description": "Quyền, nghĩa vụ và rủi ro pháp lý trên mạng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g9_d05",
+    "title": "Bài 5. Tìm hiểu phần mềm mô phỏng",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 5,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_c04"
+    ],
+    "description": "Làm quen phần mềm mô phỏng trong học tập khoa học.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d06",
+    "title": "Bài 6. Thực hành: Khai thác phần mềm mô phỏng",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 6,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d05"
+    ],
+    "description": "Vận hành mô phỏng và ghi nhận kết quả.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d07",
+    "title": "Bài 7. Trình bày thông tin trong trao đổi và hợp tác",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 7,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d06"
+    ],
+    "description": "Nguyên tắc trình bày khi làm việc nhóm trực tuyến.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d08",
+    "title": "Bài 8. Thực hành: Công cụ trực quan trình bày thông tin",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 8,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d07"
+    ],
+    "description": "Dùng công cụ trực quan hỗ trợ thảo luận nhóm.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d09a",
+    "title": "Bài 9A. Công cụ xác thực dữ liệu",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 9,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d08"
+    ],
+    "description": "Ràng buộc dữ liệu nhập trong bảng tính.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d10a",
+    "title": "Bài 10A. Hàm COUNTIF",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d09a"
+    ],
+    "description": "Đếm ô theo điều kiện bằng COUNTIF.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d11a",
+    "title": "Bài 11A. Hàm SUMIF",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d10a"
+    ],
+    "description": "Tính tổng có điều kiện bằng SUMIF.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d12a",
+    "title": "Bài 12A. Hàm IF",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d11a"
+    ],
+    "description": "Rẽ nhánh tính toán trong bảng tính với IF.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d13a",
+    "title": "Bài 13A. Hoàn thiện bảng tính quản lí tài chính gia đình",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d12a"
+    ],
+    "description": "Dự án bảng tính tài chính tổng hợp.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d09b",
+    "title": "Bài 9B. Chức năng phần mềm làm video",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d08"
+    ],
+    "description": "Giao diện và công cụ cơ bản phần mềm dựng video.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d10b",
+    "title": "Bài 10B. Chuẩn bị dữ liệu và dựng video",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d09b"
+    ],
+    "description": "Chuẩn bị clip, ảnh, âm thanh cho video.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d11b",
+    "title": "Bài 11B. Dựng video theo kịch bản",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 16,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d10b"
+    ],
+    "description": "Cắt ghép và sắp xếp cảnh theo kịch bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d12b",
+    "title": "Bài 12B. Hoàn thành việc dựng video",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 17,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d11b"
+    ],
+    "description": "Hoàn thiện timeline và hiệu ứng chuyển cảnh.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_d13b",
+    "title": "Bài 13B. Biên tập và xuất video",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 18,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g9_d12b"
+    ],
+    "description": "Biên tập, xuất file video định dạng phù hợp.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g9_e14",
+    "title": "Bài 14. Giải quyết vấn đề",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 19,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g9_d08"
+    ],
+    "description": "Mô hình hóa bài toán và thiết kế thuật toán.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g9_e15",
+    "title": "Bài 15. Bài toán tin học",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 20,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g9_e14"
+    ],
+    "description": "Phân loại bài toán và lựa chọn cấu trúc dữ liệu phù hợp.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g9_e16",
+    "title": "Bài 16. Thực hành: Lập chương trình máy tính",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 21,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g9_e15"
+    ],
+    "description": "Viết chương trình tổng hợp từ thuật toán đã thiết kế.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g9_f17",
+    "title": "Bài 17. Tin học và thế giới nghề nghiệp",
+    "grade": 9,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 6,
+    "lessonNo": 22,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 6,
+    "prerequisite": [
+      "g9_e16"
+    ],
+    "description": "Định hướng nghề nghiệp liên quan CNTT.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_a01",
+    "title": "Bài 1. Thông tin và xử lý thông tin",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Khái niệm thông tin, dữ liệu và quy trình xử lý.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a02",
+    "title": "Bài 2. Thiết bị thông minh và tin học với xã hội",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a01"
+    ],
+    "description": "IoT, thiết bị thông minh và tác động xã hội.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a03",
+    "title": "Bài 3. Kiểu dữ liệu và dữ liệu văn bản",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a02"
+    ],
+    "description": "Kiểu số, chuỗi, logic trong lập trình.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a04",
+    "title": "Bài 4. Hệ nhị phân và dữ liệu số nguyên",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 4,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a03"
+    ],
+    "description": "Chuyển đổi nhị phân – thập phân; biểu diễn số nguyên.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a05",
+    "title": "Bài 5. Dữ liệu lôgic",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 5,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a04"
+    ],
+    "description": "Giá trị True/False và phép toán logic.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a06",
+    "title": "Bài 6. Dữ liệu âm thanh và hình ảnh",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 6,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a05"
+    ],
+    "description": "Số hóa âm thanh, ảnh; định dạng tệp đa phương tiện.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_a07",
+    "title": "Bài 7. Thực hành sử dụng thiết bị số thông dụng",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 7,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g10_a06"
+    ],
+    "description": "Thao tác smartphone, máy ảnh số an toàn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_b08",
+    "title": "Bài 8. Mạng máy tính trong cuộc sống hiện đại",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 8,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g10_a07"
+    ],
+    "description": "Mạng có dây/không dây trong gia đình và trường học.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_b09",
+    "title": "Bài 9. An toàn trên không gian mạng",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 9,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g10_b08"
+    ],
+    "description": "Mã hóa, mật khẩu mạnh và bảo vệ tài khoản.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_b10",
+    "title": "Bài 10. Thực hành khai thác tài nguyên trên Internet",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 10,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g10_b09"
+    ],
+    "description": "Tìm và đánh giá tài nguyên học tập trực tuyến.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_c11",
+    "title": "Bài 11. Ứng xử trên môi trường số và bản quyền",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 11,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g10_b10"
+    ],
+    "description": "Ứng xử văn minh và nghĩa vụ tôn trọng bản quyền.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g10_d12",
+    "title": "Bài 12. Phần mềm thiết kế đồ họa",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g10_c11"
+    ],
+    "description": "Làm quen vector/raster và công cụ đồ họa.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_d13",
+    "title": "Bài 13. Bổ sung các đối tượng đồ họa",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g10_d12"
+    ],
+    "description": "Vẽ hình cơ bản, chèn icon và clipart.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_d14",
+    "title": "Bài 14. Đối tượng đường và văn bản",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g10_d13"
+    ],
+    "description": "Đường thẳng, đường cong và text trên canvas.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_d15",
+    "title": "Bài 15. Hoàn thiện hình ảnh đồ họa",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Ứng dụng tin học",
+    "level": 4,
+    "prerequisite": [
+      "g10_d14"
+    ],
+    "description": "Xuất file ảnh và hoàn thiện poster theo rubric.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g10_e16",
+    "title": "Bài 16. Ngôn ngữ lập trình Python",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_d15"
+    ],
+    "description": "Làm quen Python và môi trường lập trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e17",
+    "title": "Bài 17. Biến và lệnh gán",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e16"
+    ],
+    "description": "Khai báo biến, gán giá trị trong Python.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e18",
+    "title": "Bài 18. Lệnh vào ra đơn giản",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 18,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e17"
+    ],
+    "description": "input(), print() và định dạng xuất.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e19",
+    "title": "Bài 19. Câu lệnh rẽ nhánh if",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 19,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e18"
+    ],
+    "description": "if, elif, else trong Python.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e20",
+    "title": "Bài 20. Câu lệnh lặp for",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 20,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e19"
+    ],
+    "description": "Vòng lặp for với range và iterable.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e21",
+    "title": "Bài 21. Câu lệnh lặp while",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 21,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e20"
+    ],
+    "description": "Vòng lặp while và điều kiện dừng.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e22",
+    "title": "Bài 22. Kiểu dữ liệu danh sách",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 22,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e21"
+    ],
+    "description": "List, indexing, slicing trong Python.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e23",
+    "title": "Bài 23. Lệnh làm việc với danh sách",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 23,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e22"
+    ],
+    "description": "append, insert, remove và duyệt list.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e24",
+    "title": "Bài 24. Xâu kí tự",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 24,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e23"
+    ],
+    "description": "Chuỗi và thao tác cơ bản trên string.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e25",
+    "title": "Bài 25. Lệnh làm việc với xâu kí tự",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 25,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e24"
+    ],
+    "description": "len, split, join và tìm chuỗi con.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e26",
+    "title": "Bài 26. Hàm trong Python",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 26,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e25"
+    ],
+    "description": "Định nghĩa hàm def và return.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e27",
+    "title": "Bài 27. Tham số của hàm",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 27,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e26"
+    ],
+    "description": "Tham số, đối số và giá trị mặc định.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e28",
+    "title": "Bài 28. Phạm vi của biến",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 28,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e27"
+    ],
+    "description": "Biến cục bộ, toàn cục trong hàm.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e29",
+    "title": "Bài 29. Nhận biết lỗi chương trình",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 29,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e28"
+    ],
+    "description": "SyntaxError, RuntimeError và traceback.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e30",
+    "title": "Bài 30. Kiểm thử và gỡ lỗi",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 30,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e29"
+    ],
+    "description": "Test case và kỹ thuật debug cơ bản.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e31",
+    "title": "Bài 31. Thực hành viết chương trình đơn giản",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 31,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e30"
+    ],
+    "description": "Hoàn thiện chương trình Python theo đề bài.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_e32",
+    "title": "Bài 32. Ôn tập lập trình Python",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 5,
+    "lessonNo": 32,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 5,
+    "prerequisite": [
+      "g10_e31"
+    ],
+    "description": "Ôn tập biến, rẽ nhánh, lặp, list, hàm.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_f33",
+    "title": "Bài 33. Nghề thiết kế đồ họa máy tính",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 6,
+    "lessonNo": 33,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 6,
+    "prerequisite": [
+      "g10_e32"
+    ],
+    "description": "Định hướng nghề thiết kế đồ họa số.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g10_f34",
+    "title": "Bài 34. Nghề phát triển phần mềm",
+    "grade": 10,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 6,
+    "lessonNo": 34,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 6,
+    "prerequisite": [
+      "g10_f33"
+    ],
+    "description": "Định hướng nghề lập trình viên.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_a01",
+    "title": "Bài 1. Hệ điều hành",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Vai trò HĐH và quản lý tài nguyên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_a02",
+    "title": "Bài 2. Thực hành sử dụng hệ điều hành",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g11_a01"
+    ],
+    "description": "Thao tác file, process và cài đặt cơ bản.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_a03",
+    "title": "Bài 3. Phần mềm nguồn mở và phần mềm Internet",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 3,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g11_a02"
+    ],
+    "description": "Phần mềm mã nguồn mở và ứng dụng web.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_a04",
+    "title": "Bài 4. Bên trong máy tính",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 4,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g11_a03"
+    ],
+    "description": "CPU, RAM, bus và nguyên lý hoạt động.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_a05",
+    "title": "Bài 5. Kết nối máy tính với thiết bị số",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 5,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g11_a04"
+    ],
+    "description": "Cổng USB, Bluetooth và driver thiết bị.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_b06",
+    "title": "Bài 6. Lưu trữ và chia sẻ tệp trên Internet",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 6,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g11_a05"
+    ],
+    "description": "Cloud storage và chia sẻ quyền truy cập.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_b07",
+    "title": "Bài 7. Thực hành tìm kiếm thông tin trên Internet",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 7,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g11_b06"
+    ],
+    "description": "Kỹ thuật tìm kiếm nâng cao và đánh giá nguồn.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_b08",
+    "title": "Bài 8. Thực hành email và mạng xã hội",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 2,
+    "lessonNo": 8,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 2,
+    "prerequisite": [
+      "g11_b07"
+    ],
+    "description": "Email, mạng xã hội an toàn và hiệu quả.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_c09",
+    "title": "Bài 9. Giao tiếp an toàn trên Internet",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 9,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g11_b08"
+    ],
+    "description": "Bảo mật thông tin khi giao tiếp trực tuyến.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g11_d10",
+    "title": "Bài 10. Lưu trữ dữ liệu phục vụ quản lí",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_c09"
+    ],
+    "description": "Tổ chức dữ liệu phục vụ quản lý.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_d11",
+    "title": "Bài 11. Cơ sở dữ liệu",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 11,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_d10"
+    ],
+    "description": "Khái niệm CSDL, bảng, bản ghi và trường.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_d12",
+    "title": "Bài 12. Hệ quản trị CSDL và hệ CSDL",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_d11"
+    ],
+    "description": "DBMS và mô hình lưu trữ dữ liệu.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_d13",
+    "title": "Bài 13. Cơ sở dữ liệu quan hệ",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_d12"
+    ],
+    "description": "Khóa chính, khóa ngoại và quan hệ bảng.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_d14",
+    "title": "Bài 14. SQL – ngôn ngữ truy vấn",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_d13"
+    ],
+    "description": "SELECT, INSERT, UPDATE cơ bản.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_d15",
+    "title": "Bài 15. Bảo mật và an toàn CSDL",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Giới thiệu các hệ cơ sở dữ liệu",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Giới thiệu các hệ cơ sở dữ liệu",
+    "level": 4,
+    "prerequisite": [
+      "g11_d14"
+    ],
+    "description": "Phân quyền, sao lưu và bảo vệ dữ liệu.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g11_e16",
+    "title": "Bài 16. Công việc quản trị CSDL",
+    "grade": 11,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 5,
+    "lessonNo": 16,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 5,
+    "prerequisite": [
+      "g11_d15"
+    ],
+    "description": "Nghề quản trị cơ sở dữ liệu.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f17",
+    "title": "Bài 17. Dữ liệu mảng một chiều và hai chiều",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 17,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_e16"
+    ],
+    "description": "Mảng 1D, 2D trong lập trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g17",
+    "title": "Bài 17. Quản trị cơ sở dữ liệu trên máy tính",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 17,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11_e16"
+    ],
+    "description": "Làm quen giao diện quản trị CSDL trên máy (Access/MySQL…).",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f18",
+    "title": "Bài 18. Thực hành dữ liệu mảng",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 18,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f17"
+    ],
+    "description": "Thao tác duyệt và xử lý mảng.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g18",
+    "title": "Bài 18. Thực hành xác định cấu trúc bảng và các trường khóa",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 18,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g17"
+    ],
+    "description": "Thiết kế bảng: khóa chính, khóa ngoại.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f19",
+    "title": "Bài 19. Bài toán tìm kiếm",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 19,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f18"
+    ],
+    "description": "Thuật toán tìm kiếm tuần tự và nhị phân.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g19",
+    "title": "Bài 19. Thực hành tạo lập cơ sở dữ liệu và các bảng",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 19,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g18"
+    ],
+    "description": "Tạo CSDL mới và các bảng theo mô hình.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f20",
+    "title": "Bài 20. Thực hành bài toán tìm kiếm",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 20,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f19"
+    ],
+    "description": "Cài đặt tìm kiếm trên mảng.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g20",
+    "title": "Bài 20. Thực hành tạo lập các bảng có khóa ngoài",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 20,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g19"
+    ],
+    "description": "Liên kết bảng bằng khóa ngoại.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f21",
+    "title": "Bài 21. Thuật toán sắp xếp đơn giản",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 21,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f20"
+    ],
+    "description": "Sắp xếp chọn, chèn, nổi bọt.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g21",
+    "title": "Bài 21. Thực hành cập nhật và truy xuất dữ liệu các bảng",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 21,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g20"
+    ],
+    "description": "INSERT, UPDATE, SELECT trên bảng đơn.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f22",
+    "title": "Bài 22. Thực hành bài toán sắp xếp",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 22,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f21"
+    ],
+    "description": "Cài đặt sắp xếp trên mảng.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g22",
+    "title": "Bài 22. Thực hành cập nhật bảng dữ liệu có tham chiếu",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 22,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g21"
+    ],
+    "description": "Cập nhật dữ liệu có ràng buộc tham chiếu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f23",
+    "title": "Bài 23. Kiểm thử và đánh giá chương trình",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 23,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f22"
+    ],
+    "description": "Test case và đánh giá kết quả.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g23",
+    "title": "Bài 23. Thực hành truy xuất dữ liệu qua liên kết các bảng",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 23,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g22"
+    ],
+    "description": "JOIN/truy vấn nhiều bảng.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f24",
+    "title": "Bài 24. Độ phức tạp thời gian thuật toán",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 24,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f23"
+    ],
+    "description": "Big-O cơ bản: O(n), O(n²), O(log n).",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g24",
+    "title": "Bài 24. Thực hành sao lưu dữ liệu",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "chapterIndex": 6,
+    "lessonNo": 24,
+    "domain": "Thực hành tạo và khai thác cơ sở dữ liệu",
+    "level": 6,
+    "prerequisite": [
+      "g11ict_g23"
+    ],
+    "description": "Sao lưu và khôi phục CSDL.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f25",
+    "title": "Bài 25. Thực hành xác định độ phức tạp",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 25,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f24"
+    ],
+    "description": "Ước lượng độ phức tạp thuật toán.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f26",
+    "title": "Bài 26. Làm mịn dần trong thiết kế chương trình",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 26,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f25"
+    ],
+    "description": "Top-down design và stepwise refinement.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f27",
+    "title": "Bài 27. Thực hành thiết kế làm mịn dần",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 27,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f26"
+    ],
+    "description": "Áp dụng làm mịn dần cho bài toán.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f28",
+    "title": "Bài 28. Thiết kế chương trình theo mô đun",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 28,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f27"
+    ],
+    "description": "Chia chương trình thành module/hàm.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f29",
+    "title": "Bài 29. Thực hành thiết kế mô đun",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 29,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f28"
+    ],
+    "description": "Viết chương trình đa module.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f30",
+    "title": "Bài 30. Thiết lập thư viện cho chương trình",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 30,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f29"
+    ],
+    "description": "Import module và thư viện chuẩn.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11_f31",
+    "title": "Bài 31. Thực hành thiết lập thư viện",
+    "grade": 11,
+    "book": "KNTT-CS",
+    "chapter": "Kĩ thuật lập trình",
+    "chapterIndex": 6,
+    "lessonNo": 31,
+    "domain": "Kĩ thuật lập trình",
+    "level": 6,
+    "prerequisite": [
+      "g11_f30"
+    ],
+    "description": "Dùng thư viện trong dự án nhỏ.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g25",
+    "title": "Bài 25. Phần mềm chỉnh sửa ảnh",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 25,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g24"
+    ],
+    "description": "Giao diện và công cụ chỉnh sửa ảnh chuyên nghiệp.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g26",
+    "title": "Bài 26. Công cụ tinh chỉnh màu sắc và công cụ chọn",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 26,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g25"
+    ],
+    "description": "Chọn vùng, chỉnh sáng/tương phản/màu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g27",
+    "title": "Bài 27. Công cụ vẽ và một số ứng dụng",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 27,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g26"
+    ],
+    "description": "Bút vẽ, lớp và ứng dụng đồ họa.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g28",
+    "title": "Bài 28. Tạo ảnh động",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 28,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g27"
+    ],
+    "description": "GIF/animation từ nhiều khung hình.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g29",
+    "title": "Bài 29. Khám phá phần mềm làm phim",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 29,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g28"
+    ],
+    "description": "Timeline, clip và hiệu ứng trong phần mềm dựng phim.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g30",
+    "title": "Bài 30. Biên tập phim",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 30,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g29"
+    ],
+    "description": "Cắt ghép, âm thanh và chữ trên video.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g11ict_g31",
+    "title": "Bài 31. Thực hành tạo phim hoạt hình",
+    "grade": 11,
+    "book": "KNTT-ICT",
+    "chapter": "Phần mềm chỉnh sửa ảnh và làm video",
+    "chapterIndex": 7,
+    "lessonNo": 31,
+    "domain": "Phần mềm chỉnh sửa ảnh và làm video",
+    "level": 7,
+    "prerequisite": [
+      "g11ict_g30"
+    ],
+    "description": "Hoàn thiện phim hoạt hình ngắn theo kịch bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_a01",
+    "title": "Bài 1. Làm quen với Trí tuệ nhân tạo",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Khái niệm AI và ứng dụng trong đời sống.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_a02",
+    "title": "Bài 2. AI trong khoa học và đời sống",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 1,
+    "lessonNo": 2,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 1,
+    "prerequisite": [
+      "g12_a01"
+    ],
+    "description": "Ví dụ AI: nhận dạng, gợi ý, xe tự lái.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_b03",
+    "title": "Bài 3. Thiết bị mạng thông dụng",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 3,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g12_a02"
+    ],
+    "description": "Switch, router, modem và cáp mạng.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_b04",
+    "title": "Bài 4. Giao thức mạng",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 4,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g12_b03"
+    ],
+    "description": "TCP/IP, HTTP và vai trò giao thức.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_b05",
+    "title": "Bài 5. Thực hành chia sẻ tài nguyên trên mạng",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 5,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g12_b04"
+    ],
+    "description": "Chia sẻ tệp và máy in trong mạng LAN.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_c06",
+    "title": "Bài 6. Giao tiếp và ứng xử trong không gian mạng",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "chapterIndex": 3,
+    "lessonNo": 6,
+    "domain": "Đạo đức, pháp luật và văn hóa trong môi trường số",
+    "level": 3,
+    "prerequisite": [
+      "g12_b05"
+    ],
+    "description": "Ứng xử và bảo vệ danh tiếng số.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g12_d07",
+    "title": "Bài 7. HTML và cấu trúc trang web",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 7,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_c06"
+    ],
+    "description": "Thẻ HTML cơ bản: html, head, body, p, h1.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d08",
+    "title": "Bài 8. Định dạng văn bản HTML",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 8,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d07"
+    ],
+    "description": "Thẻ strong, em, br và đoạn văn.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d09",
+    "title": "Bài 9. Danh sách và bảng HTML",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 9,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d08"
+    ],
+    "description": "ul, ol, table, tr, td.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d10",
+    "title": "Bài 10. Tạo liên kết",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 10,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d09"
+    ],
+    "description": "Thẻ a href và liên kết nội/ngoại.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d11",
+    "title": "Bài 11. Chèn đa phương tiện và iframe",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 11,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d10"
+    ],
+    "description": "img, audio, video và iframe.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d12",
+    "title": "Bài 12. Tạo biểu mẫu",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 12,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d11"
+    ],
+    "description": "form, input, textarea, button.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d13",
+    "title": "Bài 13. Khái niệm và vai trò CSS",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 13,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d12"
+    ],
+    "description": "Tách style; selector và rule CSS.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d14",
+    "title": "Bài 14. Định dạng văn bản bằng CSS",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 14,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d13"
+    ],
+    "description": "font, color, text-align trong CSS.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d15",
+    "title": "Bài 15. Màu chữ và nền CSS",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d14"
+    ],
+    "description": "color, background-color, background-image.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d16",
+    "title": "Bài 16. Định dạng khung CSS",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d15"
+    ],
+    "description": "border, margin, padding, box model.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d17",
+    "title": "Bài 17. Mức ưu tiên bộ chọn CSS",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d16"
+    ],
+    "description": "Specificity và cascade.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_d18",
+    "title": "Bài 18. Thực hành tổng hợp thiết kế trang web",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 4,
+    "lessonNo": 18,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 4,
+    "prerequisite": [
+      "g12_d17"
+    ],
+    "description": "Hoàn thiện trang web HTML+CSS.",
+    "streams": [
+      "ICT",
+      "DL"
+    ],
+    "competencies": [
+      "NLa",
+      "NTh"
+    ]
+  },
+  {
+    "id": "g12_e19",
+    "title": "Bài 19. Dịch vụ sửa chữa và bảo trì máy tính",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 5,
+    "lessonNo": 19,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 5,
+    "prerequisite": [
+      "g12_d18"
+    ],
+    "description": "Nghề kỹ thuật viên máy tính.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_e20",
+    "title": "Bài 20. Nghề quản trị CNTT",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 5,
+    "lessonNo": 20,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 5,
+    "prerequisite": [
+      "g12_e19"
+    ],
+    "description": "Nhóm nghề quản trị hệ thống.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_e21",
+    "title": "Bài 21. Hội thảo hướng nghiệp",
+    "grade": 12,
+    "book": "KNTT",
+    "chapter": "Hướng nghiệp với tin học",
+    "chapterIndex": 5,
+    "lessonNo": 21,
+    "domain": "Hướng nghiệp với tin học",
+    "level": 5,
+    "prerequisite": [
+      "g12_e20"
+    ],
+    "description": "Tổng kết định hướng nghề nghiệp tin học.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_f22",
+    "title": "Bài 22. Tìm hiểu thiết bị mạng",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 6,
+    "lessonNo": 22,
+    "domain": "Mạng máy tính và Internet",
+    "level": 6,
+    "prerequisite": [
+      "g12_e21"
+    ],
+    "description": "Router, switch, access point và topology mạng.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_g22",
+    "title": "Bài 22. Thực hành kết nối các thiết bị số",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Máy tính và xã hội tri thức",
+    "chapterIndex": 6,
+    "lessonNo": 22,
+    "domain": "Máy tính và xã hội tri thức",
+    "level": 6,
+    "prerequisite": [
+      "g12_e21"
+    ],
+    "description": "Bluetooth, thiết bị thông minh và kết nối IoT cơ bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_f23",
+    "title": "Bài 23. Đường truyền mạng và ứng dụng",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 6,
+    "lessonNo": 23,
+    "domain": "Mạng máy tính và Internet",
+    "level": 6,
+    "prerequisite": [
+      "g12_f22"
+    ],
+    "description": "Cáp quang, Wi-Fi, băng thông và ứng dụng thực tế.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_f24",
+    "title": "Bài 24. Sơ bộ về thiết kế mạng",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 6,
+    "lessonNo": 24,
+    "domain": "Mạng máy tính và Internet",
+    "level": 6,
+    "prerequisite": [
+      "g12_f23"
+    ],
+    "description": "Sơ đồ mạng LAN và lựa chọn thiết bị cho trường/lớp.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h23",
+    "title": "Bài 23. Chuẩn bị xây dựng trang web",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 23,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_g22"
+    ],
+    "description": "Kế hoạch, wireframe và cấu trúc trang theo SGK.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h24",
+    "title": "Bài 24. Xây dựng phần đầu trang web",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 24,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_h23"
+    ],
+    "description": "Thẻ header, tiêu đề và phần đầu trang HTML.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g25",
+    "title": "Bài 25. Làm quen với Học máy",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 25,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_f24"
+    ],
+    "description": "Khái niệm học máy, dữ liệu huấn luyện và mô hình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h25",
+    "title": "Bài 25. Xây dựng phần thân và chân trang web",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 25,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_h24"
+    ],
+    "description": "Nội dung chính, footer và bố cục trang.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g26",
+    "title": "Bài 26. Làm quen với Khoa học dữ liệu",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 26,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_g25"
+    ],
+    "description": "Big data, pipeline dữ liệu và vai trò khoa học dữ liệu.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h26",
+    "title": "Bài 26. Liên kết và thanh điều hướng",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 26,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_h25"
+    ],
+    "description": "Menu nav, liên kết nội bộ và liên kết ngoài.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g27",
+    "title": "Bài 27. Máy tính và Khoa học dữ liệu",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 27,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_g26"
+    ],
+    "description": "Công cụ phân tích dữ liệu và trực quan hóa cơ bản.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h27",
+    "title": "Bài 27. Biểu mẫu trên trang web",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 27,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_h26"
+    ],
+    "description": "Form, input, textarea và nút gửi dữ liệu.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g28",
+    "title": "Bài 28. Thực hành trích rút thông tin và tri thức",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 28,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_g27"
+    ],
+    "description": "Khai thác dữ liệu, tìm mẫu và rút ra tri thức.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12ict_h28",
+    "title": "Bài 28. Thực hành tổng hợp",
+    "grade": 12,
+    "book": "KNTT-ICT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 7,
+    "lessonNo": 28,
+    "domain": "Ứng dụng tin học",
+    "level": 7,
+    "prerequisite": [
+      "g12ict_h27"
+    ],
+    "description": "Hoàn thiện website theo rubric SGK nhánh ứng dụng.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g29",
+    "title": "Bài 29. Mô phỏng trong giải quyết vấn đề",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 29,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_g28"
+    ],
+    "description": "Mô hình mô phỏng và tham số hóa bài toán.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
+    ]
+  },
+  {
+    "id": "g12_g30",
+    "title": "Bài 30. Ứng dụng mô phỏng trong giáo dục",
+    "grade": 12,
+    "book": "KNTT-CS",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 7,
+    "lessonNo": 30,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 7,
+    "prerequisite": [
+      "g12_g29"
+    ],
+    "description": "Phần mềm mô phỏng hỗ trợ dạy học khoa học.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc",
+      "NLd"
     ]
   }
 ]

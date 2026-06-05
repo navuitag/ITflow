@@ -27,6 +27,12 @@ import {
   bindBlocklyLab,
   disposeBlocklyLab
 } from "../../modules/blocklyLab.js";
+import {
+  isInputLab,
+  renderInputLab,
+  bindInputLab,
+  disposeInputLab
+} from "../../modules/inputLab.js";
 import { getGamificationSummary } from "../../modules/gamification.js";
 import { getOverallAccuracy, getSkillProgress, getWeakSkills, getLabForSkill } from "../../modules/progress.js";
 
@@ -39,6 +45,7 @@ let data = {
 };
 
 let disposeBlockly = null;
+let disposeInput = null;
 
 export function configureRouter(appData) {
   data = appData;
@@ -55,6 +62,11 @@ export function renderRoute() {
     disposeBlockly();
     disposeBlockly = null;
     disposeBlocklyLab();
+  }
+  if (disposeInput && route !== "lab") {
+    disposeInput();
+    disposeInput = null;
+    disposeInputLab();
   }
 
   if (!state.onboarded) {
@@ -429,6 +441,10 @@ function renderLab(skillId, state) {
     return renderBlocklyLab(lab, skill, escapeHtml);
   }
 
+  if (isInputLab(lab)) {
+    return renderInputLab(lab, skill, escapeHtml);
+  }
+
   const progress = getLabProgress(lab, state);
 
   return `
@@ -475,6 +491,22 @@ async function bindLab(skillId) {
         showModal({
           title: "Hoàn thành thực hành Blockly",
           body: `+${lab.xp} XP. Bạn đã hoàn thành lập trình trực quan cho bài này.`,
+          actionLabel: "Tiếp tục",
+          onAction: () => setRoute("#/skills")
+        });
+      }
+    });
+    return;
+  }
+
+  if (isInputLab(lab)) {
+    disposeInput = bindInputLab(lab, {
+      escapeHtml,
+      onPassed: () => {
+        completeLab(lab);
+        showModal({
+          title: "Hoàn thành mô phỏng",
+          body: `+${lab.xp} XP. Em đã luyện xong thao tác chuột/bàn phím.`,
           actionLabel: "Tiếp tục",
           onAction: () => setRoute("#/skills")
         });

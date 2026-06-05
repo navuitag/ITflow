@@ -1,29 +1,299 @@
 [
   {
-    "skill": "g5_c04",
-    "pattern": "desktop",
-    "errorType": "file_organization",
-    "title": "Lưu tệp không đúng chỗ",
-    "message": "Lưu mọi tệp trên Desktop khiến khó tìm và dễ xóa nhầm.",
-    "hint": "Tạo thư mục theo môn/chủ đề và đặt tên tệp có nghĩa.",
-    "recommendation": "g5_c04"
-  },
-  {
-    "skill": "g5_d05",
-    "pattern": "sao",
-    "errorType": "copyright",
-    "title": "Sao chép khi chưa được phép",
-    "message": "Dùng ảnh/nhạc/video của người khác mà không xin phép vi phạm bản quyền.",
-    "hint": "Chỉ dùng tài nguyên miễn phí có giấy phép hoặc tự tạo.",
-    "recommendation": "g5_d05"
-  },
-  {
-    "skill": "g5_f11",
+    "skill": "g4_f15",
     "pattern": "lap",
     "errorType": "loop_logic",
     "title": "Vòng lặp chưa đúng",
-    "message": "Số lần lặp hoặc điều kiện dừng chưa khớp với bài toán.",
-    "hint": "Xác định biến đếm và điều kiện kết thúc trước khi ghép khối lặp.",
-    "recommendation": "g5_f11"
+    "message": "Số lần lặp hoặc lệnh trong thân lặp chưa khớp kịch bản.",
+    "hint": "Xác định việc cần lặp bao nhiêu lần trước khi ghép khối.",
+    "recommendation": "g4_f15"
+  },
+  {
+    "skill": "g1_a03",
+    "pattern": "sat",
+    "errorType": "posture",
+    "title": "Ngồi quá sát màn hình",
+    "message": "Ngồi sát màn hình dễ mỏi mắt và đau cổ.",
+    "hint": "Lùi ghế, mắt cách màn hình khoảng một gang tay.",
+    "recommendation": "g1_a03"
+  },
+  {
+    "skill": "g1_b06",
+    "pattern": "dup",
+    "errorType": "mouse",
+    "title": "Nhầm nháy và nháy đúp",
+    "message": "Nháy đúp khi chỉ cần nháy một lần sẽ mở nhầm chương trình.",
+    "hint": "Nháy nhẹ một lần, đợi một nhịp rồi mới nháy tiếp.",
+    "recommendation": "g1_b06"
+  },
+  {
+    "skill": "g1_c11",
+    "pattern": "nhin",
+    "errorType": "typing",
+    "title": "Nhìn xuống bàn phím quá nhiều",
+    "message": "Nhìn phím khiến gõ chậm và khó nhớ vị trí phím.",
+    "hint": "Nhìn màn hình, chỉ liếc xuống khi cần.",
+    "recommendation": "g1_c11"
+  },
+  {
+    "skill": "g2_a02",
+    "pattern": "dup",
+    "errorType": "mouse",
+    "title": "Nhầm nháy và nháy đúp",
+    "message": "Nháy đúp khi chỉ cần nháy một lần sẽ mở nhầm chương trình.",
+    "hint": "Nháy nhẹ một lần; chỉ nháy đúp khi mở phần mềm.",
+    "recommendation": "g2_a02"
+  },
+  {
+    "skill": "g2_c06",
+    "pattern": "nhin",
+    "errorType": "typing",
+    "title": "Nhìn xuống bàn phím quá nhiều",
+    "message": "Nhìn phím khiến gõ chậm và khó nhớ vị trí.",
+    "hint": "Nhìn màn hình Rapid Typing, chỉ liếc phím khi cần.",
+    "recommendation": "g2_c06"
+  },
+  {
+    "skill": "g2_d09",
+    "pattern": "mat khau",
+    "errorType": "safety",
+    "title": "Chia sẻ thông tin cá nhân trên mạng",
+    "message": "Đưa mật khẩu hoặc địa chỉ cho người lạ rất nguy hiểm.",
+    "hint": "Chỉ học trên website giáo viên cho phép; hỏi người lớn khi nghi ngờ.",
+    "recommendation": "g2_d09"
+  },
+  {
+    "skill": "g3_c07",
+    "pattern": "bai",
+    "errorType": "file_naming",
+    "title": "Đặt tên tệp không rõ nghĩa",
+    "message": "Tên như «bai1.doc» khó tìm khi có nhiều môn học.",
+    "hint": "Dùng tên có môn + chủ đề, ví dụ: tin_bai7_thumuc.",
+    "recommendation": "g3_c07"
+  },
+  {
+    "skill": "g3_d10",
+    "pattern": "mat khau",
+    "errorType": "privacy",
+    "title": "Lộ mật khẩu hoặc thông tin riêng",
+    "message": "Chia sẻ mật khẩu khiến tài khoản dễ bị xâm nhập.",
+    "hint": "Giữ mật khẩu bí mật; đăng xuất sau khi dùng máy chung.",
+    "recommendation": "g3_d10"
+  },
+  {
+    "skill": "g3_f14",
+    "pattern": "buoc",
+    "errorType": "algorithm",
+    "title": "Thiếu bước trong thuật toán",
+    "message": "Bỏ qua bước khiến công việc không hoàn thành đúng.",
+    "hint": "Liệt kê đủ bước tuần tự trước khi ghép khối Blockly.",
+    "recommendation": "g3_f14"
+  },
+  {
+    "skill": "g4_d06",
+    "pattern": "crack",
+    "errorType": "copyright",
+    "title": "Dùng phần mềm không bản quyền",
+    "message": "Cài phần mềm lậu vi phạm pháp luật và có thể chứa virus.",
+    "hint": "Chỉ dùng phần mềm được cấp phép hoặc miễn phí hợp pháp.",
+    "recommendation": "g4_d06"
+  },
+  {
+    "skill": "g4_c05",
+    "pattern": "xoa",
+    "errorType": "file_ops",
+    "title": "Xóa nhầm tệp quan trọng",
+    "message": "Xóa tệp không qua Thùng rác sẽ khó khôi phục.",
+    "hint": "Kiểm tra tên tệp trước khi xóa; sao lưu bài quan trọng.",
+    "recommendation": "g4_c05"
+  },
+  {
+    "skill": "g6_d09",
+    "pattern": "link",
+    "errorType": "phishing",
+    "title": "Nhấp link lạ trên Internet",
+    "message": "Link giả mạo có thể đánh cắp tài khoản hoặc cài phần mềm độc hại.",
+    "hint": "Không nhấp link lạ; kiểm tra địa chỉ và hỏi người lớn.",
+    "recommendation": "g6_d09"
+  },
+  {
+    "skill": "g6_c08",
+    "pattern": "cc",
+    "errorType": "email",
+    "title": "Gửi email không phù hợp",
+    "message": "Gửi email cho người lạ hoặc đính kèm file không rõ nguồn gây rủi ro.",
+    "hint": "Chỉ gửi cho người nhận cần thiết; không đính kèm file lạ.",
+    "recommendation": "g6_c08"
+  },
+  {
+    "skill": "g6_f16",
+    "pattern": "lap",
+    "errorType": "loop_logic",
+    "title": "Vòng lặp chưa khớp thuật toán",
+    "message": "Số lần lặp hoặc lệnh trong thân lặp chưa đúng với bài toán.",
+    "hint": "Xác định việc cần lặp bao nhiêu lần trước khi ghép khối.",
+    "recommendation": "g6_f16"
+  },
+  {
+    "skill": "g7_c05",
+    "pattern": "chui",
+    "errorType": "cyberbullying",
+    "title": "Xúc phạm hoặc bắt nạt trên mạng",
+    "message": "Bình luận, meme chế nhạo bạn bè gây tổn thương và vi phạm quy tắc ứng xử.",
+    "hint": "Dừng ngay; xin lỗi nếu cần; báo giáo viên hoặc phụ huynh.",
+    "recommendation": "g7_c05"
+  },
+  {
+    "skill": "g7_b04",
+    "pattern": "dang",
+    "errorType": "privacy",
+    "title": "Đăng thông tin riêng tư lên mạng xã hội",
+    "message": "Địa chỉ, số điện thoại, ảnh riêng tư có thể bị lợi dụng.",
+    "hint": "Chỉ chia sẻ với người tin cậy; kiểm tra cài đặt quyền riêng tư.",
+    "recommendation": "g7_b04"
+  },
+  {
+    "skill": "g7_d07",
+    "pattern": "cong thuc",
+    "errorType": "spreadsheet",
+    "title": "Công thức bảng tính sai",
+    "message": "Thiếu dấu = hoặc tham chiếu ô sai khiến kết quả không đúng.",
+    "hint": "Bắt đầu công thức bằng =; kiểm tra A1, B1… khi sao chép.",
+    "recommendation": "g7_d07"
+  },
+  {
+    "skill": "g8_c04",
+    "pattern": "sao",
+    "errorType": "copyright",
+    "title": "Sao chép tài liệu số trái phép",
+    "message": "Dùng ảnh/nhạc không phép vi phạm bản quyền.",
+    "hint": "Chỉ dùng tài nguyên được phép.",
+    "recommendation": "g8_c04"
+  },
+  {
+    "skill": "g8_e15",
+    "pattern": "loi",
+    "errorType": "debug",
+    "title": "Chưa gỡ lỗi chương trình",
+    "message": "Chương trình chạy sai do thiếu bước kiểm tra.",
+    "hint": "Chạy thử từng khối và sửa logic.",
+    "recommendation": "g8_e15"
+  },
+  {
+    "skill": "g9_b03",
+    "pattern": "tin",
+    "errorType": "info_quality",
+    "title": "Tin giả trên mạng",
+    "message": "Chia sẻ thông tin chưa kiểm chứng gây hiểu lầm.",
+    "hint": "Đối chiếu nhiều nguồn uy tín.",
+    "recommendation": "g9_b03"
+  },
+  {
+    "skill": "g9_e16",
+    "pattern": "thuat",
+    "errorType": "algorithm",
+    "title": "Thuật toán chưa đầy đủ",
+    "message": "Thiếu bước khiến chương trình không giải được bài toán.",
+    "hint": "Liệt kê đủ bước trước khi lập trình.",
+    "recommendation": "g9_e16"
+  },
+  {
+    "skill": "g10_b09",
+    "pattern": "mat",
+    "errorType": "security",
+    "title": "Lộ mật khẩu",
+    "message": "Chia sẻ mật khẩu khiến tài khoản bị xâm nhập.",
+    "hint": "Dùng mật khẩu mạnh, bật xác thực 2 lớp.",
+    "recommendation": "g10_b09"
+  },
+  {
+    "skill": "g10_e29",
+    "pattern": "syntax",
+    "errorType": "python",
+    "title": "Lỗi cú pháp Python",
+    "message": "Thiếu dấu : hoặc thụt lề sai gây SyntaxError.",
+    "hint": "Đọc traceback và sửa dòng báo lỗi.",
+    "recommendation": "g10_e29"
+  },
+  {
+    "skill": "g11_d14",
+    "pattern": "sql",
+    "errorType": "database",
+    "title": "Câu SQL sai cú pháp",
+    "message": "SELECT thiếu FROM hoặc sai tên bảng.",
+    "hint": "Kiểm tra tên bảng và trường.",
+    "recommendation": "g11_d14"
+  },
+  {
+    "skill": "g11_f24",
+    "pattern": "on2",
+    "errorType": "complexity",
+    "title": "Chọn thuật toán chưa tối ưu",
+    "message": "Thuật toán O(n²) có thể chậm với dữ liệu lớn.",
+    "hint": "Cân nhắc thuật toán O(n log n).",
+    "recommendation": "g11_f24"
+  },
+  {
+    "skill": "g12_b04",
+    "pattern": "http",
+    "errorType": "network",
+    "title": "Nhầm giao thức mạng",
+    "message": "HTTP dùng cho web; không phải mọi dịch vụ dùng HTTP.",
+    "hint": "Phân biệt HTTP, HTTPS, TCP/IP.",
+    "recommendation": "g12_b04"
+  },
+  {
+    "skill": "g12_d17",
+    "pattern": "css",
+    "errorType": "web",
+    "title": "CSS không áp dụng đúng",
+    "message": "Selector sai hoặc bị ghi đè bởi rule khác.",
+    "hint": "Kiểm tra specificity và thứ tự CSS.",
+    "recommendation": "g12_d17"
+  },
+  {
+    "skill": "g11ict_g20",
+    "pattern": "khoa",
+    "errorType": "database",
+    "title": "Thiết kế khóa ngoại sai",
+    "message": "Khóa ngoại trỏ sai bảng hoặc kiểu dữ liệu không khớp.",
+    "hint": "Khóa ngoại phải tham chiếu khóa chính bảng liên quan.",
+    "recommendation": "g11ict_g20"
+  },
+  {
+    "skill": "g11ict_g24",
+    "pattern": "sao",
+    "errorType": "backup",
+    "title": "Chưa sao lưu trước khi sửa CSDL",
+    "message": "Mất dữ liệu khi cập nhật/xóa mà không có bản backup.",
+    "hint": "Sao lưu CSDL trước thao tác quan trọng.",
+    "recommendation": "g11ict_g24"
+  },
+  {
+    "skill": "g12_f24",
+    "pattern": "topology",
+    "errorType": "network",
+    "title": "Thiết kế mạng thiếu thiết bị",
+    "message": "Sơ đồ LAN thiếu router hoặc switch trung tâm.",
+    "hint": "Mỗi mạng LAN cần điểm kết nối và định tuyến hợp lý.",
+    "recommendation": "g12_f24"
+  },
+  {
+    "skill": "g12_g28",
+    "pattern": "data",
+    "errorType": "analysis",
+    "title": "Phân tích dữ liệu thiếu bước làm sạch",
+    "message": "Kết quả sai do dữ liệu thô chưa được lọc/chuẩn hóa.",
+    "hint": "Làm sạch dữ liệu trước khi trích rút tri thức.",
+    "recommendation": "g12_g28"
+  },
+  {
+    "skill": "g12ict_h27",
+    "pattern": "form",
+    "errorType": "web",
+    "title": "Biểu mẫu HTML thiếu thuộc tính",
+    "message": "Input thiếu name hoặc form không có action/method.",
+    "hint": "Mỗi trường form cần name; kiểm tra nút submit.",
+    "recommendation": "g12ict_h27"
   }
 ]

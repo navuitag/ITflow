@@ -10,7 +10,8 @@ export function renderLessonCard(skill, state, questions, labs) {
     ? "Sẵn sàng"
     : "Đang khóa";
   const lab = getLabForSkill(skill.id, labs);
-  const labLabel = lab?.type === "blockly" ? "Blockly" : "Thực hành";
+  const labLabel =
+    lab?.type === "blockly" ? "Blockly" : lab?.type === "mouse" || lab?.type === "keyboard" ? "Mô phỏng" : "Thực hành";
   const labLink = progress.hasLab
     ? `<a class="btn quiet" href="#/lab/${skill.id}">${labLabel}</a>`
     : "";
