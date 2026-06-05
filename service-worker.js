@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v15";
+const CACHE_NAME = "itflow-vn-v16";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,7 +12,6 @@ const APP_SHELL = [
   "./assets/css/input-lab.css",
   "./assets/css/practice-features.css",
   "./assets/css/mindmap.css",
-  "./assets/css/summer-review.css",
   "./modules/blocklyLab.js",
   "./modules/inputLab.js",
   "./modules/inputLab/scenarios.js",
@@ -23,7 +22,6 @@ const APP_SHELL = [
   "./modules/practiceModes.js",
   "./modules/practiceContent.js",
   "./modules/mindMap.js",
-  "./modules/summerReview.js",
   "./assets/js/app.js",
   "./assets/js/router.js",
   "./assets/js/state.js",

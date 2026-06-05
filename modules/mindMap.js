@@ -141,53 +141,6 @@ export function buildTopicMindMap(branch, lessons) {
   };
 }
 
-export function buildSummerTopicMindMap(pack, topicId) {
-  const topic = pack?.topics?.find((t) => t.id === topicId);
-  const lesson = pack?.lessons?.find((l) => l.id === topicId);
-  if (!topic) return null;
-  const concepts = [];
-  if (lesson?.steps) {
-    lesson.steps.forEach((step) => {
-      if (step.type === "keypoints" && step.points?.length) {
-        step.points.forEach((p) => concepts.push({ label: p, kind: "keypoint" }));
-      } else if (step.content) {
-        concepts.push({ label: step.content, kind: step.type });
-      }
-    });
-  }
-  return {
-    center: `${topic.emoji || "☀️"} ${topic.title}`,
-    subtitle: topic.description || pack.meta?.title || "",
-    concepts,
-    topicId,
-    packId: pack.meta?.packId || topicId
-  };
-}
-
-export function buildSummerBranches(summerPacks) {
-  if (!summerPacks || !Object.keys(summerPacks).length) return null;
-  return {
-    id: "summer-root",
-    label: "Ôn hè",
-    emoji: "☀️",
-    children: Object.entries(summerPacks).map(([packId, pack]) => ({
-      id: packId,
-      label: pack.meta?.title || packId,
-      subtitle: pack.meta?.subtitle || "",
-      href: `#/summer/${packId}`,
-      topicCount: pack.topics?.length || 0,
-      examCount: pack.exams?.length || 0,
-      topics: (pack.topics || []).map((t) => ({
-        id: t.id,
-        label: t.title,
-        emoji: t.emoji || "",
-        href: `#/summer/${packId}/topic/${t.id}`,
-        mindHref: `#/mindmap/summer/${packId}/${t.id}`
-      }))
-    }))
-  };
-}
-
 let escapeHtml = (s) => String(s ?? "");
 
 function renderLeaf(skill, status) {
@@ -286,56 +239,6 @@ function renderSkillDetail(map, backHref) {
     </section>`;
 }
 
-function renderSummerTopicDetail(map, packId) {
-  return `
-    <section class="mm-detail-page">
-      <a class="back-link" href="#/summer/${encodeURIComponent(packId)}/topic/${encodeURIComponent(map.topicId)}">← Chủ đề ôn hè</a>
-      <div class="mm-topic-center card-panel mm-summer-center">
-        <span class="mm-center-emoji">☀️</span>
-        <div>
-          <h1>${escapeHtml(map.center)}</h1>
-          ${map.subtitle ? `<p>${escapeHtml(map.subtitle)}</p>` : ""}
-        </div>
-        <a class="btn primary" href="#/summer/${encodeURIComponent(packId)}/topic/${encodeURIComponent(map.topicId)}/play">Luyện ngay</a>
-      </div>
-      <article class="mm-skill-group card-panel">
-        <h3>Kiến thức cần nhớ</h3>
-        <ul class="mm-concept-list">${renderConceptChips(map.concepts)}</ul>
-      </article>
-    </section>`;
-}
-
-function renderSummerSection(section) {
-  if (!section) return "";
-  const packs = section.children.map((pack) => `
-    <article class="mm-summer-pack">
-      <a class="mm-summer-pack-head" href="${pack.href}">
-        <span class="mm-summer-emoji">📦</span>
-        <span>
-          <strong>${escapeHtml(pack.label)}</strong>
-          <small>${escapeHtml(pack.subtitle)} · ${pack.topicCount} chủ đề · ${pack.examCount} đề</small>
-        </span>
-      </a>
-      <ul class="mm-summer-topics">
-        ${pack.topics.map((t) => `
-          <li>
-            <a href="${t.href}">${t.emoji ? `${t.emoji} ` : ""}${escapeHtml(t.label)}</a>
-            <a class="mm-mini-map-link" href="${t.mindHref}" title="Sơ đồ chủ đề">🧠</a>
-          </li>`).join("")}
-      </ul>
-    </article>`).join("");
-
-  return `
-    <section class="mm-summer-section card-panel">
-      <header class="mm-summer-head">
-        <span class="tag">Ôn hè</span>
-        <h2>${section.emoji} ${escapeHtml(section.label)}</h2>
-        <p>Các lộ trình ôn hè — mỗi chủ đề có sơ đồ tư duy riêng.</p>
-      </header>
-      <div class="mm-summer-grid">${packs}</div>
-    </section>`;
-}
-
 function renderTopicCards(branches) {
   return `
     <section class="mm-topic-cards">
@@ -394,7 +297,6 @@ export function createMindMapModule(ctx) {
     const tree = buildMindMapTree(ctx.data.skills || [], activeGrade, groupMode);
     const completed = state.completedLessons || [];
     const doneTotal = tree.branches.reduce((n, b) => n + b.skills.filter((s) => completed.includes(s.id)).length, 0);
-    const summer = buildSummerBranches(ctx.data.summerPacks);
     const expanded = options.expandAll !== false;
 
     const gradeTabs = grades.map((g) => {
@@ -434,8 +336,7 @@ export function createMindMapModule(ctx) {
       <div class="mm-canvas" data-mm-grade="${activeGrade}" data-mm-mode="${groupMode}">
         <div class="mm-spine"></div>
         <div class="mm-branches">${tree.branches.map((b) => renderBranch(b, completed, expanded)).join("")}</div>
-      </div>
-      ${renderSummerSection(summer)}`;
+      </div>`;
   }
 
   function renderTopicPage(state, branchId, options = {}) {
@@ -452,15 +353,6 @@ export function createMindMapModule(ctx) {
     const map = buildSkillMindMap(skill, ctx.data.lessons);
     const branchId = makeBranchId(skill.grade, groupKey(skill, config.defaultGroupMode));
     return renderSkillDetail(map, `#/mindmap/topic/${encodeURIComponent(branchId)}`);
-  }
-
-  function renderSummerTopicPage(state, packId, topicId) {
-    const pack = ctx.data.summerPacks?.[packId];
-    if (!pack) return notFound("Không tìm thấy lộ trình ôn hè.");
-    const map = buildSummerTopicMindMap(pack, topicId);
-    if (!map) return notFound("Không tìm thấy chủ đề ôn hè.");
-    map.packId = packId;
-    return renderSummerTopicDetail(map, packId);
   }
 
   function bindPage() {
@@ -504,12 +396,10 @@ export function createMindMapModule(ctx) {
     renderPage,
     renderTopicPage,
     renderSkillPage,
-    renderSummerTopicPage,
     bindPage,
     chapterMindMapHref: (skill, groupMode = config.defaultGroupMode) =>
       chapterMindMapHref(skill, groupMode),
     makeBranchId,
-    buildMindMapTree,
-    buildSummerBranches
+    buildMindMapTree
   };
 }

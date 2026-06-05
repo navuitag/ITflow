@@ -21,7 +21,6 @@ import { renderFlashcardPanel } from "../../components/flashcardPanel.js";
 import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
 import { createPracticeModule } from "../../modules/practiceModes.js";
-import { createSummerReviewModule } from "../../modules/summerReview.js";
 import { chapterMindMapHref, createMindMapModule } from "../../modules/mindMap.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
 import { submitAnswer } from "../../modules/quizEngine.js";
@@ -53,12 +52,10 @@ let data = {
   questions: [],
   labs: [],
   errors: [],
-  exercises: [],
-  summerPacks: {}
+  exercises: []
 };
 
 let practice;
-let summerReview;
 let mindMap;
 let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 let disposeBlockly = null;
@@ -81,14 +78,6 @@ export function configureRouter(appData) {
     notFound,
     handleAnswer
   });
-  summerReview = createSummerReviewModule({
-    data,
-    getState,
-    renderRoute,
-    setRoute,
-    notFound,
-    escapeHtml
-  });
   mindMap = createMindMapModule({
     data,
     getState,
@@ -110,7 +99,6 @@ export function renderRoute() {
   const sub = parts[2];
 
   practice?.resetOnLeavePractice(route);
-  summerReview?.resetOnLeave(route);
 
   if (disposeBlockly && route !== "lab") {
     disposeBlockly();
@@ -173,9 +161,6 @@ export function renderRoute() {
     } else if (mmKind === "lesson" && mmParam) {
       content = mindMap.renderSkillPage(state, mmParam);
       after = () => mindMap.bindPage(state);
-    } else if (mmKind === "summer" && mmParam && mmParam2) {
-      content = mindMap.renderSummerTopicPage(state, mmParam, mmParam2);
-      after = () => mindMap.bindPage(state);
     } else {
       content = mindMap.renderPage(state, { groupMode: mindMapGroupMode });
       after = () => mindMap.bindPage(state);
@@ -183,37 +168,6 @@ export function renderRoute() {
   } else if (route === "skills") {
     content = renderSkills(state);
     after = bindSkills;
-  } else if (route === "summer") {
-    let packId = summerReview.resolvePackId(parts[1]);
-    let base = 1;
-    if (!packId && (parts[1] === "topic" || parts[1] === "exam")) {
-      packId = "g1-g2";
-      base = 1;
-    } else if (packId) {
-      base = 2;
-    }
-    const kind = parts[base];
-    const entityId = parts[base + 1];
-    const action = parts[base + 2];
-    if (!packId) {
-      content = summerReview.renderPackPicker(state);
-    } else if (kind === "topic" && entityId) {
-      if (action === "play") {
-        content = summerReview.renderTopicPlay(packId, entityId, state);
-        after = () => summerReview.bindPlayQuiz();
-      } else {
-        content = summerReview.renderTopicLesson(packId, entityId, state);
-      }
-    } else if (kind === "exam" && entityId) {
-      if (action === "play") {
-        content = summerReview.renderExamPlay(packId, entityId, state);
-        after = () => summerReview.bindPlayQuiz();
-      } else {
-        content = summerReview.renderExamIntro(packId, entityId, state);
-      }
-    } else {
-      content = summerReview.renderHub(packId, state);
-    }
   } else if (route === "review") {
     content = renderErrors(state);
   } else if (route === "profile") {
@@ -318,21 +272,8 @@ function renderHome(state) {
   const nextSkill = gradeSkills.find((skill) => !state.completedLessons.includes(skill.id)) || gradeSkills[0] || data.skills[0];
   const questPercent = Math.round((state.dailyQuest.progress / state.dailyQuest.target) * 100);
   const weakSkill = getWeakSkills(state)[0];
-  const sr = state.summerReview || {};
-  const srPacks = sr.packs || {};
-  const srSummary = Object.keys(srPacks).length
-    ? Object.entries(srPacks).map(([id, p]) => `${p.completedTopics?.length || 0} chủ đề (${id})`).join(" · ")
-    : "Chọn lộ trình ôn hè";
 
   return `
-    <section class="summer-banner">
-      <div>
-        <span class="tag">Ôn hè · Lớp 1→12</span>
-        <h2>Luyện Tin học tương tác — chủ đề & đề tổng hợp</h2>
-        <p>Game hóa với sao, combo XP và lộ trình mở khóa. ${srSummary}.</p>
-      </div>
-      <a class="btn primary" href="#/summer">Vào ôn hè ☀️</a>
-    </section>
     <section class="hero-panel">
       <div>
         <span class="eyebrow">Lộ trình hôm nay · ${escapeHtml(state.user.name)} · Lớp ${activeGrade}</span>

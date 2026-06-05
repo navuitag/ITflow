@@ -17,9 +17,6 @@ function baseProgress() {
       target: 5,
       progress: 0
     },
-    summerReview: {
-      packs: {}
-    },
     lastStudiedDate: new Date().toISOString().slice(0, 10)
   };
 }
@@ -33,7 +30,6 @@ const store = createProfileStore({
   hydrateProgress: (raw, progress) => {
     if (raw.user?.grade) progress.selectedGrade = raw.user.grade;
     if (!Array.isArray(progress.completedLabs)) progress.completedLabs = [];
-    if (!progress.summerReview?.packs) progress.summerReview = { packs: {} };
   },
   buildUser: (progress, profile) => ({
     name: profile?.name || "Bạn học",
