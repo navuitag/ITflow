@@ -168,10 +168,28 @@ function bindOnboarding() {
   document.querySelectorAll(".grade-pick").forEach((button) => {
     button.addEventListener("click", () => {
       const grade = Number(button.dataset.grade);
-      const name = document.querySelector("#onboardingName")?.value?.trim();
-      if (!hasProfiles()) createProfile(name || "Bạn học");
+      const nameInput = document.querySelector("#onboardingName");
+      const name = nameInput?.value?.trim();
+
+      if (nameInput && !name) {
+        nameInput.focus();
+        return;
+      }
+
+      if (!hasProfiles()) {
+        const profileId = createProfile(name || "Bạn học");
+        if (!profileId) return;
+      }
+
       completeOnboarding(grade, name);
-      setRoute("#/home");
+
+      // Hash đã là #/home thì setRoute không đổi → phải renderRoute() trực tiếp
+      const hash = window.location.hash || "#/home";
+      if (hash === "#/home" || hash === "#/" || hash === "#") {
+        renderRoute();
+      } else {
+        setRoute("#/home");
+      }
     });
   });
 }
