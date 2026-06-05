@@ -1,0 +1,378 @@
+[
+  {
+    "id": "g5_a01",
+    "title": "Bài 1. Em có thể làm gì với máy tính?",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Máy tính và em",
+    "chapterIndex": 1,
+    "lessonNo": 1,
+    "domain": "Máy tính và em",
+    "level": 1,
+    "prerequisite": [],
+    "description": "Nhận biết vai trò máy tính trong học tập, giải trí và tạo sản phẩm số.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_b02",
+    "title": "Bài 2. Tìm kiếm thông tin trên website",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Mạng máy tính và Internet",
+    "chapterIndex": 2,
+    "lessonNo": 2,
+    "domain": "Mạng máy tính và Internet",
+    "level": 2,
+    "prerequisite": [
+      "g5_a01"
+    ],
+    "description": "Tìm thông tin phù hợp trên website và hợp tác chia sẻ với nhóm.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_c03",
+    "title": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 3,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g5_b02"
+    ],
+    "description": "Thu thập và chọn thông tin tin cậy khi giải quyết vấn đề.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_c04",
+    "title": "Bài 4. Cây thư mục",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "chapterIndex": 3,
+    "lessonNo": 4,
+    "domain": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "level": 3,
+    "prerequisite": [
+      "g5_c03"
+    ],
+    "description": "Tổ chức cây thư mục và tìm tệp trên máy tính.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_d05",
+    "title": "Bài 5. Bản quyền nội dung thông tin",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "chapterIndex": 4,
+    "lessonNo": 5,
+    "domain": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "level": 4,
+    "prerequisite": [
+      "g5_c04"
+    ],
+    "description": "Tôn trọng bản quyền và quyền riêng tư trong môi trường số.",
+    "streams": [
+      "DL"
+    ],
+    "competencies": [
+      "NLb"
+    ]
+  },
+  {
+    "id": "g5_e06",
+    "title": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 6,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_d05"
+    ],
+    "description": "Định dạng văn bản và chèn hình ảnh hợp lý.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_e07",
+    "title": "Bài 7. Thực hành soạn thảo văn bản",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 7,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_e06"
+    ],
+    "description": "Soạn thảo văn bản có cấu trúc, lưu tệp đúng thư mục.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_e08a",
+    "title": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 8,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_e07"
+    ],
+    "description": "Làm quen giao diện và công cụ đồ hoạ cơ bản.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_e09a",
+    "title": "Bài 9A. Sử dụng phần mềm đồ hoạ tạo sản phẩm số",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 9,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_e08a"
+    ],
+    "description": "Tạo thiệp hoặc tranh số đơn giản bằng phần mềm đồ hoạ.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_e08b",
+    "title": "Bài 8B. Làm sản phẩm thủ công theo video hướng dẫn",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 10,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_e07"
+    ],
+    "description": "Làm theo video hướng dẫn và ghi lại các bước thực hiện.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_e09b",
+    "title": "Bài 9B. Thực hành tạo đồ dùng gia đình theo video",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Ứng dụng tin học",
+    "chapterIndex": 5,
+    "lessonNo": 11,
+    "domain": "Ứng dụng tin học",
+    "level": 5,
+    "prerequisite": [
+      "g5_e08b"
+    ],
+    "description": "Tạo sản phẩm thực tế theo hướng dẫn đa phương tiện.",
+    "streams": [
+      "ICT"
+    ],
+    "competencies": [
+      "NLa"
+    ]
+  },
+  {
+    "id": "g5_f10",
+    "title": "Bài 10. Cấu trúc tuần tự",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 12,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_e07"
+    ],
+    "description": "Mô tả thuật toán tuần tự bằng các bước có thứ tự.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f11",
+    "title": "Bài 11. Cấu trúc lặp",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 13,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f10"
+    ],
+    "description": "Nhận biết và dùng cấu trúc lặp trong chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f12",
+    "title": "Bài 12. Thực hành sử dụng lệnh lặp",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 14,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f11"
+    ],
+    "description": "Viết chương trình có vòng lặp đơn giản.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f13",
+    "title": "Bài 13. Cấu trúc rẽ nhánh",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 15,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f12"
+    ],
+    "description": "Dùng điều kiện Nếu–Thì trong thuật toán.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f14",
+    "title": "Bài 14. Sử dụng biến trong chương trình",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 16,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f13"
+    ],
+    "description": "Khai báo và cập nhật biến trong lập trình trực quan.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f15",
+    "title": "Bài 15. Sử dụng biểu thức trong chương trình",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 17,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f14"
+    ],
+    "description": "Tính toán bằng biểu thức số học trong chương trình.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  },
+  {
+    "id": "g5_f16",
+    "title": "Bài 16. Từ kịch bản đến chương trình",
+    "grade": 5,
+    "book": "KNTT",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapterIndex": 6,
+    "lessonNo": 18,
+    "domain": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "level": 6,
+    "prerequisite": [
+      "g5_f15"
+    ],
+    "description": "Chuyển kịch bản thành chương trình hoàn chỉnh.",
+    "streams": [
+      "CS"
+    ],
+    "competencies": [
+      "NLc"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "skill": "g5_c04",
+    "pattern": "desktop",
+    "errorType": "file_organization",
+    "title": "Lưu tệp không đúng chỗ",
+    "message": "Lưu mọi tệp trên Desktop khiến khó tìm và dễ xóa nhầm.",
+    "hint": "Tạo thư mục theo môn/chủ đề và đặt tên tệp có nghĩa.",
+    "recommendation": "g5_c04"
+  },
+  {
+    "skill": "g5_d05",
+    "pattern": "sao",
+    "errorType": "copyright",
+    "title": "Sao chép khi chưa được phép",
+    "message": "Dùng ảnh/nhạc/video của người khác mà không xin phép vi phạm bản quyền.",
+    "hint": "Chỉ dùng tài nguyên miễn phí có giấy phép hoặc tự tạo.",
+    "recommendation": "g5_d05"
+  },
+  {
+    "skill": "g5_f11",
+    "pattern": "lap",
+    "errorType": "loop_logic",
+    "title": "Vòng lặp chưa đúng",
+    "message": "Số lần lặp hoặc điều kiện dừng chưa khớp với bài toán.",
+    "hint": "Xác định biến đếm và điều kiện kết thúc trước khi ghép khối lặp.",
+    "recommendation": "g5_f11"
+  }
+]

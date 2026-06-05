@@ -1,0 +1,470 @@
+[
+  {
+    "id": "q_g5_a01_1",
+    "skill": "g5_a01",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Em có thể làm gì với máy tính?\", ý nào phù hợp nhất?",
+    "choices": [
+      "Nhận biết vai trò máy tính trong học tập, giải trí và tạo sản phẩm số.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Nhận biết vai trò máy tính trong học tập, giải trí và tạo sản phẩm số.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_a01_2",
+    "skill": "g5_a01",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 1. Em có thể làm gì với máy tính?\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_b02_1",
+    "skill": "g5_b02",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Tìm kiếm thông tin trên website\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tìm thông tin phù hợp trên website và hợp tác chia sẻ với nhóm.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tìm thông tin phù hợp trên website và hợp tác chia sẻ với nhóm.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_b02_2",
+    "skill": "g5_b02",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 2. Tìm kiếm thông tin trên website\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_c03_1",
+    "skill": "g5_c03",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Tìm kiếm thông tin trong giải quyết vấn đề\", ý nào phù hợp nhất?",
+    "choices": [
+      "Thu thập và chọn thông tin tin cậy khi giải quyết vấn đề.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Thu thập và chọn thông tin tin cậy khi giải quyết vấn đề.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_c03_2",
+    "skill": "g5_c03",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_c04_1",
+    "skill": "g5_c04",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Cây thư mục\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tổ chức cây thư mục và tìm tệp trên máy tính.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tổ chức cây thư mục và tìm tệp trên máy tính.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_c04_2",
+    "skill": "g5_c04",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 4. Cây thư mục\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_d05_1",
+    "skill": "g5_d05",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Bản quyền nội dung thông tin\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tôn trọng bản quyền và quyền riêng tư trong môi trường số.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tôn trọng bản quyền và quyền riêng tư trong môi trường số.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_d05_2",
+    "skill": "g5_d05",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 5. Bản quyền nội dung thông tin\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e06_1",
+    "skill": "g5_e06",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Định dạng kí tự và bố trí hình ảnh trong văn bản\", ý nào phù hợp nhất?",
+    "choices": [
+      "Định dạng văn bản và chèn hình ảnh hợp lý.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Định dạng văn bản và chèn hình ảnh hợp lý.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e06_2",
+    "skill": "g5_e06",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e07_1",
+    "skill": "g5_e07",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Thực hành soạn thảo văn bản\", ý nào phù hợp nhất?",
+    "choices": [
+      "Soạn thảo văn bản có cấu trúc, lưu tệp đúng thư mục.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Soạn thảo văn bản có cấu trúc, lưu tệp đúng thư mục.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e07_2",
+    "skill": "g5_e07",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 7. Thực hành soạn thảo văn bản\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e08a_1",
+    "skill": "g5_e08a",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Làm quen với phần mềm đồ hoạ\", ý nào phù hợp nhất?",
+    "choices": [
+      "Làm quen giao diện và công cụ đồ hoạ cơ bản.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Làm quen giao diện và công cụ đồ hoạ cơ bản.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e08a_2",
+    "skill": "g5_e08a",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 8A. Làm quen với phần mềm đồ hoạ\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e09a_1",
+    "skill": "g5_e09a",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Sử dụng phần mềm đồ hoạ tạo sản phẩm số\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tạo thiệp hoặc tranh số đơn giản bằng phần mềm đồ hoạ.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tạo thiệp hoặc tranh số đơn giản bằng phần mềm đồ hoạ.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e09a_2",
+    "skill": "g5_e09a",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 9A. Sử dụng phần mềm đồ hoạ tạo sản phẩm số\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e08b_1",
+    "skill": "g5_e08b",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Làm sản phẩm thủ công theo video hướng dẫn\", ý nào phù hợp nhất?",
+    "choices": [
+      "Làm theo video hướng dẫn và ghi lại các bước thực hiện.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Làm theo video hướng dẫn và ghi lại các bước thực hiện.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e08b_2",
+    "skill": "g5_e08b",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 8B. Làm sản phẩm thủ công theo video hướng dẫn\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_e09b_1",
+    "skill": "g5_e09b",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Thực hành tạo đồ dùng gia đình theo video\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tạo sản phẩm thực tế theo hướng dẫn đa phương tiện.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tạo sản phẩm thực tế theo hướng dẫn đa phương tiện.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_e09b_2",
+    "skill": "g5_e09b",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 9B. Thực hành tạo đồ dùng gia đình theo video\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f10_1",
+    "skill": "g5_f10",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Cấu trúc tuần tự\", ý nào phù hợp nhất?",
+    "choices": [
+      "Mô tả thuật toán tuần tự bằng các bước có thứ tự.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Mô tả thuật toán tuần tự bằng các bước có thứ tự.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f10_2",
+    "skill": "g5_f10",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 10. Cấu trúc tuần tự\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f11_1",
+    "skill": "g5_f11",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Cấu trúc lặp\", ý nào phù hợp nhất?",
+    "choices": [
+      "Nhận biết và dùng cấu trúc lặp trong chương trình.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Nhận biết và dùng cấu trúc lặp trong chương trình.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f11_2",
+    "skill": "g5_f11",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 11. Cấu trúc lặp\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f12_1",
+    "skill": "g5_f12",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Thực hành sử dụng lệnh lặp\", ý nào phù hợp nhất?",
+    "choices": [
+      "Viết chương trình có vòng lặp đơn giản.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Viết chương trình có vòng lặp đơn giản.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f12_2",
+    "skill": "g5_f12",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 12. Thực hành sử dụng lệnh lặp\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f13_1",
+    "skill": "g5_f13",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Cấu trúc rẽ nhánh\", ý nào phù hợp nhất?",
+    "choices": [
+      "Dùng điều kiện Nếu–Thì trong thuật toán.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Dùng điều kiện Nếu–Thì trong thuật toán.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f13_2",
+    "skill": "g5_f13",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 13. Cấu trúc rẽ nhánh\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f14_1",
+    "skill": "g5_f14",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Sử dụng biến trong chương trình\", ý nào phù hợp nhất?",
+    "choices": [
+      "Khai báo và cập nhật biến trong lập trình trực quan.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Khai báo và cập nhật biến trong lập trình trực quan.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f14_2",
+    "skill": "g5_f14",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 14. Sử dụng biến trong chương trình\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f15_1",
+    "skill": "g5_f15",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Sử dụng biểu thức trong chương trình\", ý nào phù hợp nhất?",
+    "choices": [
+      "Tính toán bằng biểu thức số học trong chương trình.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Tính toán bằng biểu thức số học trong chương trình.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f15_2",
+    "skill": "g5_f15",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 15. Sử dụng biểu thức trong chương trình\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  },
+  {
+    "id": "q_g5_f16_1",
+    "skill": "g5_f16",
+    "type": "multiple_choice",
+    "question": "Theo bài \"Từ kịch bản đến chương trình\", ý nào phù hợp nhất?",
+    "choices": [
+      "Chuyển kịch bản thành chương trình hoàn chỉnh.",
+      "Máy tính chỉ dùng để chơi game, không hỗ trợ học tập.",
+      "Không cần tôn trọng bản quyền trên Internet.",
+      "Thuật toán không cần thứ tự các bước."
+    ],
+    "answer": "Chuyển kịch bản thành chương trình hoàn chỉnh.",
+    "hint": "Đọc lại phần mục tiêu và kiến thức trọng tâm trong bài học."
+  },
+  {
+    "id": "q_g5_f16_2",
+    "skill": "g5_f16",
+    "type": "true_false",
+    "question": "Kiến thức trong bài \"Bài 16. Từ kịch bản đến chương trình\" góp phần hình thành năng lực tin học theo CT 2018.",
+    "choices": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": "Đúng",
+    "hint": "Môn Tin học phát triển năng lực NLa–NLe qua các chủ đề A–G."
+  }
+]

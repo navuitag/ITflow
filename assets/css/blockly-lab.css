@@ -1,0 +1,112 @@
+.blockly-lab {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blockly-lab-head {
+  margin-bottom: 16px;
+}
+
+.blockly-mission {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 720px;
+}
+
+.blockly-workspace-wrap {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr minmax(260px, 320px);
+  align-items: start;
+}
+
+.blockly-div {
+  height: min(72vh, 520px);
+  min-height: 360px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.blockly-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blockly-stage {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+}
+
+.blockly-stage canvas {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.blockly-log {
+  background: #0f172a;
+  border-radius: 10px;
+  color: #e2e8f0;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  height: 140px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.blockly-log-line {
+  margin-bottom: 4px;
+}
+
+.blockly-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blockly-feedback {
+  background: var(--surface-soft);
+  border-radius: 10px;
+  font-size: 14px;
+  min-height: 48px;
+  padding: 12px;
+}
+
+.blockly-feedback.is-ok {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.blockly-feedback.is-warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.blockly-complete {
+  width: 100%;
+}
+
+.blockly-complete:disabled {
+  opacity: 0.5;
+}
+
+.blockly-hint {
+  font-size: 14px;
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .blockly-workspace-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .blockly-div {
+    height: 420px;
+  }
+}

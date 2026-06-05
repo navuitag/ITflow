@@ -1,0 +1,42 @@
+.lab-layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+}
+
+.lab-step {
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+}
+
+.lab-step.is-done {
+  border-color: var(--primary);
+  background: var(--surface-soft);
+}
+
+.lab-step-check {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lab-step-check input {
+  height: 20px;
+  width: 20px;
+}
+
+.lab-progress-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .lab-layout {
+    grid-template-columns: 1fr;
+  }
+}

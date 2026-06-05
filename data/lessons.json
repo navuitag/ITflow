@@ -1,0 +1,542 @@
+[
+  {
+    "id": "g5_a01",
+    "title": "Bài 1. Em có thể làm gì với máy tính?",
+    "skill": "g5_a01",
+    "chapter": "Máy tính và em",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Nhận biết vai trò máy tính trong học tập, giải trí và tạo sản phẩm số."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Nhận biết vai trò máy tính trong học tập, giải trí và tạo sản phẩm số.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_b02",
+    "title": "Bài 2. Tìm kiếm thông tin trên website",
+    "skill": "g5_b02",
+    "chapter": "Mạng máy tính và Internet",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tìm thông tin phù hợp trên website và hợp tác chia sẻ với nhóm."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tìm thông tin phù hợp trên website và hợp tác chia sẻ với nhóm.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_c03",
+    "title": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+    "skill": "g5_c03",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Thu thập và chọn thông tin tin cậy khi giải quyết vấn đề."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Thu thập và chọn thông tin tin cậy khi giải quyết vấn đề.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_c04",
+    "title": "Bài 4. Cây thư mục",
+    "skill": "g5_c04",
+    "chapter": "Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tổ chức cây thư mục và tìm tệp trên máy tính."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tổ chức cây thư mục và tìm tệp trên máy tính.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_d05",
+    "title": "Bài 5. Bản quyền nội dung thông tin",
+    "skill": "g5_d05",
+    "chapter": "Đạo đức, pháp luật và văn hoá trong môi trường số",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tôn trọng bản quyền và quyền riêng tư trong môi trường số."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tôn trọng bản quyền và quyền riêng tư trong môi trường số.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e06",
+    "title": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+    "skill": "g5_e06",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Định dạng văn bản và chèn hình ảnh hợp lý."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Định dạng văn bản và chèn hình ảnh hợp lý.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e07",
+    "title": "Bài 7. Thực hành soạn thảo văn bản",
+    "skill": "g5_e07",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Soạn thảo văn bản có cấu trúc, lưu tệp đúng thư mục."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Soạn thảo văn bản có cấu trúc, lưu tệp đúng thư mục.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e08a",
+    "title": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+    "skill": "g5_e08a",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Làm quen giao diện và công cụ đồ hoạ cơ bản."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Làm quen giao diện và công cụ đồ hoạ cơ bản.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e09a",
+    "title": "Bài 9A. Sử dụng phần mềm đồ hoạ tạo sản phẩm số",
+    "skill": "g5_e09a",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tạo thiệp hoặc tranh số đơn giản bằng phần mềm đồ hoạ."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tạo thiệp hoặc tranh số đơn giản bằng phần mềm đồ hoạ.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e08b",
+    "title": "Bài 8B. Làm sản phẩm thủ công theo video hướng dẫn",
+    "skill": "g5_e08b",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Làm theo video hướng dẫn và ghi lại các bước thực hiện."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Làm theo video hướng dẫn và ghi lại các bước thực hiện.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_e09b",
+    "title": "Bài 9B. Thực hành tạo đồ dùng gia đình theo video",
+    "skill": "g5_e09b",
+    "chapter": "Ứng dụng tin học",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tạo sản phẩm thực tế theo hướng dẫn đa phương tiện."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tạo sản phẩm thực tế theo hướng dẫn đa phương tiện.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f10",
+    "title": "Bài 10. Cấu trúc tuần tự",
+    "skill": "g5_f10",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Mô tả thuật toán tuần tự bằng các bước có thứ tự."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Mô tả thuật toán tuần tự bằng các bước có thứ tự.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f11",
+    "title": "Bài 11. Cấu trúc lặp",
+    "skill": "g5_f11",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Nhận biết và dùng cấu trúc lặp trong chương trình."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Nhận biết và dùng cấu trúc lặp trong chương trình.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f12",
+    "title": "Bài 12. Thực hành sử dụng lệnh lặp",
+    "skill": "g5_f12",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Viết chương trình có vòng lặp đơn giản."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Viết chương trình có vòng lặp đơn giản.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f13",
+    "title": "Bài 13. Cấu trúc rẽ nhánh",
+    "skill": "g5_f13",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Dùng điều kiện Nếu–Thì trong thuật toán."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Dùng điều kiện Nếu–Thì trong thuật toán.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f14",
+    "title": "Bài 14. Sử dụng biến trong chương trình",
+    "skill": "g5_f14",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Khai báo và cập nhật biến trong lập trình trực quan."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Khai báo và cập nhật biến trong lập trình trực quan.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f15",
+    "title": "Bài 15. Sử dụng biểu thức trong chương trình",
+    "skill": "g5_f15",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Tính toán bằng biểu thức số học trong chương trình."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Tính toán bằng biểu thức số học trong chương trình.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  },
+  {
+    "id": "g5_f16",
+    "title": "Bài 16. Từ kịch bản đến chương trình",
+    "skill": "g5_f16",
+    "chapter": "Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "source": "Bám sát SGK Tin học 5 - Kết nối tri thức với cuộc sống; nội dung tự biên soạn cho ITFlow.",
+    "xp": 50,
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mục tiêu",
+        "content": "Chuyển kịch bản thành chương trình hoàn chỉnh."
+      },
+      {
+        "type": "keypoints",
+        "title": "Kiến thức trọng tâm",
+        "content": "Nắm vững các ý sau trước khi luyện tập:",
+        "points": [
+          "Chuyển kịch bản thành chương trình hoàn chỉnh.",
+          "Liên hệ tình huống thực tế khi học, giải trí và làm việc nhóm.",
+          "Tuân thủ an toàn, bản quyền và sức khỏe khi dùng thiết bị số."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Ghi nhớ nhanh",
+        "content": "Ôn lại bằng mini quiz và phần thực hành (nếu có)."
+      }
+    ]
+  }
+]

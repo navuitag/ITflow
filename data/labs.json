@@ -1,0 +1,282 @@
+[
+  {
+    "id": "lab_g5_e06",
+    "skill": "g5_e06",
+    "type": "checklist",
+    "title": "Thực hành: Định dạng kí tự và bố trí hình ảnh trong văn bản",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_e07",
+    "skill": "g5_e07",
+    "type": "checklist",
+    "title": "Thực hành: Thực hành soạn thảo văn bản",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_e08a",
+    "skill": "g5_e08a",
+    "type": "checklist",
+    "title": "Thực hành: Làm quen với phần mềm đồ hoạ",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_e09a",
+    "skill": "g5_e09a",
+    "type": "checklist",
+    "title": "Thực hành: Sử dụng phần mềm đồ hoạ tạo sản phẩm số",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_e08b",
+    "skill": "g5_e08b",
+    "type": "checklist",
+    "title": "Thực hành: Làm sản phẩm thủ công theo video hướng dẫn",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_e09b",
+    "skill": "g5_e09b",
+    "type": "checklist",
+    "title": "Thực hành: Thực hành tạo đồ dùng gia đình theo video",
+    "xp": 40,
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Đọc yêu cầu và xác định sản phẩm cần tạo",
+        "hint": "Ghi ra đầu ra mong muốn."
+      },
+      {
+        "id": "s2",
+        "label": "Thực hiện theo hướng dẫn SGK",
+        "hint": "Làm đúng thứ tự."
+      },
+      {
+        "id": "s3",
+        "label": "Kiểm tra kết quả",
+        "hint": "So với rubric bài học."
+      },
+      {
+        "id": "s4",
+        "label": "Lưu hoặc trình bày sản phẩm",
+        "hint": "Đặt tên tệp rõ ràng."
+      }
+    ]
+  },
+  {
+    "id": "lab_g5_f10",
+    "skill": "g5_f10",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Cấu trúc tuần tự",
+    "xp": 50,
+    "blockly": {
+      "mode": "sequence",
+      "mission": "Ghép ít nhất 2 lệnh tuần tự dưới «Khi bấm Chạy» (ví dụ: Nói rồi Tiến).",
+      "hint": "Thuật toán tuần tự: các bước chạy lần lượt từ trên xuống.",
+      "rules": {
+        "minChain": 2
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f11",
+    "skill": "g5_f11",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Cấu trúc lặp",
+    "xp": 50,
+    "blockly": {
+      "mode": "loop",
+      "mission": "Dùng khối «Lặp lại» ít nhất 3 lần, bên trong có ít nhất một lệnh.",
+      "hint": "Cấu trúc lặp giúp máy tính thực hiện cùng một việc nhiều lần.",
+      "rules": {
+        "minRepeatTimes": 3
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f12",
+    "skill": "g5_f12",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Thực hành sử dụng lệnh lặp",
+    "xp": 50,
+    "blockly": {
+      "mode": "loop_practice",
+      "mission": "Viết chương trình lặp: nhân vật tiến và quay theo vòng lặp ≥ 4 lần.",
+      "hint": "Thử «Chạy thử» để xem nhân vật di chuyển.",
+      "rules": {
+        "minRepeatTimes": 4
+      },
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f13",
+    "skill": "g5_f13",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Cấu trúc rẽ nhánh",
+    "xp": 50,
+    "blockly": {
+      "mode": "branch",
+      "mission": "Dùng khối «Nếu … thì» với điều kiện so sánh và ít nhất một lệnh trong nhánh.",
+      "hint": "Rẽ nhánh: chọn hành động khác nhau tùy điều kiện.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f14",
+    "skill": "g5_f14",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Sử dụng biến trong chương trình",
+    "xp": 50,
+    "blockly": {
+      "mode": "variables",
+      "mission": "Gán giá trị cho biến và đọc biến trong chương trình.",
+      "hint": "Biến như hộp nhớ — lưu số điểm, số bước…",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f15",
+    "skill": "g5_f15",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Sử dụng biểu thức trong chương trình",
+    "xp": 50,
+    "blockly": {
+      "mode": "expressions",
+      "mission": "Dùng phép tính (+, −, ×, ÷) và gán hoặc hiển thị kết quả.",
+      "hint": "Biểu thức: kết hợp số và phép toán trước khi gán biến.",
+      "rules": {},
+      "starterXml": null
+    }
+  },
+  {
+    "id": "lab_g5_f16",
+    "skill": "g5_f16",
+    "type": "blockly",
+    "title": "Thực hành Blockly: Từ kịch bản đến chương trình",
+    "xp": 50,
+    "blockly": {
+      "mode": "project",
+      "mission": "Từ kịch bản SGK: dùng lặp + rẽ nhánh + biến (≥ 6 khối) rồi chạy thử.",
+      "hint": "Ví dụ: nếu điểm > 5 thì nói «Giỏi», không thì «Cố lên»; lặp di chuyển.",
+      "rules": {
+        "minBlocks": 6
+      },
+      "starterXml": null
+    }
+  }
+]
