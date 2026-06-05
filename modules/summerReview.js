@@ -558,6 +558,7 @@ export function createSummerReviewModule(ctx) {
     if (panel) {
       panel.innerHTML = correct
         ? `<strong>Chính xác!</strong> +${xpGain} XP${session.combo >= 3 ? ` · Combo ×${session.combo} 🔥` : ""}`
+        : `<strong>Chưa đúng.</strong> Đáp án: <strong>${escapeHtml(question.answer)}</strong><br>${escapeHtml(question.hint || "")}`;
     }
 
     document.querySelectorAll(".choice-btn, .answer-form button").forEach((el) => {
