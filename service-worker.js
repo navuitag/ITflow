@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v23";
+const CACHE_NAME = "itflow-vn-v25";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -34,7 +34,11 @@ const APP_SHELL = [
   "./components/edtechHub.js",
   "./assets/css/edtech-hub.css",
   "./assets/js/author.js",
+  "./assets/js/contact.js",
+  "./assets/js/feedback.js",
+  "./assets/css/feedback.css",
   "./assets/css/author.css",
+  "./assets/images/My-QR-Zalo.jpg",
   "./assets/js/utils.js",
   "./modules/lessonEngine.js",
   "./modules/quizEngine.js",
