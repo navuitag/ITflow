@@ -135,3 +135,11 @@ node scripts/generate-it-extras.mjs
 
 - Chương trình GDPT 2018 môn Tin học (TT 32/2018)
 - SGK Tin học 5 KNTT (`docs/SGK Tin học 5 KNTT.pdf`)
+
+---
+
+## Tác giả
+
+- **Nguyễn Anh Vũ**
+- Email: [navuitag@gmail.com](mailto:navuitag@gmail.com)
+- Điện thoại: [0986201079](tel:+84986201079)
