@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v19";
+const CACHE_NAME = "itflow-vn-v20";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -29,6 +29,7 @@ const APP_SHELL = [
   "./assets/js/router.js",
   "./assets/js/state.js",
   "./assets/js/profileStore.js",
+  "./assets/js/studyTime.js",
   "./assets/js/utils.js",
   "./modules/lessonEngine.js",
   "./modules/quizEngine.js",

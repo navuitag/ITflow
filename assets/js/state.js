@@ -17,6 +17,10 @@ function baseProgress() {
       target: 5,
       progress: 0
     },
+    studyMinutesToday: 0,
+    studyMinutesTotal: 0,
+    studyLastDate: null,
+    studyDailyLog: [],
     lastStudiedDate: new Date().toISOString().slice(0, 10)
   };
 }
