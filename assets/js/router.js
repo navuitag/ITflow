@@ -33,6 +33,7 @@ import { renderQuizCard } from "../../components/quizCard.js";
 import { renderFlashcardPanel } from "../../components/flashcardPanel.js";
 import { renderMemoryPanel } from "../../components/memoryPanel.js";
 import { showModal } from "../../components/modal.js";
+import { renderVisualization, bindVisualizations, shouldShowPracticeViz } from "../../modules/visualization.js";
 import { createPracticeModule } from "../../modules/practiceModes.js";
 import { chapterMindMapHref, createMindMapModule } from "../../modules/mindMap.js";
 import { completeLesson } from "../../modules/lessonEngine.js";
@@ -99,6 +100,9 @@ export function configureRouter(appData) {
     setRoute,
     escapeHtml,
     showModal,
+    renderVisualization,
+    bindVisualizations,
+    shouldShowPracticeViz,
     renderQuizCard,
     renderFlashcardPanel,
     renderMemoryPanel,

@@ -415,3 +415,50 @@
   font-weight: 700;
   margin-bottom: 6px;
 }
+
+.viz.it-viz {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.it-parts,
+.it-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.it-parts span,
+.it-flow span {
+  background: #eef4ff;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+.binary-row {
+  display: flex;
+  gap: 6px;
+}
+
+.binary-bit {
+  background: #193f65;
+  border-radius: 8px;
+  color: #fff;
+  font-family: ui-monospace, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 36px;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.viz-caption {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 12px 0 0;
+}

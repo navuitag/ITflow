@@ -228,7 +228,7 @@ export function createPracticeModule(ctx) {
           <span class="tag">${ctx.labelSkill(skillId)}</span>
         </div>
         ${renderPracticeTabs(skillId, activeMode)}
-        ${activeMode === "quiz" && ctx.shouldShowPracticeViz?.(skill) !== false ? ctx.renderVisualization(vizConfig) : ""}
+        ${activeMode === "quiz" && ctx.shouldShowPracticeViz?.(skill) !== false ? (ctx.renderVisualization?.(vizConfig) || "") : ""}
         ${body}
       </section>
     `;
