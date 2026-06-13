@@ -14,6 +14,14 @@ import {
 } from "./state.js";
 import { getStudyTimeSummary } from "./studyTime.js";
 import { setRoute, escapeHtml, streamTag } from "./utils.js";
+import {
+  bindHomePortal,
+  bindResourcesPage,
+  bindSitemapPage,
+  renderHomePortal,
+  renderResourcesPage,
+  renderSitemapPage
+} from "../../modules/homePortal.js";
 import { renderNavbar, renderBottomNav } from "../../components/navbar.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
@@ -195,6 +203,12 @@ export function renderRoute() {
     content = renderInputPractice(state);
   } else if (route === "scratch") {
     content = renderScratchGallery(escapeHtml);
+  } else if (route === "resources") {
+    content = renderResourcesPage(escapeHtml, data.skills);
+    after = () => bindResourcesPage({ setSelectedGrade, setRoute });
+  } else if (route === "sitemap") {
+    content = renderSitemapPage(escapeHtml, data.skills);
+    after = () => bindSitemapPage({ setSelectedGrade, setRoute });
   } else if (route === "review") {
     content = renderErrors(state);
   } else if (route === "profile") {
@@ -202,6 +216,7 @@ export function renderRoute() {
     after = bindProfile;
   } else {
     content = renderHome(state);
+    after = () => bindHomePortal({ setSelectedGrade, setRoute });
   }
 
   render(shell(content));
@@ -303,43 +318,19 @@ function renderHome(state) {
   const questPercent = Math.round((state.dailyQuest.progress / state.dailyQuest.target) * 100);
   const weakSkill = getWeakSkills(state)[0];
 
-  return `
-    <section class="hero-panel">
-      <div>
-        <span class="eyebrow">Lộ trình hôm nay · ${escapeHtml(state.user.name)} · Lớp ${activeGrade}</span>
-        <h1>Lý thuyết chắc, thực hành thạo.</h1>
-        <p>Hoàn thành lý thuyết, làm quiz, thực hành lab và xem ngay gợi ý khi trả lời chưa đúng.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#/lesson/${nextSkill.id}">Tiếp tục học</a>
-          <a class="btn secondary" href="#/practice/${nextSkill.id}">Luyện nhanh</a>
-          <a class="btn secondary" href="#/input">Chuột &amp; bàn phím</a>
-          <a class="btn secondary" href="#/scratch">Scratch</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">Daily Quest</span>
-        <h2>${state.dailyQuest.progress}/${state.dailyQuest.target} câu đúng</h2>
-        <div class="progress-track"><span style="width:${questPercent}%"></span></div>
-        <p>${weakSkill ? `Nên ôn thêm: ${labelSkill(weakSkill.skill)}` : "Bạn chưa có lỗi nổi bật. Khởi động nhẹ thôi."}</p>
-      </div>
-    </section>
-    <section class="stat-grid">
-      <article><strong>${study.todayLabel}</strong><span>Học hôm nay</span></article>
-      <article><strong>${state.todayXp}</strong><span>XP hôm nay</span></article>
-      <article><strong>${state.streak}</strong><span>Chuỗi ngày</span></article>
-      <article><strong>${study.totalLabel}</strong><span>Tổng giờ học</span></article>
-      <article><strong>${getOverallAccuracy(state)}%</strong><span>Độ chính xác</span></article>
-      <article><strong>${summary.level}</strong><span>Cấp độ</span></article>
-    </section>
-    <section class="section-head">
-      <h2>Kỹ năng tiếp theo · Lớp ${activeGrade}</h2>
-      <a href="#/mindmap">Sơ đồ tư duy</a> · <a href="#/skills">Cây kỹ năng</a>
-    </section>
-    <div class="skill-grid">
-      ${gradeSkills.slice(0, 3).map((skill) => renderLessonCard(skill, state, data.questions, data.labs)).join("")}
-    </div>
-    ${renderEdtechHubGrid()}
-  `;
+  return renderHomePortal(state, {
+    escapeHtml,
+    skills: data.skills,
+    activeGrade,
+    nextSkill,
+    study,
+    summary,
+    questPercent,
+    weakSkill: weakSkill ? { skill: labelSkill(weakSkill.skill) } : null,
+    accuracy: getOverallAccuracy(state),
+    renderLessonCards: (items) => items.map((skill) => renderLessonCard(skill, state, data.questions, data.labs)).join(""),
+    edtechHub: renderEdtechHubGrid()
+  });
 }
 
 function availableGrades() {
@@ -397,9 +388,9 @@ function renderSkills(state) {
 
   return `
     <section class="page-title">
-      <span class="eyebrow">Skill Tree</span>
+      <span class="eyebrow">Sách · SGK Tin học</span>
       <h1>Cây kỹ năng Tin học</h1>
-      <p>Chọn lớp để bắt đầu. Mỗi nút là một vi kỹ năng; hoàn thành bài trước để mở khóa bài tiếp theo.</p>
+      <p>Chọn lớp để mở học liệu số — tương tự mục Sách trên Kiến Vàng. Mỗi bài gồm lý thuyết, luyện tập và lab.</p>
     </section>
     <div class="grade-tabs" role="group" aria-label="Chọn lớp">
       ${tabs}

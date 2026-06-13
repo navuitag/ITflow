@@ -15,12 +15,11 @@ export function renderNavbar(state, grades = []) {
         <span>ITFlow VN</span>
       </a>
       <nav class="nav-links" aria-label="Điều hướng chính">
-        <a href="#/home">Hôm nay</a>
-        <a href="#/skills">Kỹ năng</a>
-        <a href="#/input">Luyện CB</a>
-        <a href="#/scratch">Scratch</a>
-        <a href="#/mindmap">Sơ đồ</a>
-        <a href="#/review/errors">Lỗi sai</a>
+        <a href="#/home">Trang chủ</a>
+        <a href="#/skills">Sách</a>
+        <a href="#/resources">Tài nguyên</a>
+        <a href="#/sitemap">Sơ đồ điều hướng</a>
+        <a href="#/mindmap">Sơ đồ tư duy</a>
         <a href="#/profile">Hồ sơ</a>
       </nav>
       <div class="top-stats">
@@ -42,11 +41,10 @@ export function renderBottomNav() {
   return `
     <nav class="bottom-nav" aria-label="Điều hướng mobile">
       <a href="#/home">Nhà</a>
-      <a href="#/skills">Kỹ năng</a>
-      <a href="#/input">Luyện</a>
-      <a href="#/scratch">Scratch</a>
+      <a href="#/skills">Sách</a>
+      <a href="#/resources">Tài nguyên</a>
+      <a href="#/input">Lab</a>
       <a href="#/mindmap">Sơ đồ</a>
-      <a href="#/review/errors">Lỗi</a>
       <a href="#/profile">Tôi</a>
     </nav>
   `;
