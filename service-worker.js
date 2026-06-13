@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v27";
+const CACHE_NAME = "itflow-vn-v28";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -15,6 +15,7 @@ const APP_SHELL = [
   "./modules/embedLab/scratchProjects.js",
   "./assets/css/practice-features.css",
   "./assets/css/home-portal.css",
+  "./assets/css/games-hub.css",
   "./assets/css/mindmap.css",
   "./modules/blocklyLab.js",
   "./modules/inputLab.js",
@@ -48,6 +49,8 @@ const APP_SHELL = [
   "./modules/progress.js",
   "./modules/gamification.js",
   "./modules/homePortal.js",
+  "./modules/gamesHub.js",
+  "./modules/arcadeGames.js",
   "./components/navbar.js",
   "./components/learnerSwitcher.js",
   "./components/lessonCard.js",

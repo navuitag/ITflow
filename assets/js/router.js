@@ -22,6 +22,7 @@ import {
   renderResourcesPage,
   renderSitemapPage
 } from "../../modules/homePortal.js";
+import { createGamesHubModule } from "../../modules/gamesHub.js";
 import { renderNavbar, renderBottomNav } from "../../components/navbar.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
@@ -82,6 +83,7 @@ let data = {
 
 let practice;
 let mindMap;
+let gamesHub;
 let mindMapGroupMode = MINDMAP_CONFIG.defaultGroupMode;
 let disposeBlockly = null;
 let disposeInput = null;
@@ -112,6 +114,14 @@ export function configureRouter(appData) {
     escapeHtml,
     config: MINDMAP_CONFIG,
     setMindMapMode: (mode) => { mindMapGroupMode = mode; }
+  });
+  gamesHub = createGamesHubModule({
+    data,
+    getState,
+    updateState,
+    renderRoute,
+    escapeHtml,
+    notFound
   });
   window.addEventListener("hashchange", renderRoute);
 }
@@ -203,6 +213,14 @@ export function renderRoute() {
     content = renderInputPractice(state);
   } else if (route === "scratch") {
     content = renderScratchGallery(escapeHtml);
+  } else if (route === "games") {
+    if (id) {
+      content = gamesHub.renderPlay(state, id);
+      after = () => gamesHub.bindPlay(id);
+    } else {
+      content = gamesHub.renderCatalog(state);
+      after = () => gamesHub.bindCatalog();
+    }
   } else if (route === "resources") {
     content = renderResourcesPage(escapeHtml, data.skills);
     after = () => bindResourcesPage({ setSelectedGrade, setRoute });

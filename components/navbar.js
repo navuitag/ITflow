@@ -17,6 +17,7 @@ export function renderNavbar(state, grades = []) {
       <nav class="nav-links" aria-label="Điều hướng chính">
         <a href="#/home">Trang chủ</a>
         <a href="#/skills">Sách</a>
+        <a href="#/games">Trò chơi</a>
         <a href="#/resources">Tài nguyên</a>
         <a href="#/sitemap">Sơ đồ điều hướng</a>
         <a href="#/mindmap">Sơ đồ tư duy</a>
@@ -42,6 +43,7 @@ export function renderBottomNav() {
     <nav class="bottom-nav" aria-label="Điều hướng mobile">
       <a href="#/home">Nhà</a>
       <a href="#/skills">Sách</a>
+      <a href="#/games">Game</a>
       <a href="#/resources">Tài nguyên</a>
       <a href="#/input">Lab</a>
       <a href="#/mindmap">Sơ đồ</a>

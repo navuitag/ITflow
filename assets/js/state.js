@@ -21,7 +21,8 @@ function baseProgress() {
     studyMinutesTotal: 0,
     studyLastDate: null,
     studyDailyLog: [],
-    lastStudiedDate: new Date().toISOString().slice(0, 10)
+    lastStudiedDate: new Date().toISOString().slice(0, 10),
+    arcadeScores: {}
   };
 }
 

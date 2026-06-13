@@ -25,10 +25,10 @@ const SCHOOL_LEVELS = [
 const FEATURES = [
   {
     title: "Trò chơi & Lab",
-    body: "Chơi và tương tác: mô phỏng chuột–bàn phím, Blockly, Scratch, memory game.",
+    body: "Chơi và tương tác: Click Frenzy, Typing Sprint, mô phỏng chuột–bàn phím, Blockly, Scratch.",
     icon: "🎮",
-    href: "#/input",
-    label: "Khám phá"
+    href: "#/games",
+    label: "Chơi ngay"
   },
   {
     title: "Bài học",
@@ -161,6 +161,11 @@ export function renderResourcesPage(escapeHtml, skills) {
 
   const cards = [
     {
+      title: "Trò chơi luyện tập",
+      body: "Click Frenzy, Typing Sprint, mô phỏng chuột–bàn phím, Blockly và Scratch.",
+      href: "#/games"
+    },
+    {
       title: "Luyện chuột & bàn phím",
       body: "Mô phỏng thao tác cơ bản cho lớp 1–2 và ôn kỹ năng thao tác.",
       href: "#/input"
@@ -231,6 +236,7 @@ export function renderSitemapPage(escapeHtml, skills) {
       links: [
         { label: "Trang chủ", href: "#/home" },
         { label: "Sách / Kỹ năng", href: "#/skills" },
+        { label: "Trò chơi", href: "#/games" },
         { label: "Tài nguyên", href: "#/resources" },
         { label: "Sơ đồ tư duy", href: "#/mindmap" },
         { label: "Hồ sơ người học", href: "#/profile" }
@@ -239,6 +245,7 @@ export function renderSitemapPage(escapeHtml, skills) {
     {
       title: "Luyện tập & Lab",
       links: [
+        { label: "Trò chơi", href: "#/games" },
         { label: "Chuột & bàn phím", href: "#/input" },
         { label: "Scratch", href: "#/scratch" },
         { label: "Sổ tay lỗi sai", href: "#/review/errors" }
