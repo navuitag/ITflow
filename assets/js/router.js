@@ -23,7 +23,7 @@ import {
   renderSitemapPage
 } from "../../modules/homePortal.js";
 import { createGamesHubModule } from "../../modules/gamesHub.js";
-import { renderNavbar, renderBottomNav } from "../../components/navbar.js";
+import { renderNavbar, renderBottomNav, bindNavMore } from "../../components/navbar.js";
 import { bindLearnerSwitcher, renderAddLearnerForm, renderLearnerList } from "../../components/learnerSwitcher.js";
 import { bindEdtechHub, renderEdtechHubGrid } from "../../components/edtechHub.js";
 import { renderAppFooter, renderAuthorCard } from "./author.js";
@@ -247,6 +247,7 @@ export function renderRoute() {
 }
 
 function bindNavbar() {
+  bindNavMore();
   bindEdtechHub();
   bindFeedback();
   bindLearnerSwitcher({
