@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v25";
+const CACHE_NAME = "itflow-vn-v$(( $(echo 25) + 1 ))";
 const APP_SHELL = [
   "./",
   "./index.html",
