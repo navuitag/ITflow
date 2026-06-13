@@ -1,4 +1,4 @@
-const CACHE_NAME = "itflow-vn-v30";
+const CACHE_NAME = "itflow-vn-v31";
 const APP_SHELL = [
   "./",
   "./index.html",

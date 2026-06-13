@@ -227,7 +227,7 @@ p {
 }
 
 .nav-more-btn:hover,
-.nav-more-btn[aria-expanded="true"] {
+.nav-more:focus-within .nav-more-btn {
   background: var(--surface-soft);
   color: var(--text);
 }
@@ -241,14 +241,29 @@ p {
   border: 1px solid var(--line);
   border-radius: 12px;
   box-shadow: var(--shadow);
-  display: grid;
+  display: none;
   gap: 2px;
+  grid-template-columns: 1fr;
   min-width: 220px;
   padding: 8px;
   position: absolute;
   right: 0;
-  top: calc(100% + 6px);
+  top: calc(100% + 2px);
   z-index: 30;
+}
+
+.nav-more-menu::before {
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -6px;
+}
+
+.nav-more:hover .nav-more-menu,
+.nav-more:focus-within .nav-more-menu {
+  display: grid;
 }
 
 .nav-more-item {

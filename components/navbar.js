@@ -36,7 +36,7 @@ function renderMoreMenu() {
         Thêm
         <span class="nav-more-caret" aria-hidden="true">▾</span>
       </button>
-      <div class="nav-more-menu" id="navMoreMenu" hidden>
+      <div class="nav-more-menu" id="navMoreMenu">
         ${items}
       </div>
     </div>
@@ -86,28 +86,24 @@ export function renderBottomNav() {
 
 let navMoreDocumentBound = false;
 
+function setNavMoreOpen(open) {
+  const button = document.getElementById("navMoreBtn");
+  if (button) button.setAttribute("aria-expanded", String(open));
+}
+
 export function bindNavMore() {
+  const wrap = document.querySelector(".nav-more");
   const button = document.getElementById("navMoreBtn");
   const menu = document.getElementById("navMoreMenu");
-  if (!button || !menu) return;
+  if (!wrap || !button || !menu) return;
 
-  button.onclick = (event) => {
-    event.stopPropagation();
-    const open = menu.hidden;
-    menu.hidden = !open;
-    button.setAttribute("aria-expanded", String(open));
+  wrap.onmouseenter = () => setNavMoreOpen(true);
+  wrap.onmouseleave = () => setNavMoreOpen(false);
+  wrap.onfocusin = () => setNavMoreOpen(true);
+  wrap.onfocusout = (event) => {
+    if (!wrap.contains(event.relatedTarget)) setNavMoreOpen(false);
   };
-
-  menu.onclick = (event) => event.stopPropagation();
 
   if (navMoreDocumentBound) return;
   navMoreDocumentBound = true;
-
-  document.addEventListener("click", () => {
-    const activeMenu = document.getElementById("navMoreMenu");
-    const activeBtn = document.getElementById("navMoreBtn");
-    if (!activeMenu || !activeBtn) return;
-    activeMenu.hidden = true;
-    activeBtn.setAttribute("aria-expanded", "false");
-  });
 }
